@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="themes">
+        <item name="Default">Default</item>
+        <item name="Grigio blu">Grigio blu</item>
+        <item name="Roccia">Roccia</item>
+        <item name="Verde">Verde</item>
+        <item name="Blu">Blu</item>
+    </string-array>
+</resources>

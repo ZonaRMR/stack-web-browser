@@ -1,0 +1,43 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#DDDDDD</item>
+        <item name="colorAccent">#EEEEEE</item>
+        <item name="colorPrimaryDark">#CCCCCC</item>
+    </style>
+
+    <!--All colors taken from Google's material design guide-->
+
+    <style name="Teal" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#DDDDDD</item>
+        <item name="colorAccent">#26C6DA</item>         <!--400-->
+        <item name="colorPrimaryDark">#00838F</item>    <!--800-->
+    </style>
+
+    <style name="BlueGray" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#DDDDDD</item>
+        <item name="colorAccent">#78909C</item>         <!--400-->
+        <item name="colorPrimaryDark">#37474F</item>    <!--800-->
+    </style>
+
+    <style name="Rock" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#DDDDDD</item>
+        <item name="colorAccent">#98908C</item>         <!--Arbitrary-->
+        <item name="colorPrimaryDark">#57473F</item>    <!--Arbitrary-->
+    </style>
+
+    <style name="Green" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#DDDDDD</item>
+        <item name="colorAccent">#66BB6A</item>         <!--400-->
+        <item name="colorPrimaryDark">#2E7D32</item>    <!--800-->
+    </style>
+
+    <style name="Blue" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#DDDDDD</item>
+        <item name="colorAccent">#29B6F6</item>         <!--400-->
+        <item name="colorPrimaryDark">#0277BD</item>    <!--800-->
+    </style>
+
+    <!--TODO gray - also in other files: arrays.xml, all java classes-->
+
+</resources>

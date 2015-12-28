@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eu.depa.browsing.stack.MainActivity">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bar_height"
+        android:id="@+id/topelements"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <ImageButton
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/bang"
+            android:foreground="@drawable/bang"
+            android:background="@drawable/bang"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:onClick="bang"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/favicon"
+            android:layout_marginTop="12.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="12.5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@id/bang"
+            android:layout_toRightOf="@id/bang"/>
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/dots"
+            android:clickable="true"
+            android:background="@drawable/dots_white"
+            android:onClick="showPopup"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bar_height"
+            android:id="@+id/toptextbar"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#DDDDDD"
+            android:textColorHighlight="@color/colorHighlight"
+            android:inputType="textVisiblePassword"
+            android:hint="@string/bar_hint"
+            android:layout_toRightOf="@id/favicon"
+            android:layout_toEndOf="@id/favicon"
+            android:layout_toStartOf="@id/dots"
+            android:layout_toLeftOf="@id/dots"/>
+
+        <ImageButton
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/X"
+            android:layout_alignEnd="@id/toptextbar"
+            android:layout_alignRight="@id/toptextbar"
+            android:background="@drawable/x"
+            android:layout_margin="15dp"
+            android:onClick="emptyBar"/>
+
+    </RelativeLayout>
+
+    <WebView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/webView"
+        android:layout_below="@+id/topelements"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

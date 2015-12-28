@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools">
+    <string-array name="sergines"
+        tools:ignore="MissingTranslation">
+        <item name="DuckDuckGo">DuckDuckGo</item>
+        <item name="Google">Google</item>
+        <item name="Bing">Bing</item>
+    </string-array>
+    <string-array name="serginevalues"
+        tools:ignore="MissingTranslation">
+        <item name="ddg">ddg</item>
+        <item name="g">g</item>
+        <item name="b">b</item>
+    </string-array>
+
+    <string-array name="themes">
+        <item name="Default">Default</item>
+        <item name="Blue gray">Blue gray</item>
+        <item name="Rock">Rock</item>
+        <item name="Green">Green</item>
+        <item name="Blue">Blue</item>
+    </string-array>
+
+    <string-array name="themevalues"
+        tools:ignore="MissingTranslation">
+        <item name="def">def</item>
+        <item name="bg">bg</item>
+        <item name="rock">rock</item>
+        <item name="green">green</item>
+        <item name="blue">blue</item>
+    </string-array>
+</resources>
