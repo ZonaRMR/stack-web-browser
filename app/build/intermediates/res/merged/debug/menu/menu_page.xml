@@ -11,8 +11,4 @@
     <item android:id="@+id/addtohome"
         android:title="@string/addtohome"
         android:onClick="addPagetoHome"/>
-
-    <item android:id="@+id/refresh"
-        android:title="@string/reload"
-        android:onClick="reloadPage"/>
 </menu>

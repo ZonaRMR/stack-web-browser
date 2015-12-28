@@ -26,7 +26,7 @@ public class About extends Activity {
 
                 emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
                 emailIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject));
-                emailIntent.putExtra(Intent.EXTRA_TEXT, "API: " + android.os.Build.VERSION.SDK_INT + "\n" + getString(R.string.email_text));
+                emailIntent.putExtra(Intent.EXTRA_TEXT, "API: " + android.os.Build.VERSION.SDK_INT + "\n");
 
                 try {
                     startActivity(emailIntent);
@@ -54,6 +54,9 @@ public class About extends Activity {
                 return;
             case "blue":
                 setTheme(R.style.Blue);
+                return;
+            case "gray":
+                setTheme(R.style.Gray);
                 return;
         }
     }

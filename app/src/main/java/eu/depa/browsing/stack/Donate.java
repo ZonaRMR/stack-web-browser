@@ -72,6 +72,9 @@ public class Donate extends Activity {
             case "blue":
                 setTheme(R.style.Blue);
                 return;
+            case "gray":
+                setTheme(R.style.Gray);
+                return;
         }
     }
 }

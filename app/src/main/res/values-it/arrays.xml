@@ -6,5 +6,6 @@
         <item name="Roccia">Roccia</item>
         <item name="Verde">Verde</item>
         <item name="Blu">Blu</item>
+        <item name="Grigio">Grigio</item>
     </string-array>
 </resources>

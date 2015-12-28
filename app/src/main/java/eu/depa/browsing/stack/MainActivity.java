@@ -307,6 +307,9 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
             case "blue":
                 setTheme(R.style.Blue);
                 return;
+            case "gray":
+                setTheme(R.style.Gray);
+                return;
         }
     }       //set background color according to user prefs
 
@@ -334,6 +337,11 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
             case "blue":
                 toptextbar.setHighlightColor(Color.rgb(129, 212, 250)); //200
                 topelements.setBackgroundColor(Color.rgb(2, 119, 189)); //800
+                return;
+            case "gray":
+                toptextbar.setHighlightColor(Color.rgb(238, 238, 238)); //200
+                topelements.setBackgroundColor(Color.rgb(66, 66, 66));  //800
+                return;
         }
     }    //set background color of all markup items according to user prefs
 

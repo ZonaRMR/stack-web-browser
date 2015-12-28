@@ -38,6 +38,10 @@
         <item name="colorPrimaryDark">#0277BD</item>    <!--800-->
     </style>
 
-    <!--TODO gray - also in other files: arrays.xml, all java classes-->
+    <style name="Gray" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#DDDDDD</item>
+        <item name="colorAccent">#BDBDBD</item>         <!--400-->
+        <item name="colorPrimaryDark">#424242</item>    <!--800-->
+    </style>
 
 </resources>

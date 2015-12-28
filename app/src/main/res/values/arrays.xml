@@ -20,6 +20,7 @@
         <item name="Rock">Rock</item>
         <item name="Green">Green</item>
         <item name="Blue">Blue</item>
+        <item name="Gray">Gray</item>
     </string-array>
 
     <string-array name="themevalues"
@@ -29,5 +30,6 @@
         <item name="rock">rock</item>
         <item name="green">green</item>
         <item name="blue">blue</item>
+        <item name="gray">gray</item>
     </string-array>
 </resources>

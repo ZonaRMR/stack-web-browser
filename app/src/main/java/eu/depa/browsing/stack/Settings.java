@@ -2,6 +2,7 @@ package eu.depa.browsing.stack;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -28,7 +29,6 @@ public class Settings extends PreferenceActivity {
                     AlertDialog.Builder builder = new AlertDialog.Builder(Settings.this);
 
                     builder.setTitle(getString(R.string.wanna_restart));
-                    builder.setMessage(getString(R.string.wanna_restart_msg));
 
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
@@ -70,10 +70,13 @@ public class Settings extends PreferenceActivity {
             case "blue":
                 setTheme(R.style.Blue);
                 return;
+            case "gray":
+                setTheme(R.style.Gray);
+                return;
         }
     }
 
-    public static void doRestart(Context c) {
+    public void doRestart(Context c) {
         try {
             if (c != null) {
                 PackageManager pm = c.getPackageManager();
@@ -86,13 +89,18 @@ public class Settings extends PreferenceActivity {
                                 .getActivity(c, mPendingIntentId, mStartActivity,
                                         PendingIntent.FLAG_CANCEL_CURRENT);
                         AlarmManager mgr = (AlarmManager) c.getSystemService(Context.ALARM_SERVICE);
-                        mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 100, mPendingIntent);
-                        System.exit(0);
+                        mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 10, mPendingIntent);
+
+                        ProgressDialog pd = new ProgressDialog(Settings.this);
+                        pd.setCancelable(false);
+                        pd.setMessage(getString(R.string.restarting));
+                        pd.setProgressStyle(android.R.style.Widget_ProgressBar_Small);
+                        pd.show();
                     }
                 }
             }
         } catch (Exception ex) {
-            Log.e("kek, ", "Was not able to restart application");
+            Log.e("settings.doRestart", "Was not able to restart application");
         }
     }
 }

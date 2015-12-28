@@ -16,6 +16,7 @@
         <item name="Rock">Rock</item>
         <item name="Green">Green</item>
         <item name="Blue">Blue</item>
+        <item name="Gray">Gray</item>
     </string-array>
     <string-array name="themevalues" ns1:ignore="MissingTranslation">
         <item name="def">def</item>
@@ -23,6 +24,7 @@
         <item name="rock">rock</item>
         <item name="green">green</item>
         <item name="blue">blue</item>
+        <item name="gray">gray</item>
     </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -294,8 +296,7 @@
     <string name="earliest_reached">Earliest page has been reached</string>
     <string name="easter_toast">You found an easter egg!</string>
     <string name="email_noclient">No email client found</string>
-    <string name="email_subject">STACK: Your subject here</string>
-    <string name="email_text">Your message here</string>
+    <string name="email_subject">STACK: </string>
     <string name="menu_about">About</string>
     <string name="menu_donate">Donate</string>
     <string name="menu_page">Page…</string>
@@ -308,13 +309,13 @@
     <string name="plzNo">CANCEL</string>
     <string name="reload">Reload</string>
     <string name="restart_cap">RESTART</string>
+    <string name="restarting">Restarting app…</string>
     <string name="search_engine">Search engine</string>
     <string name="share">Share</string>
     <string name="sharewith">Share with…</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="theme">Theme</string>
-    <string name="wanna_restart">Do you want to restart the application now?</string>
-    <string name="wanna_restart_msg">A restart is required in order to properly change the theme</string>
+    <string name="wanna_restart">Restart the application now?</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
@@ -1268,6 +1269,11 @@
         <item name="colorPrimary">#DDDDDD</item>
         <item name="colorAccent">#78909C</item>         <!--400-->
         <item name="colorPrimaryDark">#37474F</item>    <!--800-->
+    </style>
+    <style name="Gray" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#DDDDDD</item>
+        <item name="colorAccent">#BDBDBD</item>         <!--400-->
+        <item name="colorPrimaryDark">#424242</item>    <!--800-->
     </style>
     <style name="Green" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">#DDDDDD</item>

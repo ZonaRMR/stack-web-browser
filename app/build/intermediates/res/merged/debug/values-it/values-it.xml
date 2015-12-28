@@ -6,6 +6,7 @@
         <item name="Roccia">Roccia</item>
         <item name="Verde">Verde</item>
         <item name="Blu">Blu</item>
+        <item name="Grigio">Grigio</item>
     </string-array>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Vai alla home page"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
@@ -67,7 +68,6 @@
     <string name="easter_toast">Hai trovato un uovo di pasqua! </string>
     <string name="email_noclient">Nessuna applicazione adatta</string>
     <string name="email_subject">STACK: </string>
-    <string name="email_text">Messaggio</string>
     <string name="menu_about">Info</string>
     <string name="menu_donate">Dona</string>
     <string name="menu_page">Pagina…</string>
@@ -80,11 +80,11 @@
     <string name="plzNo">CANCELLA</string>
     <string name="reload">Aggiorna</string>
     <string name="restart_cap">RIAVVIA</string>
+    <string name="restarting">Riavvio…</string>
     <string name="search_engine">Motore di ricerca</string>
     <string name="share">Condividi</string>
     <string name="sharewith">Condividi con…</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="theme">Tema</string>
-    <string name="wanna_restart">Vuoi riavviare l\'applicazione adesso?</string>
-    <string name="wanna_restart_msg">Riavviare è necessario per cambiare il tema</string>
+    <string name="wanna_restart">Riavviare l\'applicazione adesso?</string>
 </resources>
