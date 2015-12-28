@@ -5,7 +5,6 @@
     <string name="menu_settings">Settings</string>
     <string name="menu_donate">Donate</string>
     <string name="about_text">Stack web browser was developed by\nAlessandro De Pasquale\n\nYou may get to me via the button below.</string>
-    <string name="email_subject">STACK: </string>
     <string name="email_noclient">No email client found</string>
     <string name="donate">By donating, you can support the development of this application.</string>
     <string name="bitcoin_noclient">No client was found</string>
@@ -29,4 +28,7 @@
     <string name="restart_cap">RESTART</string>
     <string name="plzNo">CANCEL</string>
     <string name="restarting">Restarting app…</string>
+    <string name="repBug">Report a bug</string>
+    <string name="ask">Ask a question</string>
+    <string name="suggest">Make a suggestion</string>
 </resources>

@@ -23,6 +23,7 @@
         <activity
             android:name="eu.depa.browsing.stack.MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:icon="@mipmap/ic_launcher"
             android:windowSoftInputMode="stateAlwaysHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

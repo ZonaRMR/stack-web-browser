@@ -257,6 +257,7 @@
     <string name="about_text">Stack web browser was developed by\nAlessandro De Pasquale\n\nYou may get to me via the button below.</string>
     <string name="addtohome">Add to home screen</string>
     <string name="app_name">Stack</string>
+    <string name="ask">Ask a question</string>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
     <string name="bar_hint">Search or enter address</string>
@@ -296,7 +297,6 @@
     <string name="earliest_reached">Earliest page has been reached</string>
     <string name="easter_toast">You found an easter egg!</string>
     <string name="email_noclient">No email client found</string>
-    <string name="email_subject">STACK: </string>
     <string name="menu_about">About</string>
     <string name="menu_donate">Donate</string>
     <string name="menu_page">Page…</string>
@@ -308,12 +308,14 @@
     <string name="picktheme">Pick a theme</string>
     <string name="plzNo">CANCEL</string>
     <string name="reload">Reload</string>
+    <string name="repBug">Report a bug</string>
     <string name="restart_cap">RESTART</string>
     <string name="restarting">Restarting app…</string>
     <string name="search_engine">Search engine</string>
     <string name="share">Share</string>
     <string name="sharewith">Share with…</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="suggest">Make a suggestion</string>
     <string name="theme">Theme</string>
     <string name="wanna_restart">Restart the application now?</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

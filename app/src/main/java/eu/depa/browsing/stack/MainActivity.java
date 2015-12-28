@@ -1,3 +1,19 @@
+/*This file is part of Stack.
+
+Stack is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Stack is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Stack. In fact, it is available under app/res/GPL.txt
+If not, see <http://www.gnu.org/licenses/>.*/
+
 package eu.depa.browsing.stack;
 
 import android.content.Context;
@@ -83,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
 
         onNewIntent(getIntent());       //do this just in case you get called which will never happen
 
-        X.setVisibility(View.GONE);     //hide the X at the beginning
+        X.setVisibility(View.GONE);     //hide the X in the beginning
 
         toptextbar.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
@@ -110,10 +126,6 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         WebView webView     = (WebView) findViewById(R.id.webView);
         EditText toptextbar = (EditText) findViewById(R.id.toptextbar);
         ImageView favicon   = (ImageView) findViewById(R.id.favicon);
-
-        webView.loadUrl(url);
-        toptextbar.setText(url.split("//")[1]);
-        favicon.setImageBitmap(webView.getFavicon());
 
         webView.loadUrl(url);
         toptextbar.setText(url.split("//")[1]);
@@ -145,14 +157,19 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
                 Intent gotodonate = new Intent(this, Donate.class);
                 startActivityForResult(gotodonate, 16019);
                 return true;
+
             case R.id.menu_page:
                 if (first)
                     getMenuInflater().inflate(R.menu.menu_page, item.getSubMenu());
                 first = false;
                 return true;
+
+            case R.id.menu_reload:
+                reloadPage(item);
+                return true;
         }
         return true;
-    }       //when u pick from te menu
+    }       //when u pick from the menu
 
     @Override
     public boolean onKey(View v, int keyCode, KeyEvent event) {
@@ -187,7 +204,7 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
     }   //when u press a key: enter
 
     public void showPopup(final View v) {
-        PopupMenu popup = new PopupMenu(this, v);
+        PopupMenu popup = new PopupMenu(getApplicationContext(), v);
         MenuInflater inflater = popup.getMenuInflater();
         inflater.inflate(R.menu.options, popup.getMenu());
         popup.show();

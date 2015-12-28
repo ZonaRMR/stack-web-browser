@@ -30,6 +30,7 @@
     <string name="about_text">Lo sviluppo di Stack\nè seguito da\nAlessandro De Pasquale\n\nPotete contattarmi col bottone di seguito.</string>
     <string name="addtohome">Aggiungi ad home</string>
     <string name="app_name">Stack</string>
+    <string name="ask">Fai una domanda</string>
     <string name="bar_hint">Ricerca o inserisci indirizzo</string>
     <string name="bitcoin_noclient">Nessuna applicazione adatta</string>
     <string name="color_scheme">Necessita il riavvio dell\'app</string>
@@ -67,7 +68,6 @@
     <string name="earliest_reached">Pagina iniziale raggiunta</string>
     <string name="easter_toast">Hai trovato un uovo di pasqua! </string>
     <string name="email_noclient">Nessuna applicazione adatta</string>
-    <string name="email_subject">STACK: </string>
     <string name="menu_about">Info</string>
     <string name="menu_donate">Dona</string>
     <string name="menu_page">Pagina…</string>
@@ -79,12 +79,14 @@
     <string name="picktheme">Scegli un tema</string>
     <string name="plzNo">CANCELLA</string>
     <string name="reload">Aggiorna</string>
+    <string name="repBug">Segnala un problema</string>
     <string name="restart_cap">RIAVVIA</string>
     <string name="restarting">Riavvio…</string>
     <string name="search_engine">Motore di ricerca</string>
     <string name="share">Condividi</string>
     <string name="sharewith">Condividi con…</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="suggest">Fornisci un suggerimento</string>
     <string name="theme">Tema</string>
     <string name="wanna_restart">Riavviare l\'applicazione adesso?</string>
 </resources>

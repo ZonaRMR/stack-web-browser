@@ -1670,11 +1670,12 @@ containing a value of this type.
         public static final int action_mode_bar_stub=0x7f0e003f;
         public static final int action_mode_close_button=0x7f0e0025;
         public static final int activity_chooser_view_content=0x7f0e0026;
-        public static final int addtohome=0x7f0e006c;
+        public static final int addtohome=0x7f0e006f;
         public static final int adjust_height=0x7f0e001b;
         public static final int adjust_width=0x7f0e001c;
         public static final int alertTitle=0x7f0e0032;
         public static final int always=0x7f0e001d;
+        public static final int askQ=0x7f0e006b;
         public static final int bang=0x7f0e0055;
         public static final int beginning=0x7f0e0018;
         public static final int bitcoin=0x7f0e005b;
@@ -1708,22 +1709,23 @@ containing a value of this type.
         public static final int listMode=0x7f0e0009;
         public static final int list_item=0x7f0e002a;
         public static final int media_actions=0x7f0e0060;
-        public static final int menu_about=0x7f0e006e;
-        public static final int menu_donate=0x7f0e006f;
-        public static final int menu_page=0x7f0e0070;
-        public static final int menu_reload=0x7f0e006d;
-        public static final int menu_settings=0x7f0e0071;
+        public static final int menu_about=0x7f0e0071;
+        public static final int menu_donate=0x7f0e0072;
+        public static final int menu_page=0x7f0e0073;
+        public static final int menu_reload=0x7f0e0070;
+        public static final int menu_settings=0x7f0e0074;
         public static final int middle=0x7f0e001a;
         public static final int multiply=0x7f0e0013;
         public static final int never=0x7f0e0020;
         public static final int none=0x7f0e000e;
         public static final int normal=0x7f0e000a;
-        public static final int openInApp=0x7f0e006a;
+        public static final int openInApp=0x7f0e006d;
         public static final int parentPanel=0x7f0e002f;
         public static final int paypal=0x7f0e005c;
         public static final int progress_circular=0x7f0e0005;
         public static final int progress_horizontal=0x7f0e0006;
         public static final int radio=0x7f0e003d;
+        public static final int repBug=0x7f0e006a;
         public static final int screen=0x7f0e0014;
         public static final int scrollIndicatorDown=0x7f0e0037;
         public static final int scrollIndicatorUp=0x7f0e0034;
@@ -1739,7 +1741,7 @@ containing a value of this type.
         public static final int search_src_text=0x7f0e004c;
         public static final int search_voice_btn=0x7f0e0050;
         public static final int select_dialog_listview=0x7f0e0051;
-        public static final int share=0x7f0e006b;
+        public static final int share=0x7f0e006e;
         public static final int shortcut=0x7f0e003c;
         public static final int showCustom=0x7f0e000f;
         public static final int showHome=0x7f0e0010;
@@ -1751,6 +1753,7 @@ containing a value of this type.
         public static final int src_over=0x7f0e0017;
         public static final int status_bar_latest_event_content=0x7f0e005f;
         public static final int submit_area=0x7f0e004e;
+        public static final int suggest=0x7f0e006c;
         public static final int tabMode=0x7f0e000b;
         public static final int text=0x7f0e0067;
         public static final int text2=0x7f0e0065;
@@ -1819,14 +1822,20 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f040027;
     }
     public static final class menu {
-        public static final int menu_page=0x7f0f0000;
-        public static final int options=0x7f0f0001;
+        public static final int menu_email=0x7f0f0000;
+        public static final int menu_page=0x7f0f0001;
+        public static final int options=0x7f0f0002;
     }
     public static final class mipmap {
-        public static final int ic_launcher=0x7f030000;
+        public static final int ic_blue=0x7f030000;
+        public static final int ic_bluegray=0x7f030001;
+        public static final int ic_gray=0x7f030002;
+        public static final int ic_green=0x7f030003;
+        public static final int ic_launcher=0x7f030004;
+        public static final int ic_rock=0x7f030005;
     }
     public static final class string {
-        public static final int HP=0x7f07004f;
+        public static final int HP=0x7f070051;
         public static final int abc_action_bar_home_description=0x7f070000;
         public static final int abc_action_bar_home_description_format=0x7f070001;
         public static final int abc_action_bar_home_subtitle_description_format=0x7f070002;
@@ -1849,11 +1858,12 @@ containing a value of this type.
         public static final int about_text=0x7f070032;
         public static final int addtohome=0x7f070033;
         public static final int app_name=0x7f070034;
-        public static final int auth_google_play_services_client_facebook_display_name=0x7f070050;
-        public static final int auth_google_play_services_client_google_display_name=0x7f070051;
-        public static final int bar_hint=0x7f070035;
-        public static final int bitcoin_noclient=0x7f070036;
-        public static final int color_scheme=0x7f070037;
+        public static final int ask=0x7f070035;
+        public static final int auth_google_play_services_client_facebook_display_name=0x7f070052;
+        public static final int auth_google_play_services_client_google_display_name=0x7f070053;
+        public static final int bar_hint=0x7f070036;
+        public static final int bitcoin_noclient=0x7f070037;
+        public static final int color_scheme=0x7f070038;
         public static final int common_android_wear_notification_needs_update_text=0x7f070013;
         public static final int common_android_wear_update_text=0x7f070014;
         public static final int common_android_wear_update_title=0x7f070015;
@@ -1884,11 +1894,10 @@ containing a value of this type.
         public static final int common_google_play_services_updating_text=0x7f07002e;
         public static final int common_google_play_services_updating_title=0x7f07002f;
         public static final int common_open_on_phone=0x7f070030;
-        public static final int donate=0x7f070038;
-        public static final int earliest_reached=0x7f070039;
-        public static final int easter_toast=0x7f07003a;
-        public static final int email_noclient=0x7f07003b;
-        public static final int email_subject=0x7f07003c;
+        public static final int donate=0x7f070039;
+        public static final int earliest_reached=0x7f07003a;
+        public static final int easter_toast=0x7f07003b;
+        public static final int email_noclient=0x7f07003c;
         public static final int menu_about=0x7f07003d;
         public static final int menu_donate=0x7f07003e;
         public static final int menu_page=0x7f07003f;
@@ -1900,14 +1909,16 @@ containing a value of this type.
         public static final int picktheme=0x7f070045;
         public static final int plzNo=0x7f070046;
         public static final int reload=0x7f070047;
-        public static final int restart_cap=0x7f070048;
-        public static final int restarting=0x7f070049;
-        public static final int search_engine=0x7f07004a;
-        public static final int share=0x7f07004b;
-        public static final int sharewith=0x7f07004c;
+        public static final int repBug=0x7f070048;
+        public static final int restart_cap=0x7f070049;
+        public static final int restarting=0x7f07004a;
+        public static final int search_engine=0x7f07004b;
+        public static final int share=0x7f07004c;
+        public static final int sharewith=0x7f07004d;
         public static final int status_bar_notification_info_overflow=0x7f070031;
-        public static final int theme=0x7f07004d;
-        public static final int wanna_restart=0x7f07004e;
+        public static final int suggest=0x7f07004e;
+        public static final int theme=0x7f07004f;
+        public static final int wanna_restart=0x7f070050;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0a007d;

@@ -1,6 +1,26 @@
 [
     {
+        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_bluegray.png",
+        "source": "/home/depa/Desktop/Stack/app/src/main/res/mipmap-xhdpi/ic_bluegray.png"
+    },
+    {
+        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_green.png",
+        "source": "/home/depa/Desktop/Stack/app/src/main/res/mipmap-xhdpi/ic_green.png"
+    },
+    {
         "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png",
         "source": "/home/depa/Desktop/Stack/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_blue.png",
+        "source": "/home/depa/Desktop/Stack/app/src/main/res/mipmap-xhdpi/ic_blue.png"
+    },
+    {
+        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_gray.png",
+        "source": "/home/depa/Desktop/Stack/app/src/main/res/mipmap-xhdpi/ic_gray.png"
+    },
+    {
+        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_rock.png",
+        "source": "/home/depa/Desktop/Stack/app/src/main/res/mipmap-xhdpi/ic_rock.png"
     }
 ]

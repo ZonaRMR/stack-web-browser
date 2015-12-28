@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/menu/menu_email.xml",
+        "source": "/home/depa/Desktop/Stack/app/src/main/res/menu/menu_email.xml"
+    },
+    {
         "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/menu/menu_page.xml",
         "source": "/home/depa/Desktop/Stack/app/src/main/res/menu/menu_page.xml"
     },

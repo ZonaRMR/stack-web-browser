@@ -6,7 +6,6 @@
     <string name="menu_settings">Impostazioni</string>
     <string name="menu_donate">Dona</string>
     <string name="about_text">Lo sviluppo di Stack\nè seguito da\nAlessandro De Pasquale\n\nPotete contattarmi col bottone di seguito.</string>
-    <string name="email_subject">STACK: </string>
     <string name="email_noclient">Nessuna applicazione adatta</string>
     <string name="donate">Donando puoi sostenere lo sviluppo di Stack</string>
     <string name="bitcoin_noclient">Nessuna applicazione adatta</string>
@@ -29,4 +28,7 @@
     <string name="restart_cap">RIAVVIA</string>
     <string name="plzNo">CANCELLA</string>
     <string name="restarting">Riavvio…</string>
+    <string name="ask">Fai una domanda</string>
+    <string name="repBug">Segnala un problema</string>
+    <string name="suggest">Fornisci un suggerimento</string>
 </resources>
