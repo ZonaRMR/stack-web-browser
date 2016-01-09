@@ -58,7 +58,7 @@ public class Donate extends Activity {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         switch(sharedPref.getString("theme", "")) {
             case "def":
-                setTheme(R.style.Teal);
+                setTheme(R.style.Cyan);
                 return;
             case "bg":
                 setTheme(R.style.BlueGray);
@@ -74,7 +74,6 @@ public class Donate extends Activity {
                 return;
             case "gray":
                 setTheme(R.style.Gray);
-                return;
         }
     }
 }

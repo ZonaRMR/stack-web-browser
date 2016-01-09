@@ -9,21 +9,24 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.preference.*;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
-import android.view.WindowManager;
+import android.view.ViewConfiguration;
 
-public class Settings extends PreferenceActivity {
+@SuppressWarnings("deprecation")
 
-    SharedPreferences.OnSharedPreferenceChangeListener listener;
+public class Settings extends PreferenceActivity{
+
+    SharedPreferences.OnSharedPreferenceChangeListener ChListener;
 
     @Override
     protected void onCreate(Bundle SavedInstanceState) {
         setThemeFromPrefs();
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        listener = new SharedPreferences.OnSharedPreferenceChangeListener() {
 
+        ChListener = new SharedPreferences.OnSharedPreferenceChangeListener() {
             public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
                 if (key.equals("theme")) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(Settings.this);
@@ -37,26 +40,35 @@ public class Settings extends PreferenceActivity {
                         }
                     });
                     builder.setNegativeButton(getString(R.string.plzNo), null);
-                    try {
-                        builder.show();
-                    } catch (WindowManager.BadTokenException e) {
-                        e.printStackTrace();
-                    }
+                    builder.show();
                 }
                 setResult(36165);
             }
         };
-        prefs.registerOnSharedPreferenceChangeListener(listener);
+        prefs.registerOnSharedPreferenceChangeListener(ChListener);
 
         super.onCreate(SavedInstanceState);
         addPreferencesFromResource(R.xml.settings);
+
+        Preference showDots = this.findPreference("showDots");
+        if (!ViewConfiguration.get(this).hasPermanentMenuKey()) showDots.setEnabled(false);
+
+        Preference showGPL = findPreference("showGPL");
+        showGPL.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                Intent gotogpl = new Intent(getApplicationContext(), GPL.class);
+                startActivity(gotogpl);
+                return false;
+            }
+        });
     }
 
     public void setThemeFromPrefs () {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-        switch(sharedPref.getString("theme", "")) {
+        switch(sharedPref.getString("theme", "def")) {
             case "def":
-                setTheme(R.style.Teal);
+                setTheme(R.style.Cyan);
                 return;
             case "bg":
                 setTheme(R.style.BlueGray);
@@ -72,7 +84,6 @@ public class Settings extends PreferenceActivity {
                 return;
             case "gray":
                 setTheme(R.style.Gray);
-                return;
         }
     }
 
@@ -85,11 +96,10 @@ public class Settings extends PreferenceActivity {
                     if (mStartActivity != null) {
                         mStartActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         int mPendingIntentId = 223344;
-                        PendingIntent mPendingIntent = PendingIntent
-                                .getActivity(c, mPendingIntentId, mStartActivity,
-                                        PendingIntent.FLAG_CANCEL_CURRENT);
+                        PendingIntent mPendingIntent = PendingIntent.getActivity
+                                (c, mPendingIntentId, mStartActivity, PendingIntent.FLAG_CANCEL_CURRENT);
                         AlarmManager mgr = (AlarmManager) c.getSystemService(Context.ALARM_SERVICE);
-                        mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 10, mPendingIntent);
+                        mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 1, mPendingIntent);
 
                         ProgressDialog pd = new ProgressDialog(Settings.this);
                         pd.setCancelable(false);
@@ -102,5 +112,14 @@ public class Settings extends PreferenceActivity {
         } catch (Exception ex) {
             Log.e("settings.doRestart", "Was not able to restart application");
         }
+    }
+
+    public boolean mListStyled;
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (!mListStyled) this.getListView().setDivider(null);
+        mListStyled = true;
     }
 }

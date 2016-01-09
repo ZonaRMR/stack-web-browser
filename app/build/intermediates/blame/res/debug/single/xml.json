@@ -2,5 +2,9 @@
     {
         "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/xml/settings.xml",
         "source": "/home/depa/Desktop/Stack/app/src/main/res/xml/settings.xml"
+    },
+    {
+        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/xml/filepaths.xml",
+        "source": "/home/depa/Desktop/Stack/app/src/main/res/xml/filepaths.xml"
     }
 ]

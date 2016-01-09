@@ -8,4 +8,10 @@
         <item name="Blu">Blu</item>
         <item name="Grigio">Grigio</item>
     </string-array>
+
+    <string-array name="location_options">
+        <item name="ask">Chiedi ogni volta</item>
+        <item name="doprovide">Fornisci sempre</item>
+        <item name="dontprovide">Non fornire mai</item>
+    </string-array>
 </resources>

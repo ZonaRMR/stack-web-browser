@@ -4,4 +4,10 @@
     <color name="colorAccent">#26C6DA</color>
     <color name="colorPrimary">#26A69A</color>
     <color name="colorPrimaryDark">#00838F</color>
+
+    <color name="BGD">#37474F</color>
+    <color name="RD">#57473F</color>
+    <color name="GD">#2E7D32</color>
+    <color name="BD">#0277BD</color>
+    <color name="GRD">#424242</color>
 </resources>

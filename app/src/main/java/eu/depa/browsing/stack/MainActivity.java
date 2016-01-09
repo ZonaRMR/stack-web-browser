@@ -16,19 +16,28 @@ If not, see <http://www.gnu.org/licenses/>.*/
 
 package eu.depa.browsing.stack;
 
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.Uri;
+import android.os.StrictMode;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.ContextMenu;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnKeyListener;
 import android.view.ViewConfiguration;
+import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
+import android.webkit.GeolocationPermissions;
 import android.webkit.WebChromeClient;
 import android.webkit.WebIconDatabase;
 import android.webkit.WebView;
@@ -36,75 +45,52 @@ import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
-
 import java.util.HashMap;
+
+@SuppressWarnings({"ConstantConditions", "deprecation"})
+@SuppressLint("SetJavaScriptEnabled")
 
 public class MainActivity extends AppCompatActivity implements OnKeyListener{
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         setThemeFromPrefs();                        //set background color before anything is shown
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
         reloadGraphicalTheme();                     //set background color of all markup items according to user prefs
 
-        PreferenceManager.setDefaultValues(this, R.xml.settings, false);    //set defs only once
+        PreferenceManager.setDefaultValues(this, R.xml.settings, false);    //set pref defs, only once
         final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
 
-        try {getSupportActionBar().hide();}         //parser is too dumb to understand I'm catching the exce it's calling me out for
-        catch (NullPointerException e) {e.printStackTrace();}       //see this parser u dumb cuck
+        getSupportActionBar().hide();
 
-        final WebView  webview    = (WebView)     findViewById(R.id.webView);
+        final LCWV  webview       = (LCWV)        findViewById(R.id.webView);
         final EditText toptextbar = (EditText)    findViewById(R.id.toptextbar);
-        final ImageView favicon   = (ImageView)   findViewById(R.id.favicon);
         final ImageButton X       = (ImageButton) findViewById(R.id.X);
-        ImageButton dots = (ImageButton) findViewById(R.id.dots);
 
         reloadSettings();       //load up prefs, see comment below
 
-        //BROWSERY STUFF
-        webview.getSettings().setBuiltInZoomControls(true);
-        webview.getSettings().setDisplayZoomControls(false);
-        webview.getSettings().setJavaScriptEnabled(true);   // Enable javascript
-        webview.setWebChromeClient(new WebChromeClient());  // Set WebView client
-        webview.setWebViewClient(new WebViewClient() {
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                if (url.startsWith("market://")) {
-                    Intent openIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                    startActivity(openIntent);
-                }
-                else {
-                    HashMap<String, String> extraHeaders = new HashMap<String, String>();
-                    if (sharedPref.getBoolean("DNT", true)) extraHeaders.put("DNT", "1");
-                    else extraHeaders.put("DNT", "0");
-                    view.loadUrl(url, extraHeaders);
-                    toptextbar.setText(url.split("//")[1]);
-                    favicon.setImageBitmap(webview.getFavicon());
-                }
-                return true;
-            }
-        });
-        //NO BROWSERY STUFF, MORE AUTOCONFIG
-        if (ViewConfiguration.get(this).hasPermanentMenuKey())
-            dots.setVisibility(View.GONE);
-        toptextbar.setOnKeyListener(this);      //set that for l8r
+        //MOST BROWSERY STUFF HAS MOVED TO THE LCWV SUBCLASS FOR CLEANLINESS PURPOSES
+        registerForContextMenu(webview);
+        webview.init();
         WebIconDatabase.getInstance().open(getDir("icons", MODE_PRIVATE).getPath());    //why is this deprecated you cuck give me an alternative
+        //NO BROWSERY STUFF, MORE AUTOCONFIG
 
+        toptextbar.setOnKeyListener(this);      //set that for l8r
         onNewIntent(getIntent());       //do this just in case you get called which will never happen
-
         X.setVisibility(View.GONE);     //hide the X in the beginning
 
         toptextbar.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
-                if (toptextbar.hasFocus()) X.setVisibility(View.VISIBLE);   //when it's focused show the X TODO make X nice + pretty
+                if (toptextbar.hasFocus()) X.setVisibility(View.VISIBLE);   //when it's focused show the X
                 else X.setVisibility(View.GONE);
             }
         });
@@ -113,6 +99,7 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
 
     protected void onNewIntent(Intent intent) {
         String action = intent.getAction();
+        Bundle bundle = intent.getBundleExtra("WV-STATE");
         String data = intent.getDataString();
         if (Intent.ACTION_VIEW.equals(action) && data != null) loadAll(data);
         else {
@@ -120,56 +107,26 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
             String HP = sharedPref.getString("HP", "");
             loadAll("http://" + HP);
         }
-    }       //when u get an intento
+    }       //when u get an intent
 
     public void loadAll(String url) {
-        WebView webView     = (WebView) findViewById(R.id.webView);
-        EditText toptextbar = (EditText) findViewById(R.id.toptextbar);
-        ImageView favicon   = (ImageView) findViewById(R.id.favicon);
+        LCWV webView        = (LCWV)        findViewById(R.id.webView);
+        EditText toptextbar = (EditText)    findViewById(R.id.toptextbar);
+        ProgressBar pb      = (ProgressBar) findViewById(R.id.pb);
 
+        pb.setVisibility(View.VISIBLE);
         webView.loadUrl(url);
-        toptextbar.setText(url.split("//")[1]);
-        favicon.setImageBitmap(webView.getFavicon());
-    }                 //load errything u need to all nicely packed in 1 method
+        if (url.startsWith("<html>")) toptextbar.setText(webView.getTitle());
+        else toptextbar.setText(url.split("//")[1]);
+    }//load everything u need to all nicely packed in 1 method
 
+    boolean dotsClicked = false;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.options, menu);
+        dotsClicked = false;
         return true;
-    }   //wat do when options menu is TRIGGERED
-
-    boolean first = true;   //sub menu inflating goofs up so u need this
-
-    @Override
-    public boolean onOptionsItemSelected (MenuItem item) {
-        switch(item.getItemId()) {
-            case R.id.menu_about:
-                Intent gotoabout = new Intent(this, About.class);
-                startActivity(gotoabout);
-                return true;
-
-            case R.id.menu_settings:
-                Intent gotosettings = new Intent(this, Settings.class);
-                startActivityForResult(gotosettings, 36165);
-                return true;
-
-            case R.id.menu_donate:
-                Intent gotodonate = new Intent(this, Donate.class);
-                startActivityForResult(gotodonate, 16019);
-                return true;
-
-            case R.id.menu_page:
-                if (first)
-                    getMenuInflater().inflate(R.menu.menu_page, item.getSubMenu());
-                first = false;
-                return true;
-
-            case R.id.menu_reload:
-                reloadPage(item);
-                return true;
-        }
-        return true;
-    }       //when u pick from the menu
+    }   //wat do when options menu is triggered
 
     @Override
     public boolean onKey(View v, int keyCode, KeyEvent event) {
@@ -203,39 +160,11 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         return false;
     }   //when u press a key: enter
 
-    public void showPopup(final View v) {
-        PopupMenu popup = new PopupMenu(getApplicationContext(), v);
-        MenuInflater inflater = popup.getMenuInflater();
-        inflater.inflate(R.menu.options, popup.getMenu());
+    public void showPopup(View v) {
+        PopupMenu popup = new PopupMenu(this, findViewById(R.id.dots));
+        popup.getMenuInflater().inflate(R.menu.options, popup.getMenu());
         popup.show();
-        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.menu_about:
-                        Intent gotoabout = new Intent(getApplicationContext(), About.class);
-                        startActivity(gotoabout);
-                        return true;
-
-                    case R.id.menu_settings:
-                        Intent gotosettings = new Intent(getApplicationContext(), Settings.class);
-                        startActivityForResult(gotosettings, 36165);
-                        return true;
-
-                    case R.id.menu_donate:
-                        Intent gotodonate = new Intent(getApplicationContext(), Donate.class);
-                        startActivityForResult(gotodonate, 16019);
-                        return true;
-                    case R.id.menu_page:
-                        getMenuInflater().inflate(R.menu.menu_page, item.getSubMenu());
-                        return true;
-                    case R.id.menu_reload:
-                        WebView webView = (WebView) findViewById(R.id.webView);
-                        webView.reload();
-                }
-                return false;
-            }
-        });
+        dotsClicked = true;
     }         //when dots r clicked
 
     public void bang(View v) {
@@ -248,27 +177,25 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
 
     @Override
     public void onBackPressed() {
-        WebView webview = (WebView) findViewById(R.id.webView);
+        LCWV webview = (LCWV) findViewById(R.id.webView);
         EditText toptextbar = (EditText) findViewById(R.id.toptextbar);
-        ImageView favicon = (ImageView) findViewById(R.id.favicon);
         if (webview.canGoBack()) {
             webview.goBack();
-            toptextbar.setText(webview.getUrl());
-            favicon.setImageBitmap(webview.getFavicon());
+            toptextbar.setText(webview.getOriginalUrl());
         }
         else {
-            finish();
+            super.onBackPressed();
         }
     }                 //override: go back instead
 
     public void openInApp (MenuItem item) {
-        WebView webView = (WebView) findViewById(R.id.webView);
+        LCWV webView = (LCWV) findViewById(R.id.webView);
         Intent openIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(webView.getUrl()));
         startActivity(openIntent);
     }       //make and execute intent to open webviewed page in other apps
 
     public void share (MenuItem item) {
-        WebView webView = (WebView) findViewById(R.id.webView);
+        LCWV webView = (LCWV) findViewById(R.id.webView);
         Intent sharingIntent = new Intent(Intent.ACTION_SEND);
         sharingIntent.setType("text/plain");
         sharingIntent.putExtra(Intent.EXTRA_TEXT, webView.getUrl());
@@ -279,38 +206,46 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
     }           //share the current webviewed page
 
     public void addPagetoHome (MenuItem item) {
-        WebView webView = (WebView) findViewById(R.id.webView);
-        Intent shortcutintent = new Intent("com.android.launcher.action.INSTALL_SHORTCUT");
-        shortcutintent.putExtra("duplicate", false);
+        LCWV webView = (LCWV) findViewById(R.id.webView);
 
-        Intent gonnaLaunch = new Intent();
-        gonnaLaunch.putExtra(Intent.ACTION_VIEW, Uri.parse(webView.getUrl()));
-        gonnaLaunch.putExtra(Intent.EXTRA_TEXT, Uri.parse(webView.getUrl()));
+        Intent shortcutIntent = new Intent(getApplicationContext(), MainActivity.class);
+        shortcutIntent.putExtra("extra", webView.getUrl());
+        shortcutIntent.setData(Uri.parse(webView.getUrl()));
+        shortcutIntent.setAction(Intent.ACTION_VIEW);
 
-        shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_NAME, webView.getTitle());
-        shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_ICON, webView.getFavicon());
-        shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, gonnaLaunch);
+        Intent addIntent = new Intent();
+        addIntent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
+        addIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, webView.getTitle());
+        addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON, webView.getFavicon());
 
-        sendBroadcast(shortcutintent);
-    }   //duh
+
+        addIntent.putExtra("duplicate", false);
+        addIntent.setAction("com.android.launcher.action.INSTALL_SHORTCUT");
+
+        getApplicationContext().sendBroadcast(addIntent);
+        Toast.makeText(this, getString(R.string.added_to_home), Toast.LENGTH_SHORT).show();
+    }   //duh NOTE: WORKS 3/1/16 HELL YEAH
 
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         if (resultCode == 16019) loadAll("http://paypal.me/makeitrainonme/1");
         reloadSettings();
-    }   //wat do when u get a result from activity: paypal
+    }   //wat do when u get a result from activity: PayPal
 
     public void reloadSettings() {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         ImageButton bang = (ImageButton) findViewById(R.id.bang);
+        ImageButton dots = (ImageButton) findViewById(R.id.dots);
         if (!sharedPref.getString("searchEngine", "").equals("ddg")) bang.setVisibility(View.GONE);
         else bang.setVisibility(View.VISIBLE);
+        if (ViewConfiguration.get(this).hasPermanentMenuKey()) dots.setVisibility(View.GONE);
+        if (sharedPref.getBoolean("showDots", false)) dots.setVisibility(View.VISIBLE);
     }           //set button visibility et al according to prefs
 
     public void setThemeFromPrefs () {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         switch(sharedPref.getString("theme", "")) {
             case "def":
-                setTheme(R.style.Teal);
+                setTheme(R.style.Cyan);
                 return;
             case "bg":
                 setTheme(R.style.BlueGray);
@@ -326,7 +261,6 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
                 return;
             case "gray":
                 setTheme(R.style.Gray);
-                return;
         }
     }       //set background color according to user prefs
 
@@ -358,7 +292,6 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
             case "gray":
                 toptextbar.setHighlightColor(Color.rgb(238, 238, 238)); //200
                 topelements.setBackgroundColor(Color.rgb(66, 66, 66));  //800
-                return;
         }
     }    //set background color of all markup items according to user prefs
 
@@ -368,7 +301,36 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
     }           //empty top text bar duh
 
     public void reloadPage (MenuItem item) {
-        WebView webView = (WebView) findViewById(R.id.webView);
+        LCWV webView = (LCWV) findViewById(R.id.webView);
         webView.reload();
+        loadAll(webView.getUrl());
     } //duh
+
+    boolean first = true;   //sub menu inflating goofs up so u need this
+    public void inflatePageMenu (MenuItem item) {
+        if (dotsClicked) getMenuInflater().inflate(R.menu.menu_page, item.getSubMenu());
+        else if (item != null && first)
+           getMenuInflater().inflate(R.menu.menu_page, item.getSubMenu());
+        first = false;
+    }
+
+    public void goToDonate (MenuItem item) {
+        Intent gotodonate = new Intent(getApplicationContext(), Donate.class);
+        startActivityForResult(gotodonate, 16019);
+    }
+
+    public void goToSettings (MenuItem item) {
+        Intent gotosettings = new Intent(getApplicationContext(), Settings.class);
+        startActivityForResult(gotosettings, 36165);
+    }
+
+    public void goToAbout (MenuItem item) {
+        Intent gotoabout = new Intent(getApplicationContext(), About.class);
+        startActivity(gotoabout);
+    }
+
+    public void goToTabs (View v) {
+        Intent seetabs = new Intent(getApplicationContext(), TabView.class);
+        startActivity(seetabs);
+    }
 }

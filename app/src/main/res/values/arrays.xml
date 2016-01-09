@@ -32,4 +32,17 @@
         <item name="blue">blue</item>
         <item name="gray">gray</item>
     </string-array>
+
+    <string-array name="location_options">
+        <item name="ask">Ask me every time</item>
+        <item name="doprovide">Always provide</item>
+        <item name="dontprovide">Never provide</item>
+    </string-array>
+
+    <string-array name="locopvals"
+        tools:ignore="MissingTranslation">
+        <item name="ask">ask</item>
+        <item name="doprovide">doprovide</item>
+        <item name="dontprovide">dontprovide</item>
+    </string-array>>
 </resources>

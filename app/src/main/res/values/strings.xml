@@ -31,4 +31,27 @@
     <string name="repBug">Report a bug</string>
     <string name="ask">Ask a question</string>
     <string name="suggest">Make a suggestion</string>
+    <string name="showDots">Show the menu button</string>
+    <string name="appearance">Appearance</string>
+    <string name="functionality">Functionality</string>
+    <string name="showGPL">Released under the GNU GPLv3.0 licence</string>
+    <string name="GPLsummary">Tap to see licence</string>
+    <string name="dotssumm" >Requires a hardware menu button</string>
+    <string name="pageNotLoaded">The page could not be loaded</string>
+    <string name="checkTypos">Check the address for typing errors such as</string>
+    <string name="insteadof">instead of</string>
+    <string name="cantLoad">If you are unable to load any pages,</string>
+    <string name="checkConn">check your network connection.</string>
+    <string name="web_isPermitted">If your phone or network is protected by a firewall or proxy, make sure that Stack is permitted to access the Web.</string>
+    <string name="save_image">Save image</string>
+    <string name="view_image">View image</string>
+    <string name="share_image">Share image</string>
+    <string name="share_link">Share link</string>
+    <string name="added_to_home">Added to home</string>
+    <string name="location">Location</string>
+    <string name="askuselocation">Provide web pages with your precise location?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="tracking">Tracking</string>
+    <string name="image_downloaded">The image has been downloaded</string>
 </resources>

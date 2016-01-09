@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="location_options">
+        <item name="ask">Ask me every time</item>
+        <item name="doprovide">Always provide</item>
+        <item name="dontprovide">Never provide</item>
+    </string-array>
+    <string-array name="locopvals" ns1:ignore="MissingTranslation">
+        <item name="ask">ask</item>
+        <item name="doprovide">doprovide</item>
+        <item name="dontprovide">dontprovide</item>
+    </string-array>
     <string-array name="sergines" ns1:ignore="MissingTranslation">
         <item name="DuckDuckGo">DuckDuckGo</item>
         <item name="Google">Google</item>
@@ -38,6 +48,11 @@
     <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
     <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <color name="BD">#0277BD</color>
+    <color name="BGD">#37474F</color>
+    <color name="GD">#2E7D32</color>
+    <color name="GRD">#424242</color>
+    <color name="RD">#57473F</color>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
@@ -234,6 +249,7 @@
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="google_play_services_version">8115000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="GPLsummary">Tap to see licence</string>
     <string name="HP" translatable="false">http://duckduckgo.com</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -255,13 +271,19 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="about_text">Stack web browser was developed by\nAlessandro De Pasquale\n\nYou may get to me via the button below.</string>
+    <string name="added_to_home">Added to home</string>
     <string name="addtohome">Add to home screen</string>
     <string name="app_name">Stack</string>
+    <string name="appearance">Appearance</string>
     <string name="ask">Ask a question</string>
+    <string name="askuselocation">Provide web pages with your precise location?</string>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
     <string name="bar_hint">Search or enter address</string>
     <string name="bitcoin_noclient">No client was found</string>
+    <string name="cantLoad">If you are unable to load any pages,</string>
+    <string name="checkConn">check your network connection.</string>
+    <string name="checkTypos">Check the address for typing errors such as</string>
     <string name="color_scheme">Requires that the app is restarted</string>
     <string name="common_android_wear_notification_needs_update_text"><ns1:g id="app_name">%1$s</ns1:g> requires an update to the Android Wear app.</string>
     <string name="common_android_wear_update_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run unless you update the Android Wear app.</string>
@@ -294,16 +316,23 @@
     <string name="common_google_play_services_updating_title">Google Play services are updating</string>
     <string name="common_open_on_phone">Open on phone</string>
     <string name="donate">By donating, you can support the development of this application.</string>
+    <string name="dotssumm">Requires a hardware menu button</string>
     <string name="earliest_reached">Earliest page has been reached</string>
     <string name="easter_toast">You found an easter egg!</string>
     <string name="email_noclient">No email client found</string>
+    <string name="functionality">Functionality</string>
+    <string name="image_downloaded">The image has been downloaded</string>
+    <string name="insteadof">instead of</string>
+    <string name="location">Location</string>
     <string name="menu_about">About</string>
     <string name="menu_donate">Donate</string>
     <string name="menu_page">Page…</string>
     <string name="menu_settings">Settings</string>
+    <string name="no">NO</string>
     <string name="notrack">Ask websites not to track me</string>
     <string name="notrackspec">Whether a DNT request should be sent</string>
     <string name="openInApp">Open with another app</string>
+    <string name="pageNotLoaded">The page could not be loaded</string>
     <string name="picksergine">Pick a search engine</string>
     <string name="picktheme">Pick a theme</string>
     <string name="plzNo">CANCEL</string>
@@ -311,13 +340,22 @@
     <string name="repBug">Report a bug</string>
     <string name="restart_cap">RESTART</string>
     <string name="restarting">Restarting app…</string>
+    <string name="save_image">Save image</string>
     <string name="search_engine">Search engine</string>
     <string name="share">Share</string>
+    <string name="share_image">Share image</string>
+    <string name="share_link">Share link</string>
     <string name="sharewith">Share with…</string>
+    <string name="showDots">Show the menu button</string>
+    <string name="showGPL">Released under the GNU GPLv3.0 licence</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="suggest">Make a suggestion</string>
     <string name="theme">Theme</string>
+    <string name="tracking">Tracking</string>
+    <string name="view_image">View image</string>
     <string name="wanna_restart">Restart the application now?</string>
+    <string name="web_isPermitted">If your phone or network is protected by a firewall or proxy, make sure that Stack is permitted to access the Web.</string>
+    <string name="yes">YES</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
@@ -1272,6 +1310,11 @@
         <item name="colorAccent">#78909C</item>         <!--400-->
         <item name="colorPrimaryDark">#37474F</item>    <!--800-->
     </style>
+    <style name="Cyan" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#DDDDDD</item>
+        <item name="colorAccent">#26C6DA</item>         <!--400-->
+        <item name="colorPrimaryDark">#00838F</item>    <!--800-->
+    </style>
     <style name="Gray" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">#DDDDDD</item>
         <item name="colorAccent">#BDBDBD</item>         <!--400-->
@@ -1430,11 +1473,6 @@
     <style name="RtlUnderlay.Widget.AppCompat.ActionButton.Overflow" parent="Base.Widget.AppCompat.ActionButton">
         <item name="android:paddingLeft">@dimen/abc_action_bar_overflow_padding_start_material</item>
         <item name="android:paddingRight">@dimen/abc_action_bar_overflow_padding_end_material</item>
-    </style>
-    <style name="Teal" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">#DDDDDD</item>
-        <item name="colorAccent">#26C6DA</item>         <!--400-->
-        <item name="colorPrimaryDark">#00838F</item>    <!--800-->
     </style>
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat"/>
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="location_options">
+        <item name="ask">Chiedi ogni volta</item>
+        <item name="doprovide">Fornisci sempre</item>
+        <item name="dontprovide">Non fornire mai</item>
+    </string-array>
     <string-array name="themes">
         <item name="Default">Default</item>
         <item name="Grigio blu">Grigio blu</item>
@@ -8,6 +13,7 @@
         <item name="Blu">Blu</item>
         <item name="Grigio">Grigio</item>
     </string-array>
+    <string name="GPLsummary">Tocca per vedere la licenza</string>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Vai alla home page"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -28,11 +34,17 @@
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Condividi con %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Comprimi"</string>
     <string name="about_text">Lo sviluppo di Stack\nè seguito da\nAlessandro De Pasquale\n\nPotete contattarmi col bottone di seguito.</string>
+    <string name="added_to_home">Scorciatoia aggiunta</string>
     <string name="addtohome">Aggiungi ad home</string>
     <string name="app_name">Stack</string>
+    <string name="appearance">Aspetto</string>
     <string name="ask">Fai una domanda</string>
+    <string name="askuselocation">Fornire la posizione precisa ai siti internet che visiti?</string>
     <string name="bar_hint">Ricerca o inserisci indirizzo</string>
     <string name="bitcoin_noclient">Nessuna applicazione adatta</string>
+    <string name="cantLoad">Se non riesci a caricare nemmeno altre pagine,</string>
+    <string name="checkConn">controlla la tua connessione.</string>
+    <string name="checkTypos">Controlla che non ci siano errori del tipo</string>
     <string name="color_scheme">Necessita il riavvio dell\'app</string>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> richiede l\'aggiornamento dell\'app Android Wear."</string>
     <string msgid="2453027084525739603" name="common_android_wear_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> funzionerà solo dopo avere aggiornato Android Wear."</string>
@@ -65,16 +77,22 @@
     <string msgid="815008177440683245" name="common_google_play_services_updating_title">"Aggiornamento di Google Play Services"</string>
     <string msgid="411506735369601515" name="common_open_on_phone">"Apri sul telefono"</string>
     <string name="donate">Donando puoi sostenere lo sviluppo di Stack</string>
+    <string name="dotssumm">Necessita un tasto menu fisico</string>
     <string name="earliest_reached">Pagina iniziale raggiunta</string>
     <string name="easter_toast">Hai trovato un uovo di pasqua! </string>
     <string name="email_noclient">Nessuna applicazione adatta</string>
+    <string name="functionality">Funzionalità</string>
+    <string name="insteadof">invece che</string>
+    <string name="location">Posizione</string>
     <string name="menu_about">Info</string>
     <string name="menu_donate">Dona</string>
     <string name="menu_page">Pagina…</string>
     <string name="menu_settings">Impostazioni</string>
+    <string name="no">NO</string>
     <string name="notrack">Richiedi di non essere tracciato</string>
     <string name="notrackspec">Decidi se inviare una direttiva DNT</string>
     <string name="openInApp">Apri in un\'app</string>
+    <string name="pageNotLoaded">Impossibile caricare la pagina</string>
     <string name="picksergine">Scegli un motore di ricerca</string>
     <string name="picktheme">Scegli un tema</string>
     <string name="plzNo">CANCELLA</string>
@@ -82,11 +100,20 @@
     <string name="repBug">Segnala un problema</string>
     <string name="restart_cap">RIAVVIA</string>
     <string name="restarting">Riavvio…</string>
+    <string name="save_image">Salva immagine</string>
     <string name="search_engine">Motore di ricerca</string>
     <string name="share">Condividi</string>
+    <string name="share_image">Condividi immagine</string>
+    <string name="share_link">Condividi link</string>
     <string name="sharewith">Condividi con…</string>
+    <string name="showDots">Mostra il pulsante menu</string>
+    <string name="showGPL">Rilasciato sotto la licenza GNU GPLv3.0</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="suggest">Fornisci un suggerimento</string>
     <string name="theme">Tema</string>
+    <string name="tracking">Monitoraggio</string>
+    <string name="view_image">Visualizza immagine</string>
     <string name="wanna_restart">Riavviare l\'applicazione adesso?</string>
+    <string name="web_isPermitted">Se la tua rete utilizza misure di sicurezza come firewall o proxy, assicurati che Stack abbia il permesso di accedere ad Internet.</string>
+    <string name="yes">SÌ</string>
 </resources>

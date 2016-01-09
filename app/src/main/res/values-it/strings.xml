@@ -31,4 +31,26 @@
     <string name="ask">Fai una domanda</string>
     <string name="repBug">Segnala un problema</string>
     <string name="suggest">Fornisci un suggerimento</string>
+    <string name="appearance">Aspetto</string>
+    <string name="functionality">Funzionalità</string>
+    <string name="showDots">Mostra il pulsante menu</string>
+    <string name="GPLsummary">Tocca per vedere la licenza</string>
+    <string name="showGPL">Rilasciato sotto la licenza GNU GPLv3.0</string>
+    <string name="dotssumm">Necessita un tasto menu fisico</string>
+    <string name="cantLoad">Se non riesci a caricare nemmeno altre pagine,</string>
+    <string name="checkConn">controlla la tua connessione.</string>
+    <string name="checkTypos">Controlla che non ci siano errori del tipo</string>
+    <string name="insteadof">invece che</string>
+    <string name="pageNotLoaded">Impossibile caricare la pagina</string>
+    <string name="web_isPermitted">Se la tua rete utilizza misure di sicurezza come firewall o proxy, assicurati che Stack abbia il permesso di accedere ad Internet.</string>
+    <string name="added_to_home">Scorciatoia aggiunta</string>
+    <string name="save_image">Salva immagine</string>
+    <string name="share_image">Condividi immagine</string>
+    <string name="share_link">Condividi link</string>
+    <string name="view_image">Visualizza immagine</string>
+    <string name="askuselocation">Fornire la posizione precisa ai siti internet che visiti?</string>
+    <string name="location">Posizione</string>
+    <string name="no">NO</string>
+    <string name="yes">SÌ</string>
+    <string name="tracking">Monitoraggio</string>
 </resources>

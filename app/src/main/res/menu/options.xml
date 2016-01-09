@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item android:id="@+id/menu_reload"
-        android:title="@string/reload"/>
+        android:title="@string/reload"
+        android:onClick="reloadPage"/>
 
     <item android:id="@+id/menu_about"
-          android:title="@string/menu_about" />
+        android:title="@string/menu_about"
+        android:onClick="goToAbout"/>
 
     <item android:id="@+id/menu_donate"
-          android:title="@string/menu_donate" />
+        android:title="@string/menu_donate"
+        android:onClick="goToDonate"/>
 
     <item android:id="@+id/menu_page"
-        android:title="@string/menu_page">
-        <menu></menu>
+        android:title="@string/menu_page"
+        android:onClick="inflatePageMenu">
+        <menu>
+            <!--empty-->
+        </menu>
     </item>
 
     <item android:id="@+id/menu_settings"
-        android:title="@string/menu_settings" />
+        android:title="@string/menu_settings"
+        android:onClick="goToSettings"/>
 </menu>

@@ -26,7 +26,7 @@ public class About extends Activity {
         email_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PopupMenu popup = new PopupMenu(getApplicationContext(), v);
+                PopupMenu popup = new PopupMenu(About.this, findViewById(R.id.email_button));
                 MenuInflater inflater = popup.getMenuInflater();
                 inflater.inflate(R.menu.menu_email, popup.getMenu());
                 popup.show();
@@ -68,7 +68,7 @@ public class About extends Activity {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         switch(sharedPref.getString("theme", "")) {
             case "def":
-                setTheme(R.style.Teal);
+                setTheme(R.style.Cyan);
                 return;
             case "bg":
                 setTheme(R.style.BlueGray);
