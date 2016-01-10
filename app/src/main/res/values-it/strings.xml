@@ -53,4 +53,12 @@
     <string name="no">NO</string>
     <string name="yes">SÌ</string>
     <string name="tracking">Monitoraggio</string>
+    <string name="copied">Indirizzo copiato negli appunti</string>
+    <string name="copy_image_link">Copia indirizzo immagine</string>
+    <string name="copy_link">Copia link</string>
+    <string name="image_downloaded">L\'immagine è stata scaricata</string>
+    <string name="askdownload">Permettere il download?</string>
+    <string name="download">Scaricamento file</string>
+    <string name="file_downloaded">Il file è stato scaricato</string>
+    <string name="file_downloading">Il file sarà scaricato</string>
 </resources>

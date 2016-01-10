@@ -1,20 +1,26 @@
 package eu.depa.browsing.stack;
 
+import android.app.AlertDialog;
 import android.app.DownloadManager;
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.util.AttributeSet;
 import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.DownloadListener;
 import android.webkit.GeolocationPermissions;
 import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.EditText;
@@ -128,7 +134,7 @@ public class LCWV extends WebView {
                 callback.invoke(origin, false, false);
                 return;
             }
-            android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(getContext());
+            AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
 
             builder.setTitle(getString(R.string.location));
             builder.setMessage(getString(R.string.askuselocation));
@@ -146,6 +152,27 @@ public class LCWV extends WebView {
                 }
             });
             builder.setCancelable(false);
+            builder.setIcon(getResources().getDrawable(R.drawable.pin));
+            builder.show();
+        }
+    };
+    DownloadListener DListener = new DownloadListener() {
+        @Override
+        public void onDownloadStart(final String url, String userAgent, String contentDisposition, String mimetype, long contentLength) {
+            final AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+
+            builder.setTitle(getString(R.string.download));
+            builder.setMessage(getString(R.string.askdownload));
+
+            builder.setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    downloadFile(url);
+                    Toast.makeText(getContext(), getString(R.string.file_downloading), Toast.LENGTH_SHORT).show();
+                }
+            });
+            builder.setIcon(new BitmapDrawable(getResources(), getFavicon()));
+            builder.setCancelable(true);
             builder.show();
         }
     };
@@ -162,12 +189,14 @@ public class LCWV extends WebView {
         favicon = (ImageView) getRootView().findViewById(R.id.favicon);
         this.setWebViewClient(webViewClient);
         this.setWebChromeClient(webChromeClient);
+        this.setDownloadListener(DListener);
     }
 
     final int SHARE_LINK_ID = 0,
             VIEW_IMAGE_ID = 1,
             SAVE_IMAGE_ID = 2,
-            SHARE_IMAGE_ID = 3;
+            SHARE_IMAGE_ID = 3,
+            COPY_ID = 4;
 
     @Override
     protected void onCreateContextMenu(ContextMenu menu) {
@@ -191,7 +220,7 @@ public class LCWV extends WebView {
                         downloadFile(result.getExtra());
                         Toast.makeText(getContext(), getContext().getString(R.string.image_downloaded), Toast.LENGTH_SHORT).show();
                         break;
-                    case SHARE_IMAGE_ID:
+                    case SHARE_IMAGE_ID:    //TODO FIX THIS!!!!
                         downloadFile(result.getExtra());
                         Intent sharePicIntent = new Intent(Intent.ACTION_SEND);
                         String FN = getFileName(result.getExtra());
@@ -199,6 +228,12 @@ public class LCWV extends WebView {
                         sharePicIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(picFile));
                         sharePicIntent.setType("image/*");
                         getContext().startActivity(sharePicIntent);
+                        break;
+                    case COPY_ID:
+                        ClipboardManager clipMan = (ClipboardManager) getContext().getSystemService(Context.CLIPBOARD_SERVICE);
+                        ClipData clipData = ClipData.newPlainText("stack_clip", result.getExtra());
+                        clipMan.setPrimaryClip(clipData);
+                        Toast.makeText(getContext(), getResources().getString(R.string.copied), Toast.LENGTH_SHORT).show();
                 }
                 return true;
             }
@@ -206,14 +241,22 @@ public class LCWV extends WebView {
 
         switch (result.getType()) {
             case HitTestResult.IMAGE_TYPE:      //PICTURE
+            case HitTestResult.SRC_IMAGE_ANCHOR_TYPE:
                 menu.setHeaderTitle(result.getExtra());
-                menu.add(0, SAVE_IMAGE_ID, 0, getContext().getString(R.string.save_image)).setOnMenuItemClickListener(handler);
-                menu.add(0, VIEW_IMAGE_ID, 0, getContext().getString(R.string.view_image)).setOnMenuItemClickListener(handler);
-                menu.add(0, SHARE_IMAGE_ID, 0, getContext().getString(R.string.share_image)).setOnMenuItemClickListener(handler);
+                if (result.getExtra().startsWith("data:image")) {
+                    menu.add(0, VIEW_IMAGE_ID, 0, getContext().getString(R.string.view_image)).setOnMenuItemClickListener(handler);
+                }
+                else {
+                    menu.add(0, SAVE_IMAGE_ID, 0, getContext().getString(R.string.save_image)).setOnMenuItemClickListener(handler);
+                    menu.add(0, VIEW_IMAGE_ID, 0, getContext().getString(R.string.view_image)).setOnMenuItemClickListener(handler);
+                    menu.add(0, SHARE_IMAGE_ID, 0, getContext().getString(R.string.share_image)).setOnMenuItemClickListener(handler);
+                    menu.add(0, COPY_ID, 0, getResources().getString(R.string.copy_image_link)).setOnMenuItemClickListener(handler);
+                }
                 break;
             case HitTestResult.SRC_ANCHOR_TYPE: //LINK
                 menu.setHeaderTitle(result.getExtra());
                 menu.add(0, SHARE_LINK_ID, 0, getContext().getString(R.string.share_link)).setOnMenuItemClickListener(handler);
+                menu.add(0, COPY_ID, 0, getResources().getString(R.string.copy_link)).setOnMenuItemClickListener(handler);
                 break;
         }
     }

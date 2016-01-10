@@ -54,4 +54,11 @@
     <string name="no">NO</string>
     <string name="tracking">Tracking</string>
     <string name="image_downloaded">The image has been downloaded</string>
+    <string name="copy_link">Copy link location</string>
+    <string name="copy_image_link">Copy image location</string>
+    <string name="copied">Link copied to clipboard</string>
+    <string name="download">File download</string>
+    <string name="askdownload">Download file?</string>
+    <string name="file_downloaded">The file was downloaded</string>
+    <string name="file_downloading">The file is now downloading</string>
 </resources>

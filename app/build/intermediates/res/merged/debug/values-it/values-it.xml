@@ -39,6 +39,7 @@
     <string name="app_name">Stack</string>
     <string name="appearance">Aspetto</string>
     <string name="ask">Fai una domanda</string>
+    <string name="askdownload">Permettere il download?</string>
     <string name="askuselocation">Fornire la posizione precisa ai siti internet che visiti?</string>
     <string name="bar_hint">Ricerca o inserisci indirizzo</string>
     <string name="bitcoin_noclient">Nessuna applicazione adatta</string>
@@ -76,12 +77,19 @@
     <string msgid="2201289642219771610" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> non funzionerà senza Google Play Services, attualmente in fase di aggiornamento."</string>
     <string msgid="815008177440683245" name="common_google_play_services_updating_title">"Aggiornamento di Google Play Services"</string>
     <string msgid="411506735369601515" name="common_open_on_phone">"Apri sul telefono"</string>
+    <string name="copied">Indirizzo copiato negli appunti</string>
+    <string name="copy_image_link">Copia indirizzo immagine</string>
+    <string name="copy_link">Copia link</string>
     <string name="donate">Donando puoi sostenere lo sviluppo di Stack</string>
     <string name="dotssumm">Necessita un tasto menu fisico</string>
+    <string name="download">Scaricamento file</string>
     <string name="earliest_reached">Pagina iniziale raggiunta</string>
     <string name="easter_toast">Hai trovato un uovo di pasqua! </string>
     <string name="email_noclient">Nessuna applicazione adatta</string>
+    <string name="file_downloaded">Il file è stato scaricato</string>
+    <string name="file_downloading">Il file sarà scaricato</string>
     <string name="functionality">Funzionalità</string>
+    <string name="image_downloaded">L\'immagine è stata scaricata</string>
     <string name="insteadof">invece che</string>
     <string name="location">Posizione</string>
     <string name="menu_about">Info</string>

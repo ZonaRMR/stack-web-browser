@@ -24,6 +24,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.StrictMode;
 import android.preference.PreferenceManager;
@@ -216,7 +218,9 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         Intent addIntent = new Intent();
         addIntent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
         addIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, webView.getTitle());
-        addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON, webView.getFavicon());
+        if (webView.getFavicon() != null)
+            addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON, webView.getFavicon());
+        else addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, R.drawable.x);
 
 
         addIntent.putExtra("duplicate", false);

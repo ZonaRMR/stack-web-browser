@@ -276,6 +276,7 @@
     <string name="app_name">Stack</string>
     <string name="appearance">Appearance</string>
     <string name="ask">Ask a question</string>
+    <string name="askdownload">Download file?</string>
     <string name="askuselocation">Provide web pages with your precise location?</string>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
@@ -315,11 +316,17 @@
     <string name="common_google_play_services_updating_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are currently updating.</string>
     <string name="common_google_play_services_updating_title">Google Play services are updating</string>
     <string name="common_open_on_phone">Open on phone</string>
+    <string name="copied">Link copied to clipboard</string>
+    <string name="copy_image_link">Copy image location</string>
+    <string name="copy_link">Copy link location</string>
     <string name="donate">By donating, you can support the development of this application.</string>
     <string name="dotssumm">Requires a hardware menu button</string>
+    <string name="download">File download</string>
     <string name="earliest_reached">Earliest page has been reached</string>
     <string name="easter_toast">You found an easter egg!</string>
     <string name="email_noclient">No email client found</string>
+    <string name="file_downloaded">The file was downloaded</string>
+    <string name="file_downloading">The file is now downloading</string>
     <string name="functionality">Functionality</string>
     <string name="image_downloaded">The image has been downloaded</string>
     <string name="insteadof">instead of</string>
