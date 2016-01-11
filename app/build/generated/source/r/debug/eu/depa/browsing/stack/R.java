@@ -1682,7 +1682,6 @@ containing a value of this type.
         public static final int action_mode_close_button=0x7f0e0025;
         public static final int activity_chooser_view_content=0x7f0e0026;
         public static final int activity_main_root=0x7f0e0054;
-        public static final int addtohome=0x7f0e0076;
         public static final int adjust_height=0x7f0e001b;
         public static final int adjust_width=0x7f0e001c;
         public static final int alertTitle=0x7f0e0032;
@@ -1722,18 +1721,17 @@ containing a value of this type.
         public static final int listMode=0x7f0e0009;
         public static final int list_item=0x7f0e002a;
         public static final int media_actions=0x7f0e0065;
-        public static final int menu_about=0x7f0e0079;
-        public static final int menu_donate=0x7f0e007a;
-        public static final int menu_history=0x7f0e0078;
-        public static final int menu_page=0x7f0e007b;
-        public static final int menu_reload=0x7f0e0077;
-        public static final int menu_settings=0x7f0e007c;
+        public static final int menu_about=0x7f0e0076;
+        public static final int menu_donate=0x7f0e0077;
+        public static final int menu_history=0x7f0e0075;
+        public static final int menu_page=0x7f0e0078;
+        public static final int menu_reload=0x7f0e0074;
+        public static final int menu_settings=0x7f0e0079;
         public static final int middle=0x7f0e001a;
         public static final int multiply=0x7f0e0013;
         public static final int never=0x7f0e0020;
         public static final int none=0x7f0e000e;
         public static final int normal=0x7f0e000a;
-        public static final int openInApp=0x7f0e0074;
         public static final int parentPanel=0x7f0e002f;
         public static final int paypal=0x7f0e005f;
         public static final int pb=0x7f0e005d;
@@ -1756,7 +1754,6 @@ containing a value of this type.
         public static final int search_src_text=0x7f0e004c;
         public static final int search_voice_btn=0x7f0e0050;
         public static final int select_dialog_listview=0x7f0e0051;
-        public static final int share=0x7f0e0075;
         public static final int shortcut=0x7f0e003c;
         public static final int showCustom=0x7f0e000f;
         public static final int showDots=0x7f0e0070;
@@ -1846,8 +1843,7 @@ containing a value of this type.
     }
     public static final class menu {
         public static final int menu_email=0x7f0f0000;
-        public static final int menu_page=0x7f0f0001;
-        public static final int options=0x7f0f0002;
+        public static final int options=0x7f0f0001;
     }
     public static final class mipmap {
         public static final int ic_blue=0x7f030000;
@@ -1959,6 +1955,7 @@ containing a value of this type.
         public static final int restarting=0x7f07005f;
         public static final int save_image=0x7f070060;
         public static final int search_engine=0x7f070061;
+        public static final int send_email=0x7f070073;
         public static final int share=0x7f070062;
         public static final int share_image=0x7f070063;
         public static final int share_link=0x7f070064;

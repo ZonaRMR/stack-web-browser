@@ -17,7 +17,9 @@ If not, see <http://www.gnu.org/licenses/>.*/
 package eu.depa.browsing.stack;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -109,11 +111,9 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         else toptextbar.setText(url.split("//")[1]);
     }//load everything u need to all nicely packed in 1 method
 
-    boolean dotsClicked = false;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.options, menu);
-        dotsClicked = false;
         return true;
     }   //wat do when options menu is triggered
 
@@ -153,7 +153,6 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         PopupMenu popup = new PopupMenu(this, findViewById(R.id.dots));
         popup.getMenuInflater().inflate(R.menu.options, popup.getMenu());
         popup.show();
-        dotsClicked = true;
     }         //when dots r clicked
 
     public void bang(View v) {
@@ -177,13 +176,13 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         }
     }                 //override: go back instead
 
-    public void openInApp (MenuItem item) {
+    public void openInApp () {
         LCWV webView = (LCWV) findViewById(R.id.webView);
         Intent openIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(webView.getUrl()));
         startActivity(openIntent);
     }       //make and execute intent to open webviewed page in other apps
 
-    public void share (MenuItem item) {
+    public void share () {
         LCWV webView = (LCWV) findViewById(R.id.webView);
         Intent sharingIntent = new Intent(Intent.ACTION_SEND);
         sharingIntent.setType("text/plain");
@@ -194,7 +193,7 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         getFragmentManager().popBackStack();
     }           //share the current webviewed page
 
-    public void addPagetoHome (MenuItem item) {
+    public void addPagetoHome () {
         LCWV webView = (LCWV) findViewById(R.id.webView);
 
         Intent shortcutIntent = new Intent(getApplicationContext(), MainActivity.class);
@@ -296,12 +295,29 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         loadAll(webView.getUrl());
     } //duh
 
-    boolean first = true;   //sub menu inflating goofs up so u need this
     public void inflatePageMenu (MenuItem item) {
-        if (dotsClicked) getMenuInflater().inflate(R.menu.menu_page, item.getSubMenu());
-        else if (item != null && first)
-           getMenuInflater().inflate(R.menu.menu_page, item.getSubMenu());
-        first = false;
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        builder.setTitle(getString(R.string.menu_page));
+        builder.setItems(new CharSequence[]{getString(R.string.openInApp),
+                        getString(R.string.share),
+                        getString(R.string.addtohome)},
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        switch (which) {
+                            case 0:
+                                openInApp();
+                                break;
+                            case 1:
+                                share();
+                                break;
+                            case 2:
+                                addPagetoHome();
+                                break;
+                        }
+                    }
+                });
+        builder.create().show();
     }
 
     public void goToDonate (MenuItem item) {

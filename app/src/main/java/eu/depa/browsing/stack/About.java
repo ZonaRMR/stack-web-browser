@@ -2,17 +2,14 @@ package eu.depa.browsing.stack;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.PopupMenu;
 import android.widget.Toast;
 
 public class About extends Activity {
@@ -26,40 +23,41 @@ public class About extends Activity {
         email_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PopupMenu popup = new PopupMenu(About.this, findViewById(R.id.email_button));
-                MenuInflater inflater = popup.getMenuInflater();
-                inflater.inflate(R.menu.menu_email, popup.getMenu());
-                popup.show();
-                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                    @Override
-                    public boolean onMenuItemClick(MenuItem menuItem) {
-                        String thing = "";
-                        switch (menuItem.getItemId()) {
-                            case R.id.repBug:
-                                thing = "REPORT";
-                                break;
-                            case R.id.suggest:
-                                thing = "SUGGEST";
-                                break;
-                            case R.id.askQ:
-                                thing = "ASK";
-                                break;
-                        }
-                        String TO = "depasquale.a@tuta.io";
-                        Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", TO, null));
+                AlertDialog.Builder builder = new AlertDialog.Builder(About.this);
+                builder.setTitle(getString(R.string.send_email));
+                builder.setItems(new CharSequence[]{getString(R.string.repBug),
+                                getString(R.string.ask),
+                                getString(R.string.suggest)},
+                        new DialogInterface.OnClickListener() {
+                            public String thing = "";
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                switch (which) {
+                                    case 0:
+                                        thing = "BUG";
+                                        break;
+                                    case 1:
+                                        thing = "ASK";
+                                        break;
+                                    case 2:
+                                        thing = "SUGGEST";
+                                        break;
+                                }
+                                String TO = "depasquale.a@tuta.io";
+                                Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", TO, null));
 
-                        emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
-                        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "STACK_" + thing + ": ");
-                        emailIntent.putExtra(Intent.EXTRA_TEXT, "API: " + android.os.Build.VERSION.SDK_INT + "\n");
+                                emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
+                                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "STACK_" + thing + ": ");
+                                emailIntent.putExtra(Intent.EXTRA_TEXT, "API: " + android.os.Build.VERSION.SDK_INT + "\n");
 
-                        try {
-                            startActivity(emailIntent);
-                        }
-                        catch (android.content.ActivityNotFoundException ex){
-                            Toast.makeText(About.this, getString(R.string.email_noclient), Toast.LENGTH_SHORT).show();}
-                        return false;
-                    }
-                });
+                                try {
+                                    startActivity(emailIntent);
+                                }
+                                catch (android.content.ActivityNotFoundException ex){
+                                    Toast.makeText(About.this, getString(R.string.email_noclient), Toast.LENGTH_SHORT).show();}
+                            }
+                        });
+                builder.create().show();
             }
         });
     }

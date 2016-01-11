@@ -49,6 +49,7 @@ public class History extends AppCompatActivity {
                 TwoLineListItem item = (TwoLineListItem) view;
                 String url = item.getText2().getText().toString();
                 Toast.makeText(History.this, url, Toast.LENGTH_SHORT).show();
+                //TODO THIS
             }
         });
     }
