@@ -17,43 +17,31 @@ If not, see <http://www.gnu.org/licenses/>.*/
 package eu.depa.browsing.stack;
 
 import android.annotation.SuppressLint;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.os.StrictMode;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.ContextMenu;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnKeyListener;
 import android.view.ViewConfiguration;
-import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
-import android.webkit.GeolocationPermissions;
-import android.webkit.WebChromeClient;
+import android.webkit.WebBackForwardList;
 import android.webkit.WebIconDatabase;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
-import java.util.HashMap;
+
+import java.util.ArrayList;
 
 @SuppressWarnings({"ConstantConditions", "deprecation"})
 @SuppressLint("SetJavaScriptEnabled")
@@ -69,7 +57,6 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         reloadGraphicalTheme();                     //set background color of all markup items according to user prefs
 
         PreferenceManager.setDefaultValues(this, R.xml.settings, false);    //set pref defs, only once
-        final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
 
         getSupportActionBar().hide();
 
@@ -214,7 +201,6 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         shortcutIntent.putExtra("extra", webView.getUrl());
         shortcutIntent.setData(Uri.parse(webView.getUrl()));
         shortcutIntent.setAction(Intent.ACTION_VIEW);
-
         Intent addIntent = new Intent();
         addIntent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
         addIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, webView.getTitle());
@@ -336,5 +322,24 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
     public void goToTabs (View v) {
         Intent seetabs = new Intent(getApplicationContext(), TabView.class);
         startActivity(seetabs);
+    }
+
+    public void goToHistory(MenuItem item) {
+        Intent gotoHistory = new Intent(getApplicationContext(), History.class);
+        Bundle historyData = new Bundle();
+
+        LCWV webView = (LCWV) findViewById(R.id.webView);
+        WebBackForwardList historyList = webView.copyBackForwardList();
+        ArrayList<String> titles = new ArrayList<>(),
+                          addrs  = new ArrayList<>();
+        for (int i = historyList.getSize(); i > 0; i--) {
+            if (historyList.getItemAtIndex(i) == null) continue;
+            titles.add(historyList.getItemAtIndex(i).getTitle());
+            addrs.add(historyList.getItemAtIndex(i).getUrl());
+        }
+        historyData.putStringArrayList("titles", titles);
+        historyData.putStringArrayList("addrs", addrs);
+        gotoHistory.putExtra("bundle", historyData);
+        startActivity(gotoHistory);
     }
 }

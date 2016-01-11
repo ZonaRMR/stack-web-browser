@@ -88,6 +88,10 @@
         "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_radio.xml"
     },
     {
+        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/layout/history.xml",
+        "source": "/home/depa/Desktop/Stack/app/src/main/res/layout/history.xml"
+    },
+    {
         "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
         "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_mode_bar.xml"
     },

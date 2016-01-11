@@ -61,4 +61,5 @@
     <string name="askdownload">Download file?</string>
     <string name="file_downloaded">The file was downloaded</string>
     <string name="file_downloading">The file is now downloading</string>
+    <string name="menu_history">History</string>
 </resources>

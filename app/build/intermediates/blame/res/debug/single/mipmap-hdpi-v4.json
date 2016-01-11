@@ -16,11 +16,11 @@
         "source": "/home/depa/Desktop/Stack/app/src/main/res/mipmap-hdpi/ic_blue.png"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_rock.png",
-        "source": "/home/depa/Desktop/Stack/app/src/main/res/mipmap-hdpi/ic_rock.png"
-    },
-    {
         "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_launcher.png",
         "source": "/home/depa/Desktop/Stack/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_rock.png",
+        "source": "/home/depa/Desktop/Stack/app/src/main/res/mipmap-hdpi/ic_rock.png"
     }
 ]

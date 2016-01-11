@@ -6,6 +6,10 @@
         android:title="@string/reload"
         android:onClick="reloadPage"/>
 
+    <item android:id="@+id/menu_history"
+        android:title="@string/menu_history"
+        android:onClick="goToHistory"/>
+
     <item android:id="@+id/menu_about"
         android:title="@string/menu_about"
         android:onClick="goToAbout"/>

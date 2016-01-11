@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="16"
         android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -49,16 +49,7 @@
         <activity android:name="eu.depa.browsing.stack.Settings" />
         <activity android:name="eu.depa.browsing.stack.GPL" />
         <activity android:name="eu.depa.browsing.stack.TabView" />
-
-        <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.example.myapp.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true" >
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/filepaths" />
-        </provider>
+        <activity android:name="eu.depa.browsing.stack.History" />
 
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@+id/menu_reload"
         android:title="@string/reload"
         android:onClick="reloadPage"/>
+
+    <item android:id="@+id/menu_history"
+        android:title="@string/menu_history"
+        android:onClick="goToHistory"/>
 
     <item android:id="@+id/menu_about"
         android:title="@string/menu_about"

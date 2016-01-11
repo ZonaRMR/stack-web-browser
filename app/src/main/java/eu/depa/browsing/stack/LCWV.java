@@ -8,10 +8,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.util.AttributeSet;
@@ -27,6 +25,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
 import java.io.File;
 import java.util.HashMap;
 
@@ -220,7 +219,7 @@ public class LCWV extends WebView {
                         downloadFile(result.getExtra());
                         Toast.makeText(getContext(), getContext().getString(R.string.image_downloaded), Toast.LENGTH_SHORT).show();
                         break;
-                    case SHARE_IMAGE_ID:    //TODO FIX THIS!!!!
+                    case SHARE_IMAGE_ID:    //FIXME: 11/1/16 00:20
                         downloadFile(result.getExtra());
                         Intent sharePicIntent = new Intent(Intent.ACTION_SEND);
                         String FN = getFileName(result.getExtra());
@@ -285,6 +284,7 @@ public class LCWV extends WebView {
         url = url.split("&")[0];
         url = url.split("$")[0];
         url = url.split("#")[0];
+        url = url.split("\\?")[0];
         return url;
     }
 
