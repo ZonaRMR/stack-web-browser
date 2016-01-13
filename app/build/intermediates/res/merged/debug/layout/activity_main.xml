@@ -51,22 +51,6 @@
             android:contentDescription="the favicon duh"/>
 
         <ImageButton
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:id="@+id/tabs"
-            android:background="@drawable/tabs"
-            android:onClick="goToTabs"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginBottom="15dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginEnd="50dp"
-            android:contentDescription="Tabs button duh"/>
-
-        <ImageButton
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:id="@+id/dots"
@@ -89,8 +73,8 @@
             android:hint="@string/bar_hint"
             android:layout_toRightOf="@id/favicon"
             android:layout_toEndOf="@id/favicon"
-            android:layout_toStartOf="@id/tabs"
-            android:layout_toLeftOf="@id/tabs"/>
+            android:layout_toStartOf="@id/dots"
+            android:layout_toLeftOf="@id/dots"/>
 
         <ImageButton
             android:layout_width="15dp"

@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
@@ -195,7 +196,8 @@ public class LCWV extends WebView {
             VIEW_IMAGE_ID = 1,
             SAVE_IMAGE_ID = 2,
             SHARE_IMAGE_ID = 3,
-            COPY_ID = 4;
+            COPY_ID = 4,
+            NEW_TAB_ID = 5;
 
     @Override
     protected void onCreateContextMenu(ContextMenu menu) {
@@ -233,6 +235,16 @@ public class LCWV extends WebView {
                         ClipData clipData = ClipData.newPlainText("stack_clip", result.getExtra());
                         clipMan.setPrimaryClip(clipData);
                         Toast.makeText(getContext(), getResources().getString(R.string.copied), Toast.LENGTH_SHORT).show();
+                        break;
+                    case NEW_TAB_ID: //FIXME PLEASE!!!
+                        PackageManager pm = getContext().getPackageManager();
+                        Intent newTabIntent = pm.getLaunchIntentForPackage("eu.depa.browsing.stack");
+                        newTabIntent.setAction(Intent.ACTION_VIEW);
+                        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+                        //    newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
+                        newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        newTabIntent.setData(Uri.parse(result.getExtra()));
+                        getContext().startActivity(newTabIntent);
                 }
                 return true;
             }
@@ -256,6 +268,7 @@ public class LCWV extends WebView {
                 menu.setHeaderTitle(result.getExtra());
                 menu.add(0, SHARE_LINK_ID, 0, getContext().getString(R.string.share_link)).setOnMenuItemClickListener(handler);
                 menu.add(0, COPY_ID, 0, getResources().getString(R.string.copy_link)).setOnMenuItemClickListener(handler);
+                menu.add(0, NEW_TAB_ID, 0, getString(R.string.openInNewTab)).setOnMenuItemClickListener(handler);
                 break;
         }
     }

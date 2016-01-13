@@ -44,6 +44,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 @SuppressWarnings({"ConstantConditions", "deprecation"})
 @SuppressLint("SetJavaScriptEnabled")
@@ -90,7 +91,6 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
 
     protected void onNewIntent(Intent intent) {
         String action = intent.getAction();
-        Bundle bundle = intent.getBundleExtra("WV-STATE");
         String data = intent.getDataString();
         if (Intent.ACTION_VIEW.equals(action) && data != null) loadAll(data);
         else {
@@ -216,7 +216,16 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
     }   //duh NOTE: WORKS 3/1/16 HELL YEAH
 
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-        if (resultCode == 16019) loadAll("http://paypal.me/makeitrainonme/1");
+        if (resultCode == 16019) {
+            Intent launchPayPal = getPackageManager().getLaunchIntentForPackage("com.paypal.android.p2pmobile");
+            if(launchPayPal == null)
+                loadAll("http://paypal.me/makeitrainonme/1/?locale.x=" + Locale.getDefault().toString());
+            else {
+                launchPayPal.setAction(Intent.ACTION_SENDTO);
+                launchPayPal.setData(Uri.fromParts("mailto", "depasquale.a@tuta.io", null));
+                startActivity(launchPayPal);
+            }
+        }
         reloadSettings();
     }   //wat do when u get a result from activity: PayPal
 
@@ -333,11 +342,6 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
     public void goToAbout (MenuItem item) {
         Intent gotoabout = new Intent(getApplicationContext(), About.class);
         startActivity(gotoabout);
-    }
-
-    public void goToTabs (View v) {
-        Intent seetabs = new Intent(getApplicationContext(), TabView.class);
-        startActivity(seetabs);
     }
 
     public void goToHistory(MenuItem item) {

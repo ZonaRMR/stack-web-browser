@@ -63,4 +63,5 @@
     <string name="file_downloading">The file is now downloading</string>
     <string name="menu_history">History</string>
     <string name="send_email">Contact the developer</string>
+    <string name="openInNewTab">Open in new tab</string>
 </resources>
