@@ -337,6 +337,7 @@
     <string name="menu_page">Page…</string>
     <string name="menu_settings">Settings</string>
     <string name="no">NO</string>
+    <string name="nohistory">There\'s nothing here</string>
     <string name="notrack">Ask websites not to track me</string>
     <string name="notrackspec">Whether a DNT request should be sent</string>
     <string name="openInApp">Open with another app</string>

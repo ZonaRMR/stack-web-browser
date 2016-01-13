@@ -98,6 +98,7 @@
     <string name="menu_page">Pagina…</string>
     <string name="menu_settings">Impostazioni</string>
     <string name="no">NO</string>
+    <string name="nohistory">La cronologia è ancora vuota</string>
     <string name="notrack">Richiedi di non essere tracciato</string>
     <string name="notrackspec">Decidi se inviare una direttiva DNT</string>
     <string name="openInApp">Apri in un\'app</string>

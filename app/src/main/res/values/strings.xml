@@ -65,4 +65,5 @@
     <string name="send_email">Contact the developer</string>
     <string name="openInNewTab">Open in new tab</string>
     <string name="openNewTab">Open a new tab</string>
+    <string name="nohistory">There\'s nothing here</string>
 </resources>

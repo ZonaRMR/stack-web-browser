@@ -1,6 +1,10 @@
 package eu.depa.browsing.stack;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +12,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.Toast;
+import android.widget.TextView;
 import android.widget.TwoLineListItem;
 
 import java.util.ArrayList;
@@ -37,6 +41,11 @@ public class History extends AppCompatActivity {
             data.add(datum);
         }
 
+        if (titles.isEmpty()) {
+            TextView empty = (TextView) findViewById(R.id.empty);
+            empty.setVisibility(View.VISIBLE);
+        }
+
         final SimpleAdapter adapter = new SimpleAdapter(this, data,
                 android.R.layout.simple_list_item_2,
                 new String[] {"title", "addr"},
@@ -48,8 +57,14 @@ public class History extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 TwoLineListItem item = (TwoLineListItem) view;
                 String url = item.getText2().getText().toString();
-                Toast.makeText(History.this, url, Toast.LENGTH_SHORT).show();
-                //TODO THIS
+                PackageManager pm = getApplicationContext().getPackageManager();
+                Intent newTabIntent = pm.getLaunchIntentForPackage("eu.depa.browsing.stack");
+                newTabIntent.setAction(Intent.ACTION_VIEW);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+                    newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
+                newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                newTabIntent.setData(Uri.parse(url));
+                getApplicationContext().startActivity(newTabIntent);
             }
         });
     }
