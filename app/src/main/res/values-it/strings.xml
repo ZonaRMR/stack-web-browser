@@ -61,4 +61,8 @@
     <string name="download">Scaricamento file</string>
     <string name="file_downloaded">Il file è stato scaricato</string>
     <string name="file_downloading">Il file sarà scaricato</string>
+    <string name="menu_history">Cronologia</string>
+    <string name="openInNewTab">Apri in una nuova scheda</string>
+    <string name="send_email">Contatta lo sviluppatore</string>
+    <string name="openNewTab">Apri una nuova scheda</string>
 </resources>

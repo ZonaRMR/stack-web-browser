@@ -9,6 +9,10 @@
         android:title="@string/menu_history"
         android:onClick="goToHistory"/>
 
+    <item android:id="@+id/newTab"
+        android:title="@string/openNewTab"
+        android:onClick="newTab"/>
+
     <item android:id="@+id/menu_about"
         android:title="@string/menu_about"
         android:onClick="goToAbout"/>

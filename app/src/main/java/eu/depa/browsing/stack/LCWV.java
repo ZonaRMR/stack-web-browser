@@ -12,6 +12,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.preference.PreferenceManager;
 import android.util.AttributeSet;
 import android.view.ContextMenu;
@@ -104,8 +105,12 @@ public class LCWV extends WebView {
 
         @Override
         public void onPageFinished(WebView webView, String url) {
-            if (url.startsWith("<html>") || url.endsWith("</html>")) toptextbar.setText(webView.getTitle());
-            else toptextbar.setText(url.split("//")[1]);
+            try{
+                if (url.startsWith("<html>") || url.endsWith("</html>")) toptextbar.setText(webView.getTitle());
+                else toptextbar.setText(url.split("//")[1]);
+            }catch (Exception e) {
+                e.printStackTrace();
+            }
 
         }
     };
@@ -113,8 +118,12 @@ public class LCWV extends WebView {
         @Override
         public void onProgressChanged(WebView wv, int progress) {
             pb.setProgress(progress);
-            if (getUrl().startsWith("<html>")) toptextbar.setText(getTitle());
-            else toptextbar.setText(getUrl().split("//")[1]);
+            try {
+                if (getUrl().startsWith("<html>")) toptextbar.setText(getTitle());
+                else toptextbar.setText(getUrl().split("//")[1]);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
             if (progress == 100) pb.setVisibility(View.GONE);
         }
 
@@ -236,12 +245,12 @@ public class LCWV extends WebView {
                         clipMan.setPrimaryClip(clipData);
                         Toast.makeText(getContext(), getResources().getString(R.string.copied), Toast.LENGTH_SHORT).show();
                         break;
-                    case NEW_TAB_ID: //FIXME PLEASE!!!
+                    case NEW_TAB_ID:
                         PackageManager pm = getContext().getPackageManager();
                         Intent newTabIntent = pm.getLaunchIntentForPackage("eu.depa.browsing.stack");
                         newTabIntent.setAction(Intent.ACTION_VIEW);
-                        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-                        //    newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+                            newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
                         newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         newTabIntent.setData(Uri.parse(result.getExtra()));
                         getContext().startActivity(newTabIntent);

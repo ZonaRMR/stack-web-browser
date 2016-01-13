@@ -341,6 +341,7 @@
     <string name="notrackspec">Whether a DNT request should be sent</string>
     <string name="openInApp">Open with another app</string>
     <string name="openInNewTab">Open in new tab</string>
+    <string name="openNewTab">Open a new tab</string>
     <string name="pageNotLoaded">The page could not be loaded</string>
     <string name="picksergine">Pick a search engine</string>
     <string name="picktheme">Pick a theme</string>

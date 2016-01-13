@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:ns1="http://schemas.android.com/tools">
     <string-array name="location_options">
         <item name="ask">Chiedi ogni volta</item>
         <item name="doprovide">Fornisci sempre</item>
@@ -94,12 +94,15 @@
     <string name="location">Posizione</string>
     <string name="menu_about">Info</string>
     <string name="menu_donate">Dona</string>
+    <string name="menu_history">Cronologia</string>
     <string name="menu_page">Pagina…</string>
     <string name="menu_settings">Impostazioni</string>
     <string name="no">NO</string>
     <string name="notrack">Richiedi di non essere tracciato</string>
     <string name="notrackspec">Decidi se inviare una direttiva DNT</string>
     <string name="openInApp">Apri in un\'app</string>
+    <string name="openInNewTab">Apri in una nuova scheda</string>
+    <string name="openNewTab">Apri una nuova scheda</string>
     <string name="pageNotLoaded">Impossibile caricare la pagina</string>
     <string name="picksergine">Scegli un motore di ricerca</string>
     <string name="picktheme">Scegli un tema</string>
@@ -110,6 +113,7 @@
     <string name="restarting">Riavvio…</string>
     <string name="save_image">Salva immagine</string>
     <string name="search_engine">Motore di ricerca</string>
+    <string name="send_email">Contatta lo sviluppatore</string>
     <string name="share">Condividi</string>
     <string name="share_image">Condividi immagine</string>
     <string name="share_link">Condividi link</string>

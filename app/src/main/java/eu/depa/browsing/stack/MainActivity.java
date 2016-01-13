@@ -22,8 +22,10 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
@@ -108,7 +110,13 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         pb.setVisibility(View.VISIBLE);
         webView.loadUrl(url);
         if (url.startsWith("<html>")) toptextbar.setText(webView.getTitle());
-        else toptextbar.setText(url.split("//")[1]);
+        else {
+            try {
+                toptextbar.setText(url.split("//")[1]);
+            }catch (Exception e) {
+                toptextbar.setText(url);
+            }
+        }
     }//load everything u need to all nicely packed in 1 method
 
     @Override
@@ -361,5 +369,18 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         historyData.putStringArrayList("addrs", addrs);
         gotoHistory.putExtra("bundle", historyData);
         startActivity(gotoHistory);
+    }
+
+    public void newTab(MenuItem item) {
+        PackageManager pm = getPackageManager();
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+        String HP = sharedPref.getString("HP", "duckduckgo.com");
+        Intent newTabIntent = pm.getLaunchIntentForPackage("eu.depa.browsing.stack");
+        newTabIntent.setAction(Intent.ACTION_VIEW);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+            newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
+        newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        newTabIntent.setData(Uri.parse(HP));
+        startActivity(newTabIntent);
     }
 }
