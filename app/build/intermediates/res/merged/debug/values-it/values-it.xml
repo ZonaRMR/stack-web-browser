@@ -36,6 +36,7 @@
     <string name="about_text">Lo sviluppo di Stack\nè seguito da\nAlessandro De Pasquale\n\nPotete contattarmi o seguire lo sviluppo di Stack coi bottoni di seguito.</string>
     <string name="added_to_home">Scorciatoia aggiunta</string>
     <string name="addtohome">Aggiungi ad home</string>
+    <string name="alphathx">Un ringraziamento speciale al mio alpha tester\nAlessandro Menabue</string>
     <string name="app_name">Stack</string>
     <string name="appearance">Aspetto</string>
     <string name="ask">Fai una domanda</string>
@@ -82,6 +83,7 @@
     <string name="donate">Donando puoi sostenere lo sviluppo di Stack</string>
     <string name="dotssumm">Necessita un tasto menu fisico</string>
     <string name="download">Scaricamento file</string>
+    <string name="dust">polvere</string>
     <string name="earliest_reached">Pagina iniziale raggiunta</string>
     <string name="easter_toast">Hai trovato un uovo di pasqua! </string>
     <string name="email_noclient">Nessuna applicazione adatta</string>

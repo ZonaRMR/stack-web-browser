@@ -22,11 +22,4 @@
         android:layout_margin="20dp"
         android:visibility="gone" />
 
-    <android.support.v7.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="visible"
-        android:subtitle="@string/about_text"
-        android:id="@+id/CTB"/>
-
 </RelativeLayout>

@@ -50,7 +50,7 @@ public class History extends AppCompatActivity {
         }
 
         final SimpleAdapter adapter = new SimpleAdapter(this, data,
-                android.R.layout.simple_list_item_2,
+                android.R.layout.simple_expandable_list_item_2,
                 new String[] {"title", "addr"},
                 new int[] {android.R.id.text1, android.R.id.text2 });
 

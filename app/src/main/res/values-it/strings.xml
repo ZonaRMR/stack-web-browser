@@ -66,4 +66,6 @@
     <string name="send_email">Contatta lo sviluppatore</string>
     <string name="openNewTab">Apri una nuova scheda</string>
     <string name="nohistory">La cronologia è ancora vuota</string>
+    <string name="alphathx">Un ringraziamento speciale al mio alpha tester\nAlessandro Menabue</string>
+    <string name="dust">polvere</string>
 </resources>

@@ -334,9 +334,10 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="about_text">Stack web browser was developed by\nAlessandro De Pasquale\n\nYou may get to me or follow the development of Stack via the buttons below.</string>
+    <string name="about_text">The development of stack is led by\nAlessandro De Pasquale\n\nYou may get to me or follow the development of Stack via the buttons below.</string>
     <string name="added_to_home">Added to home</string>
     <string name="addtohome">Add to home screen</string>
+    <string name="alphathx">Special thanks to my alpha tester\nAlessandro Menabue</string>
     <string name="app_name">Stack</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="appearance">Appearance</string>
@@ -387,6 +388,7 @@
     <string name="donate">By donating, you can support the development of this application.</string>
     <string name="dotssumm">Requires a hardware menu button</string>
     <string name="download">File download</string>
+    <string name="dust">dust</string>
     <string name="earliest_reached">Earliest page has been reached</string>
     <string name="easter_toast">You found an easter egg!</string>
     <string name="email_noclient">No email client found</string>
