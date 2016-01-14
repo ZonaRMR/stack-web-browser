@@ -48,7 +48,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Locale;
 
-@SuppressWarnings({"ConstantConditions", "deprecation"})
+@SuppressWarnings({"deprecation"})
 @SuppressLint("SetJavaScriptEnabled")
 
 public class MainActivity extends AppCompatActivity implements OnKeyListener{
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
 
         PreferenceManager.setDefaultValues(this, R.xml.settings, false);    //set pref defs, only once
 
-        getSupportActionBar().hide();
+        if (getSupportActionBar() != null) getSupportActionBar().hide();
 
         final LCWV  webview       = (LCWV)        findViewById(R.id.webView);
         final EditText toptextbar = (EditText)    findViewById(R.id.toptextbar);
@@ -184,6 +184,13 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         }
     }                 //override: go back instead
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        reloadSettings();
+        reloadGraphicalTheme();
+    }
+
     public void openInApp () {
         LCWV webView = (LCWV) findViewById(R.id.webView);
         Intent openIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(webView.getUrl()));
@@ -226,8 +233,16 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         if (resultCode == 16019) {
             Intent launchPayPal = getPackageManager().getLaunchIntentForPackage("com.paypal.android.p2pmobile");
-            if(launchPayPal == null)
-                loadAll("http://paypal.me/makeitrainonme/1/?locale.x=" + Locale.getDefault().toString());
+            if(launchPayPal == null) {
+                PackageManager pm = getPackageManager();
+                Intent newTabIntent = pm.getLaunchIntentForPackage("eu.depa.browsing.stack");
+                newTabIntent.setAction(Intent.ACTION_VIEW);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+                    newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
+                newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                newTabIntent.setData(Uri.parse("http://paypal.me/makeitrainonme/1/?locale.x=" + Locale.getDefault().toString()));
+                startActivity(newTabIntent);
+            }
             else {
                 launchPayPal.setAction(Intent.ACTION_SENDTO);
                 launchPayPal.setData(Uri.fromParts("mailto", "depasquale.a@tuta.io", null));
@@ -380,7 +395,7 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
             newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
         newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        newTabIntent.setData(Uri.parse(HP));
+        newTabIntent.setData(Uri.fromParts("http", HP, null));
         startActivity(newTabIntent);
     }
 }

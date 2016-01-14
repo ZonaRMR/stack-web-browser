@@ -41,8 +41,13 @@ application
 ADDED from /home/depa/Desktop/Stack/app/src/main/AndroidManifest.xml:12:5-51:19
 MERGED from [com.android.support:appcompat-v7:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.1.0] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
 	android:supportsRtl
 		ADDED from /home/depa/Desktop/Stack/app/src/main/AndroidManifest.xml:17:9-35
@@ -122,7 +127,7 @@ ADDED from /home/depa/Desktop/Stack/app/src/main/AndroidManifest.xml:44:9-44
 		ADDED from /home/depa/Desktop/Stack/app/src/main/AndroidManifest.xml:44:19-42
 meta-data#com.google.android.gms.version
 ADDED from /home/depa/Desktop/Stack/app/src/main/AndroidManifest.xml:48:9-50:69
-MERGED from [com.google.android.gms:play-services-basement:8.1.0] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 	android:name
 		ADDED from /home/depa/Desktop/Stack/app/src/main/AndroidManifest.xml:49:13-58
 	android:value
@@ -131,8 +136,15 @@ uses-sdk
 INJECTED from /home/depa/Desktop/Stack/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.1.0] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.1.1] /home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		INJECTED from /home/depa/Desktop/Stack/app/src/main/AndroidManifest.xml

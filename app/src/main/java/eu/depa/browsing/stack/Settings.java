@@ -9,8 +9,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.os.StrictMode;
-import android.preference.*;
+import android.preference.Preference;
+import android.preference.PreferenceActivity;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.ViewConfiguration;
@@ -29,7 +30,7 @@ public class Settings extends PreferenceActivity{
         ChListener = new SharedPreferences.OnSharedPreferenceChangeListener() {
             public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
                 if (key.equals("theme")) {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(Settings.this);
+                    final AlertDialog.Builder builder = new AlertDialog.Builder(Settings.this);
 
                     builder.setTitle(getString(R.string.wanna_restart));
 
@@ -42,7 +43,6 @@ public class Settings extends PreferenceActivity{
                     builder.setNegativeButton(getString(R.string.plzNo), null);
                     builder.show();
                 }
-                setResult(36165);
             }
         };
         prefs.registerOnSharedPreferenceChangeListener(ChListener);
@@ -119,6 +119,7 @@ public class Settings extends PreferenceActivity{
     @Override
     public void onResume() {
         super.onResume();
+        onCreate(null);
         if (!mListStyled) this.getListView().setDivider(null);
         mListStyled = true;
     }

@@ -1,5 +1,6 @@
 package eu.depa.browsing.stack;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.DownloadManager;
 import android.content.ClipData;
@@ -186,6 +187,7 @@ public class LCWV extends WebView {
         }
     };
 
+    @SuppressLint("SetJavaScriptEnabled")
     protected void init(){
         this.getSettings().setBuiltInZoomControls(true);
         this.getSettings().setDisplayZoomControls(false);
@@ -193,6 +195,7 @@ public class LCWV extends WebView {
         this.getSettings().setAppCacheEnabled(true);
         this.getSettings().setDatabaseEnabled(true);
         this.getSettings().setDomStorageEnabled(true);
+        this.getSettings().setSaveFormData(true);
         toptextbar = (EditText) getRootView().findViewById(R.id.toptextbar);
         pb = (ProgressBar) getRootView().findViewById(R.id.pb);
         favicon = (ImageView) getRootView().findViewById(R.id.favicon);
@@ -230,7 +233,7 @@ public class LCWV extends WebView {
                         downloadFile(result.getExtra());
                         Toast.makeText(getContext(), getContext().getString(R.string.image_downloaded), Toast.LENGTH_SHORT).show();
                         break;
-                    case SHARE_IMAGE_ID:    //FIXME: 11/1/16 00:20
+                    case SHARE_IMAGE_ID:    //FIXME
                         downloadFile(result.getExtra());
                         Intent sharePicIntent = new Intent(Intent.ACTION_SEND);
                         String FN = getFileName(result.getExtra());
@@ -282,6 +285,7 @@ public class LCWV extends WebView {
         }
     }
 
+    @SuppressWarnings("ResultOfMethodCallIgnored")
     public void downloadFile(String url) {
         File direct = new File("/storage/emulated/0/Android/data/eu.depa.browsing.stack");
 

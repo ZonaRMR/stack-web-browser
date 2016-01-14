@@ -10,6 +10,7 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
 import java.util.Random;
 
 public class Donate extends Activity {
@@ -20,8 +21,8 @@ public class Donate extends Activity {
         super.onCreate(SavedInstanceState);
         setContentView(R.layout.donate);
 
-        ImageButton bitcoin = (ImageButton) findViewById(R.id.bitcoin);
-        ImageButton paypal  = (ImageButton) findViewById(R.id.paypal);
+        ImageButton bitcoin = (ImageButton) findViewById(R.id.fab_btc);
+        ImageButton paypal  = (ImageButton) findViewById(R.id.fab_paypal);
 
         bitcoin.setOnClickListener(new View.OnClickListener() {
             @Override

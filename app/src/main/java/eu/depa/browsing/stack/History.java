@@ -26,12 +26,20 @@ public class History extends AppCompatActivity {
         setThemeFromPrefs();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.history);
-        getSupportActionBar().hide();
+        if (getSupportActionBar() != null) getSupportActionBar().hide();
         final ListView LV = (ListView) findViewById(R.id.historyList);
 
-        List<Map<String, String>> data = new ArrayList<Map<String, String>>();
+        List<Map<String, String>> data = new ArrayList<>();
         ArrayList<String> titles = getIntent().getBundleExtra("bundle").getStringArrayList("titles");
         ArrayList<String> addrs  = getIntent().getBundleExtra("bundle").getStringArrayList("addrs");
+
+        if (titles == null || addrs == null) return;
+
+        if (titles.isEmpty() || addrs.isEmpty()) {
+            TextView empty = (TextView) findViewById(R.id.empty);
+            empty.setVisibility(View.VISIBLE);
+            return;
+        }
 
         for (int i = 0; i < titles.size(); i++) {
             if (titles.get(i).equals("") || addrs.get(i).startsWith("data:")) continue;
@@ -41,11 +49,6 @@ public class History extends AppCompatActivity {
             data.add(datum);
         }
 
-        if (titles.isEmpty()) {
-            TextView empty = (TextView) findViewById(R.id.empty);
-            empty.setVisibility(View.VISIBLE);
-        }
-
         final SimpleAdapter adapter = new SimpleAdapter(this, data,
                 android.R.layout.simple_list_item_2,
                 new String[] {"title", "addr"},
@@ -53,6 +56,7 @@ public class History extends AppCompatActivity {
 
         LV.setAdapter(adapter);
         LV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @SuppressWarnings("deprecation")
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 TwoLineListItem item = (TwoLineListItem) view;
