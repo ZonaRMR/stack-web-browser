@@ -15,6 +15,7 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.ViewConfiguration;
+import android.widget.Toast;
 
 @SuppressWarnings("deprecation")
 
@@ -65,8 +66,16 @@ public class Settings extends PreferenceActivity{
         Preference version = findPreference("vers");
         version.setSummary(BuildConfig.VERSION_NAME);
         version.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            int clicks = 0;
             @Override
             public boolean onPreferenceClick(Preference preference) {
+                clicks++;
+                if (clicks == 10) {
+                    Toast.makeText(Settings.this,
+                            getResources().getString(R.string.stopcklicking),
+                            Toast.LENGTH_SHORT).show();
+                    clicks = 0;
+                }
                 return false;
             }
         });
