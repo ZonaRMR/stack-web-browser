@@ -70,7 +70,7 @@ public class Settings extends PreferenceActivity{
             @Override
             public boolean onPreferenceClick(Preference preference) {
                 clicks++;
-                if (clicks == 10) {
+                if (clicks >= 10) {
                     Toast.makeText(Settings.this,
                             getResources().getString(R.string.stopcklicking),
                             Toast.LENGTH_SHORT).show();
