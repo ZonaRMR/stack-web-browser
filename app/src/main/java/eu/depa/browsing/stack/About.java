@@ -58,8 +58,15 @@ public class About extends Activity {
                     public void onClick(DialogInterface dialog, int which) {
                         switch (which) {
                             case 0:
-                                thing = "BUG";
-                                break;
+                                PackageManager pm = getPackageManager();
+                                Intent newTabIntent = pm.getLaunchIntentForPackage("eu.depa.browsing.stack");
+                                newTabIntent.setAction(Intent.ACTION_VIEW);
+                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+                                    newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
+                                newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                newTabIntent.setData(Uri.parse("http://github.com/deeepaaa/stack-web-browser/issues/new"));
+                                startActivity(newTabIntent);
+                                return;
                             case 1:
                                 thing = "ASK";
                                 break;
@@ -72,7 +79,8 @@ public class About extends Activity {
 
                         emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
                         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "STACK_" + thing + ": ");
-                        emailIntent.putExtra(Intent.EXTRA_TEXT, "API: " + android.os.Build.VERSION.SDK_INT + "\n");
+                        emailIntent.putExtra(Intent.EXTRA_TEXT, "API: " + android.os.Build.VERSION.SDK_INT +
+                                "\nVERSION: " + BuildConfig.VERSION_CODE);
 
                         try {
                             startActivity(emailIntent);

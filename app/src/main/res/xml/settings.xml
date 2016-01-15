@@ -12,17 +12,13 @@
         android:defaultValue="def"
         android:summary="@string/color_scheme"/>
 
-    <SwitchPreference
+    <CheckBoxPreference
         android:key="showDots"
         android:title="@string/showDots"
         android:summary="@string/dotssumm"
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:id="@+id/showDots"/>
     </PreferenceCategory>
-
-    <Preference
-        android:selectable="false"
-        android:layout="@layout/divider"/>
 
     <PreferenceCategory android:title="@string/functionality">
         <ListPreference
@@ -40,10 +36,6 @@
             android:hint="http://&#8230;"/>
     </PreferenceCategory>
 
-    <Preference
-        android:selectable="false"
-        android:layout="@layout/divider"/>
-
     <PreferenceCategory android:title="@string/tracking">
         <ListPreference
             android:key="location"
@@ -53,21 +45,23 @@
             android:entryValues="@array/locopvals"
             android:defaultValue="ask"/>
 
-        <SwitchPreference
+        <CheckBoxPreference
             android:key="DNT"
             android:title="@string/notrack"
             android:summary="@string/notrackspec"
             android:defaultValue="true"/>
     </PreferenceCategory>
 
-    <Preference
-        android:selectable="false"
-        android:layout="@layout/divider"/>
+    <PreferenceCategory android:title="@string/menu_about">
+        <Preference
+            android:key="showGPL"
+            android:title="@string/showGPL"
+            android:summary="@string/GPLsummary"
+            android:selectable="true"/>
 
-    <Preference
-        android:key="showGPL"
-        android:title="@string/showGPL"
-        android:summary="@string/GPLsummary"
-        android:selectable="true"/>
+        <Preference
+            android:key="vers"
+            android:title="@string/version"/>
+    </PreferenceCategory>
 
 </PreferenceScreen>

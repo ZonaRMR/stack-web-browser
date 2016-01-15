@@ -49,7 +49,7 @@
     <string name="share_link">Share link</string>
     <string name="added_to_home">Added to home</string>
     <string name="location">Location</string>
-    <string name="askuselocation">Provide web pages with your precise location?</string>
+    <string name="askuselocation">Provide the current web page with your precise location?</string>
     <string name="yes">YES</string>
     <string name="no">NO</string>
     <string name="tracking">Tracking</string>
@@ -66,6 +66,7 @@
     <string name="openInNewTab">Open in new tab</string>
     <string name="openNewTab">Open a new tab</string>
     <string name="nohistory">There\'s nothing here</string>
-    <string name="alphathx">Special thanks to my alpha tester\nAlessandro Menabue</string>
+    <string name="alphathx">Special thanks to\nmy alpha tester\nAlessandro Menabue</string>
     <string name="dust">dust</string>
+    <string name="version">Version</string>
 </resources>

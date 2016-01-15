@@ -2339,12 +2339,11 @@ containing a value of this type.
         public static final int design_snackbar_background=0x7f020072;
         public static final int dots_white=0x7f020073;
         public static final int github=0x7f020074;
-        public static final int line=0x7f020075;
-        public static final int mail=0x7f020076;
-        public static final int notification_template_icon_bg=0x7f02007a;
-        public static final int paypal=0x7f020077;
-        public static final int pin=0x7f020078;
-        public static final int x=0x7f020079;
+        public static final int mail=0x7f020075;
+        public static final int notification_template_icon_bg=0x7f020079;
+        public static final int paypal=0x7f020076;
+        public static final int pin=0x7f020077;
+        public static final int x=0x7f020078;
     }
     public static final class id {
         public static final int X=0x7f0e007a;
@@ -2559,23 +2558,22 @@ containing a value of this type.
         public static final int design_navigation_item_subheader=0x7f040023;
         public static final int design_navigation_menu=0x7f040024;
         public static final int design_navigation_menu_item=0x7f040025;
-        public static final int divider=0x7f040026;
-        public static final int donate=0x7f040027;
-        public static final int gpl=0x7f040028;
-        public static final int history=0x7f040029;
-        public static final int notification_media_action=0x7f04002a;
-        public static final int notification_media_cancel_action=0x7f04002b;
-        public static final int notification_template_big_media=0x7f04002c;
-        public static final int notification_template_big_media_narrow=0x7f04002d;
-        public static final int notification_template_lines=0x7f04002e;
-        public static final int notification_template_media=0x7f04002f;
-        public static final int notification_template_part_chronometer=0x7f040030;
-        public static final int notification_template_part_time=0x7f040031;
-        public static final int select_dialog_item_material=0x7f040032;
-        public static final int select_dialog_multichoice_material=0x7f040033;
-        public static final int select_dialog_singlechoice_material=0x7f040034;
-        public static final int support_simple_spinner_dropdown_item=0x7f040035;
-        public static final int tabs_view=0x7f040036;
+        public static final int donate=0x7f040026;
+        public static final int gpl=0x7f040027;
+        public static final int history=0x7f040028;
+        public static final int notification_media_action=0x7f040029;
+        public static final int notification_media_cancel_action=0x7f04002a;
+        public static final int notification_template_big_media=0x7f04002b;
+        public static final int notification_template_big_media_narrow=0x7f04002c;
+        public static final int notification_template_lines=0x7f04002d;
+        public static final int notification_template_media=0x7f04002e;
+        public static final int notification_template_part_chronometer=0x7f04002f;
+        public static final int notification_template_part_time=0x7f040030;
+        public static final int select_dialog_item_material=0x7f040031;
+        public static final int select_dialog_multichoice_material=0x7f040032;
+        public static final int select_dialog_singlechoice_material=0x7f040033;
+        public static final int support_simple_spinner_dropdown_item=0x7f040034;
+        public static final int tabs_view=0x7f040035;
     }
     public static final class menu {
         public static final int menu_email=0x7f0f0000;
@@ -2591,7 +2589,7 @@ containing a value of this type.
     }
     public static final class string {
         public static final int GPLsummary=0x7f070031;
-        public static final int HP=0x7f070075;
+        public static final int HP=0x7f070076;
         public static final int abc_action_bar_home_description=0x7f070000;
         public static final int abc_action_bar_home_description_format=0x7f070001;
         public static final int abc_action_bar_home_subtitle_description_format=0x7f070002;
@@ -2616,17 +2614,17 @@ containing a value of this type.
         public static final int addtohome=0x7f070034;
         public static final int alphathx=0x7f070035;
         public static final int app_name=0x7f070036;
-        public static final int appbar_scrolling_view_behavior=0x7f070076;
+        public static final int appbar_scrolling_view_behavior=0x7f070077;
         public static final int appearance=0x7f070037;
         public static final int ask=0x7f070038;
         public static final int askdownload=0x7f070039;
         public static final int askuselocation=0x7f07003a;
-        public static final int auth_google_play_services_client_facebook_display_name=0x7f070077;
-        public static final int auth_google_play_services_client_google_display_name=0x7f070078;
+        public static final int auth_google_play_services_client_facebook_display_name=0x7f070078;
+        public static final int auth_google_play_services_client_google_display_name=0x7f070079;
         public static final int bar_hint=0x7f07003b;
         public static final int bitcoin_noclient=0x7f07003c;
         public static final int cantLoad=0x7f07003d;
-        public static final int character_counter_pattern=0x7f070079;
+        public static final int character_counter_pattern=0x7f07007a;
         public static final int checkConn=0x7f07003e;
         public static final int checkTypos=0x7f07003f;
         public static final int color_scheme=0x7f070040;
@@ -2708,10 +2706,11 @@ containing a value of this type.
         public static final int suggest=0x7f07006e;
         public static final int theme=0x7f07006f;
         public static final int tracking=0x7f070070;
-        public static final int view_image=0x7f070071;
-        public static final int wanna_restart=0x7f070072;
-        public static final int web_isPermitted=0x7f070073;
-        public static final int yes=0x7f070074;
+        public static final int version=0x7f070071;
+        public static final int view_image=0x7f070072;
+        public static final int wanna_restart=0x7f070073;
+        public static final int web_isPermitted=0x7f070074;
+        public static final int yes=0x7f070075;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0a007e;

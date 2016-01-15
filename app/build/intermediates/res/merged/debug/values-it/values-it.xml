@@ -36,12 +36,12 @@
     <string name="about_text">Lo sviluppo di Stack\nè seguito da\nAlessandro De Pasquale\n\nPotete contattarmi o seguire lo sviluppo di Stack coi bottoni di seguito.</string>
     <string name="added_to_home">Scorciatoia aggiunta</string>
     <string name="addtohome">Aggiungi ad home</string>
-    <string name="alphathx">Un ringraziamento speciale al mio alpha tester\nAlessandro Menabue</string>
+    <string name="alphathx">Un ringraziamento speciale\nal mio alpha tester\nAlessandro Menabue</string>
     <string name="app_name">Stack</string>
     <string name="appearance">Aspetto</string>
     <string name="ask">Fai una domanda</string>
     <string name="askdownload">Permettere il download?</string>
-    <string name="askuselocation">Fornire la posizione precisa ai siti internet che visiti?</string>
+    <string name="askuselocation">Fornire la posizione precisa al sito internet attuale?</string>
     <string name="bar_hint">Ricerca o inserisci indirizzo</string>
     <string name="bitcoin_noclient">Nessuna applicazione adatta</string>
     <string name="cantLoad">Se non riesci a caricare nemmeno altre pagine,</string>
@@ -93,7 +93,7 @@
     <string name="image_downloaded">L\'immagine è stata scaricata</string>
     <string name="insteadof">invece che</string>
     <string name="location">Posizione</string>
-    <string name="menu_about">Info</string>
+    <string name="menu_about">Informazioni</string>
     <string name="menu_donate">Dona</string>
     <string name="menu_history">Cronologia</string>
     <string name="menu_page">Pagina…</string>
@@ -126,6 +126,7 @@
     <string name="suggest">Fornisci un suggerimento</string>
     <string name="theme">Tema</string>
     <string name="tracking">Monitoraggio</string>
+    <string name="version">Versione</string>
     <string name="view_image">Visualizza immagine</string>
     <string name="wanna_restart">Riavviare l\'applicazione adesso?</string>
     <string name="web_isPermitted">Se la tua rete utilizza misure di sicurezza come firewall o proxy, assicurati che Stack abbia il permesso di accedere ad Internet.</string>

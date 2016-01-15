@@ -74,9 +74,10 @@ public class LCWV extends WebView {
         }
 
         private void ErrorPage(WebView view, String url) {
-            String customErrorPageHtml = "<html>" +
+            String customErrorPageHtml =
+                    "<html>" +
                     "  <head>" +
-                    "    <title>" + getString(R.string.pageNotLoaded) + "</title>" +
+                    "    <title>" + url + "</title>" +
                     "  </head>" +
                     "  <body style=\"font-family: 'Open Sans'; text-align: center\">" +
                     "    <br>" +

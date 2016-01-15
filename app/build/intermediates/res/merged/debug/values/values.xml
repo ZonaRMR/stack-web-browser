@@ -337,13 +337,13 @@
     <string name="about_text">The development of stack is led by\nAlessandro De Pasquale\n\nYou may get to me or follow the development of Stack via the buttons below.</string>
     <string name="added_to_home">Added to home</string>
     <string name="addtohome">Add to home screen</string>
-    <string name="alphathx">Special thanks to my alpha tester\nAlessandro Menabue</string>
+    <string name="alphathx">Special thanks to\nmy alpha tester\nAlessandro Menabue</string>
     <string name="app_name">Stack</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="appearance">Appearance</string>
     <string name="ask">Ask a question</string>
     <string name="askdownload">Download file?</string>
-    <string name="askuselocation">Provide web pages with your precise location?</string>
+    <string name="askuselocation">Provide the current web page with your precise location?</string>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
     <string name="bar_hint">Search or enter address</string>
@@ -431,6 +431,7 @@
     <string name="suggest">Make a suggestion</string>
     <string name="theme">Theme</string>
     <string name="tracking">Tracking</string>
+    <string name="version">Version</string>
     <string name="view_image">View image</string>
     <string name="wanna_restart">Restart the application now?</string>
     <string name="web_isPermitted">If your phone or network is protected by a firewall or proxy, make sure that Stack is permitted to access the Web.</string>

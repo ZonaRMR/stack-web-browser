@@ -2,7 +2,7 @@
 
     <string name="app_name">Stack</string>
     <string name="bar_hint">Ricerca o inserisci indirizzo</string>
-    <string name="menu_about">Info</string>
+    <string name="menu_about">Informazioni</string>
     <string name="menu_settings">Impostazioni</string>
     <string name="menu_donate">Dona</string>
     <string name="about_text">Lo sviluppo di Stack\nè seguito da\nAlessandro De Pasquale\n\nPotete contattarmi o seguire lo sviluppo di Stack coi bottoni di seguito.</string>
@@ -48,7 +48,7 @@
     <string name="share_image">Condividi immagine</string>
     <string name="share_link">Condividi link</string>
     <string name="view_image">Visualizza immagine</string>
-    <string name="askuselocation">Fornire la posizione precisa ai siti internet che visiti?</string>
+    <string name="askuselocation">Fornire la posizione precisa al sito internet attuale?</string>
     <string name="location">Posizione</string>
     <string name="no">NO</string>
     <string name="yes">SÌ</string>
@@ -66,6 +66,7 @@
     <string name="send_email">Contatta lo sviluppatore</string>
     <string name="openNewTab">Apri una nuova scheda</string>
     <string name="nohistory">La cronologia è ancora vuota</string>
-    <string name="alphathx">Un ringraziamento speciale al mio alpha tester\nAlessandro Menabue</string>
+    <string name="alphathx">Un ringraziamento speciale\nal mio alpha tester\nAlessandro Menabue</string>
     <string name="dust">polvere</string>
+    <string name="version">Versione</string>
 </resources>

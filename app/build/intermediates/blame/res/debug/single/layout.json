@@ -180,10 +180,6 @@
         "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_big_media.xml"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/layout/divider.xml",
-        "source": "/home/depa/Desktop/Stack/app/src/main/res/layout/divider.xml"
-    },
-    {
         "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
         "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_chronometer.xml"
     },

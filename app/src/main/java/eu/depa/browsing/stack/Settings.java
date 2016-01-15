@@ -62,6 +62,14 @@ public class Settings extends PreferenceActivity{
                 return false;
             }
         });
+        Preference version = findPreference("vers");
+        version.setSummary(BuildConfig.VERSION_NAME);
+        version.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                return false;
+            }
+        });
     }
 
     public void setThemeFromPrefs () {
@@ -112,15 +120,5 @@ public class Settings extends PreferenceActivity{
         } catch (Exception ex) {
             Log.e("settings.doRestart", "Was not able to restart application");
         }
-    }
-
-    public boolean mListStyled;
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        onCreate(null);
-        if (!mListStyled) this.getListView().setDivider(null);
-        mListStyled = true;
     }
 }
