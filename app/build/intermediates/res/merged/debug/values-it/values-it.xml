@@ -123,6 +123,7 @@
     <string name="showDots">Mostra il pulsante menu</string>
     <string name="showGPL">Rilasciato sotto la licenza GNU GPLv3.0</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stopcklicking">Smettila di toccarmi</string>
     <string name="suggest">Fornisci un suggerimento</string>
     <string name="theme">Tema</string>
     <string name="tracking">Monitoraggio</string>

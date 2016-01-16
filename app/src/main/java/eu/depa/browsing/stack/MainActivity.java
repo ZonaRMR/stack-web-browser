@@ -264,7 +264,7 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
 
     public void setThemeFromPrefs () {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-        switch(sharedPref.getString("theme", "")) {
+        switch(sharedPref.getString("theme", "def")) {
             case "def":
                 setTheme(R.style.Cyan);
                 return;
@@ -289,7 +289,7 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         EditText toptextbar = (EditText) findViewById(R.id.toptextbar);
         RelativeLayout topelements = (RelativeLayout) findViewById(R.id.topelements);
-        switch(sharedPref.getString("theme", "")) {
+        switch(sharedPref.getString("theme", "def")) {
             case "def":
                 toptextbar.setHighlightColor(Color.rgb(128, 222, 234)); //200
                 topelements.setBackgroundColor(Color.rgb(0, 131, 143)); //800
