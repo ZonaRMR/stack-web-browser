@@ -1,6 +1,7 @@
 package eu.depa.browsing.stack;
 
 import android.annotation.SuppressLint;
+import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.DownloadManager;
 import android.content.ClipData;
@@ -11,6 +12,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Build;
@@ -104,17 +106,6 @@ public class LCWV extends WebView {
             view.loadData(customErrorPageHtml, "text/html", null);
             toptextbar.setText(url);
         }
-
-        @Override
-        public void onPageFinished(WebView webView, String url) {
-            try{
-                if (url.startsWith("<html>") || url.endsWith("</html>")) toptextbar.setText(webView.getTitle());
-                else toptextbar.setText(url.split("//")[1]);
-            }catch (Exception e) {
-                e.printStackTrace();
-            }
-
-        }
     };
     WebChromeClient webChromeClient = new WebChromeClient(){
         @Override
@@ -165,6 +156,30 @@ public class LCWV extends WebView {
             builder.setCancelable(false);
             builder.setIcon(getResources().getDrawable(R.drawable.pin));
             builder.show();
+        }
+
+        @Override
+        public void onReceivedTitle(WebView view, String title) {
+            super.onReceivedTitle(view, title);
+            if (getUrl().startsWith("<html>") || getUrl().endsWith("</html>")){
+                toptextbar.setText(getTitle());
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                    ActivityManager.TaskDescription taskDescription = new ActivityManager.TaskDescription(
+                            getString(R.string.pageNotLoaded),
+                            null,
+                            Color.rgb(221, 221, 221));
+                    ((MainActivity)getContext()).setTaskDescription(taskDescription);
+                }
+            }
+            else{
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                    ActivityManager.TaskDescription taskDescription = new ActivityManager.TaskDescription(
+                            getTitle().split("-")[0] + " - Stack",
+                            null,
+                            Color.rgb(221, 221, 221));
+                    ((MainActivity)getContext()).setTaskDescription(taskDescription);
+                }
+            }
         }
     };
     DownloadListener DListener = new DownloadListener() {
