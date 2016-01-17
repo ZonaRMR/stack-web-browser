@@ -40,7 +40,7 @@
         <ListPreference
             android:key="location"
             android:title="@string/location"
-            android:dialogTitle="@string/askuselocation"
+            android:dialogTitle="@string/askLocGeneral"
             android:entries="@array/location_options"
             android:entryValues="@array/locopvals"
             android:defaultValue="ask"/>

@@ -70,4 +70,5 @@
     <string name="dust">dust</string>
     <string name="version">Version</string>
     <string name="stopcklicking">Stop clicking me</string>
+    <string name="askLocGeneral">Should your precise location be provided?</string>
 </resources>
