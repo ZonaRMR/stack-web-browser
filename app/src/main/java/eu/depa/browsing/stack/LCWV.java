@@ -12,12 +12,15 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.preference.PreferenceManager;
+import android.provider.MediaStore;
 import android.util.AttributeSet;
+import android.util.Base64;
 import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,6 +35,9 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.HashMap;
 
 @SuppressWarnings("deprecation")
@@ -221,11 +227,12 @@ public class LCWV extends WebView {
     }
 
     final int SHARE_LINK_ID = 0,
-            VIEW_IMAGE_ID = 1,
-            SAVE_IMAGE_ID = 2,
-            SHARE_IMAGE_ID = 3,
-            COPY_ID = 4,
-            NEW_TAB_ID = 5;
+            VIEW_IMAGE_ID   = 1,
+            SAVE_IMAGE_ID   = 2,
+            SHARE_IMAGE_ID  = 3,
+            COPY_ID         = 4,
+            NEW_TAB_ID      = 5,
+            SHARE_RAW_ID    = 6;
 
     @Override
     protected void onCreateContextMenu(ContextMenu menu) {
@@ -249,14 +256,8 @@ public class LCWV extends WebView {
                         downloadFile(result.getExtra());
                         Toast.makeText(getContext(), getContext().getString(R.string.image_downloaded), Toast.LENGTH_SHORT).show();
                         break;
-                    case SHARE_IMAGE_ID:    //FIXME
-                        downloadFile(result.getExtra());
-                        Intent sharePicIntent = new Intent(Intent.ACTION_SEND);
-                        String FN = getFileName(result.getExtra());
-                        File picFile = new File("/storage/emulated/0/Android/data/eu.depa.browsing.stack", FN);
-                        sharePicIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(picFile));
-                        sharePicIntent.setType("image/*");
-                        getContext().startActivity(sharePicIntent);
+                    case SHARE_IMAGE_ID:
+                        shareFromUrl(result.getExtra());
                         break;
                     case COPY_ID:
                         ClipboardManager clipMan = (ClipboardManager) getContext().getSystemService(Context.CLIPBOARD_SERVICE);
@@ -273,6 +274,20 @@ public class LCWV extends WebView {
                         newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         newTabIntent.setData(Uri.parse(result.getExtra()));
                         getContext().startActivity(newTabIntent);
+                        break;
+                    case SHARE_RAW_ID:
+                        String encodedDataString = result.getExtra().replace("data:image/jpeg;base64,","");
+                        encodedDataString = encodedDataString.replace("data:image/jpg;base64,","");
+                        encodedDataString = encodedDataString.replace("data:image/png;base64,","");
+                        byte[] imageAsBytes = Base64.decode(encodedDataString.getBytes(), 0);
+                        Bitmap finalBM = BitmapFactory.decodeByteArray(imageAsBytes, 0, imageAsBytes.length);
+                        Intent intent = new Intent(Intent.ACTION_SEND);
+                        String path = MediaStore.Images.Media.insertImage(getContext().getContentResolver(), finalBM, "", null);
+                        Uri finalUri = Uri.parse(path);
+
+                        intent.putExtra(Intent.EXTRA_STREAM, finalUri);
+                        intent.setType("image/*");
+                        getContext().startActivity(intent);
                 }
                 return true;
             }
@@ -284,6 +299,7 @@ public class LCWV extends WebView {
                 menu.setHeaderTitle(result.getExtra());
                 if (result.getExtra().startsWith("data:image")) {
                     menu.add(0, VIEW_IMAGE_ID, 0, getContext().getString(R.string.view_image)).setOnMenuItemClickListener(handler);
+                    menu.add(0, SHARE_RAW_ID, 0, getString(R.string.share_image)).setOnMenuItemClickListener(handler);
                 }
                 else {
                     menu.add(0, SAVE_IMAGE_ID, 0, getContext().getString(R.string.save_image)).setOnMenuItemClickListener(handler);
@@ -301,9 +317,43 @@ public class LCWV extends WebView {
         }
     }
 
+    public void shareFromUrl(final String extra)  {
+
+        Thread thread = new Thread(new Runnable(){
+            @Override
+            public void run() {
+                try {
+                    Intent intent = new Intent(Intent.ACTION_SEND);
+                    URL url  = null;
+                    try {
+                        url = new URL(extra);
+                    } catch (MalformedURLException e) {
+                        e.printStackTrace();
+                    }
+                    Bitmap image = null;
+                    try {
+                        if (url != null) image = BitmapFactory.decodeStream(url.openConnection().getInputStream());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    String path = MediaStore.Images.Media.insertImage(getContext().getContentResolver(), image, "", null);
+                    Uri finalUri = Uri.parse(path);
+
+                    intent.putExtra(Intent.EXTRA_STREAM, finalUri);
+                    intent.setType("image/*");
+                    getContext().startActivity(intent);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        thread.start();
+    }
+
     @SuppressWarnings("ResultOfMethodCallIgnored")
     public void downloadFile(String url) {
-        File direct = new File("/storage/emulated/0/Android/data/eu.depa.browsing.stack");
+        File direct = new File("/storage/emulated/0/Download");
 
         if (!direct.exists())
             direct.mkdirs();
