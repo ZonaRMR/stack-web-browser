@@ -26,7 +26,7 @@
     <string name="notrackspec">Whether a DNT request should be sent</string>
     <string name="wanna_restart">Restart the application now?</string>
     <string name="restart_cap">RESTART</string>
-    <string name="plzNo">CANCEL</string>
+    <string name="plzNo">Cancel</string>
     <string name="restarting">Restarting app…</string>
     <string name="repBug">Report a bug</string>
     <string name="ask">Ask a question</string>
@@ -71,4 +71,5 @@
     <string name="version">Version</string>
     <string name="stopcklicking">Stop clicking me</string>
     <string name="askLocGeneral">Should your precise location be provided?</string>
+    <string name="image">Image</string>
 </resources>

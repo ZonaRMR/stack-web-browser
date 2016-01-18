@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="location_options">
+        <item name="ask">Pídeme cada vez</item>
+        <item name="doprovide">Proporciona siempre</item>
+        <item name="dontprovide">No proporciones nunca</item>
+    </string-array>
+    <string-array name="themes">
+        <item name="Default">Default</item>
+        <item name="Grigio blu">Azul gris</item>
+        <item name="Roccia">Roca</item>
+        <item name="Verde">Verde</item>
+        <item name="Blu">Azul</item>
+        <item name="Grigio">Gris</item>
+    </string-array>
+    <string name="GPLsummary">Tocar para ver la licencia</string>
+    <string name="HP" translatable="false">http://duckduckgo.com</string>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Ir a la pantalla de inicio"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -19,6 +34,22 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Compartir con"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Compartir con %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Contraer"</string>
+    <string name="about_text">El desarrollo de Stack es dirigido por\nAlessandro De Pasquale\n\nPodéis contactarme o seguir el desarrollo vìa los botones debajo.</string>
+    <string name="added_to_home">Añadido a la pantalla de inicio</string>
+    <string name="addtohome">Añadir a la pantalla de inicio</string>
+    <string name="alphathx">Muchas gracias a\nmi alpha tester\nAlessandro Menabue</string>
+    <string name="app_name">Stack</string>
+    <string name="appearance">Aspecto</string>
+    <string name="ask">Pedir algo</string>
+    <string name="askLocGeneral">Proporcionar tu posición exacta?</string>
+    <string name="askdownload">Descargar?</string>
+    <string name="askuselocation">Proporcionar tu posición?</string>
+    <string name="bar_hint">Término de búsqueda o dirección</string>
+    <string name="bitcoin_noclient">Ninguna aplicación adecuada</string>
+    <string name="cantLoad">Si no logras cargar ninguna página,</string>
+    <string name="checkConn">controla tu conexión.</string>
+    <string name="checkTypos">Controla que la dirección no contenge errores como</string>
+    <string name="color_scheme">Necesita que se reinicie la aplicación</string>
     <string msgid="2785372108150982144" name="common_google_play_services_api_unavailable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> necesita uno o varios servicios de Google Play que no están disponibles en este momento. Ponte en contacto con el desarrollador para obtener ayuda."</string>
     <string msgid="7334167077229901382" name="common_google_play_services_enable_button">"Habilitar los Servicios de Google Play"</string>
     <string msgid="2016066508617425489" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no funcionará hasta que no habilites los Servicios de Google Play."</string>
@@ -48,5 +79,60 @@
     <string msgid="311697239335516384" name="common_open_on_phone">"Abrir en teléfono"</string>
     <string msgid="3156914698180786012" name="common_signin_button_text">"Iniciar sesión"</string>
     <string msgid="1483290677806110088" name="common_signin_button_text_long">"Iniciar sesión con Google"</string>
+    <string name="copied">Dirección copiada</string>
+    <string name="copy_image_link">Copiar dirección de la imagen</string>
+    <string name="copy_link">Copiar dirección</string>
+    <string name="donate">Donando, ayudas el desarrollo de esta aplicación.</string>
+    <string name="dotssumm">Necesita un botón menu físico</string>
+    <string name="download">Descarga</string>
+    <string name="dust">polvo</string>
+    <string name="earliest_reached">Ninguna página antes de la actual</string>
+    <string name="easter_toast">Encontraste un huevo de Pascua!</string>
+    <string name="email_noclient">Ninguna aplicación adecuada</string>
+    <string name="file_downloaded">El archivo ha sido descargado</string>
+    <string name="file_downloading">El archivo está siendo descargado</string>
+    <string name="functionality">Funcionalidad</string>
+    <string name="image">Imagen</string>
+    <string name="image_downloaded">La imagen ha sido descargada</string>
+    <string name="insteadof">en vez de</string>
+    <string name="location">Posición</string>
+    <string name="menu_about">Informaciones</string>
+    <string name="menu_donate">Donar</string>
+    <string name="menu_history">Historial</string>
+    <string name="menu_page">Página…</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="no">NO</string>
+    <string name="nohistory">No hay nada aquí</string>
+    <string name="notrack">Pide que no seas rastreado</string>
+    <string name="notrackspec">Enviar una directiva DNT</string>
+    <string name="openInApp">Abrir con otra aplicación</string>
+    <string name="openInNewTab">Abrir en una nueva pestaña</string>
+    <string name="openNewTab">Abrir una nueva pestaña</string>
+    <string name="pageNotLoaded">No fue posible cargar la página</string>
+    <string name="picksergine">Selecciona un motor</string>
+    <string name="picktheme">Selecciona a un tema</string>
+    <string name="plzNo">Cancelar</string>
+    <string name="reload">Recargar</string>
+    <string name="repBug">Comunicar de un bug</string>
+    <string name="restart_cap">REINICIAR</string>
+    <string name="restarting">Reinicio…</string>
+    <string name="save_image">Guardar imagen</string>
+    <string name="search_engine">Motor de búsqueda</string>
+    <string name="send_email">Contacta el desarrollador</string>
+    <string name="share">Compartir</string>
+    <string name="share_image">Compartir imagen</string>
+    <string name="share_link">Compartir dirección</string>
+    <string name="sharewith">Comparte con…</string>
+    <string name="showDots">Mostrar el botón del menu</string>
+    <string name="showGPL">Publicado bajo la licencia GNU GPLv3.0</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"+999"</string>
+    <string name="stopcklicking">Deja de tocarme</string>
+    <string name="suggest">Dar un consejo</string>
+    <string name="theme">Tema</string>
+    <string name="tracking">Rastreo</string>
+    <string name="version">Versión</string>
+    <string name="view_image">Ver imagen</string>
+    <string name="wanna_restart">Reiniciar la aplicación ahora?</string>
+    <string name="web_isPermitted">Si tu teléfono está protegido por un firewall o proxy, asegúrate que Stack tenga el permiso para conectarse.</string>
+    <string name="yes">SÍ</string>
 </resources>

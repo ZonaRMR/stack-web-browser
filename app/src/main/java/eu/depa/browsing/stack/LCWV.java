@@ -298,6 +298,7 @@ public class LCWV extends WebView {
             case HitTestResult.SRC_IMAGE_ANCHOR_TYPE:
                 menu.setHeaderTitle(result.getExtra());
                 if (result.getExtra().startsWith("data:image")) {
+                    menu.setHeaderTitle(getString(R.string.image));
                     menu.add(0, VIEW_IMAGE_ID, 0, getContext().getString(R.string.view_image)).setOnMenuItemClickListener(handler);
                     menu.add(0, SHARE_RAW_ID, 0, getString(R.string.share_image)).setOnMenuItemClickListener(handler);
                 }

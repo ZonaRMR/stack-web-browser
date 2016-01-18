@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:ns1="http://schemas.android.com/tools">
     <string-array name="location_options">
         <item name="ask">Ask me every time</item>
         <item name="doprovide">Always provide</item>
@@ -396,6 +396,7 @@
     <string name="file_downloaded">The file was downloaded</string>
     <string name="file_downloading">The file is now downloading</string>
     <string name="functionality">Functionality</string>
+    <string name="image">Image</string>
     <string name="image_downloaded">The image has been downloaded</string>
     <string name="insteadof">instead of</string>
     <string name="location">Location</string>
@@ -414,7 +415,7 @@
     <string name="pageNotLoaded">The page could not be loaded</string>
     <string name="picksergine">Pick a search engine</string>
     <string name="picktheme">Pick a theme</string>
-    <string name="plzNo">CANCEL</string>
+    <string name="plzNo">Cancel</string>
     <string name="reload">Reload</string>
     <string name="repBug">Report a bug</string>
     <string name="restart_cap">RESTART</string>

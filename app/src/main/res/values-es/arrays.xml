@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="themes">
+        <item name="Default">Default</item>
+        <item name="Grigio blu">Azul gris</item>
+        <item name="Roccia">Roca</item>
+        <item name="Verde">Verde</item>
+        <item name="Blu">Azul</item>
+        <item name="Grigio">Gris</item>
+    </string-array>
+
+    <string-array name="location_options">
+        <item name="ask">Pídeme cada vez</item>
+        <item name="doprovide">Proporciona siempre</item>
+        <item name="dontprovide">No proporciones nunca</item>
+    </string-array>
+</resources>

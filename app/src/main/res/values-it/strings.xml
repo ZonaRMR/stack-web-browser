@@ -71,4 +71,5 @@
     <string name="version">Versione</string>
     <string name="stopcklicking">Smettila di toccarmi</string>
     <string name="askLocGeneral">Fornire la tua posizione precisa?</string>
+    <string name="image">Immagine</string>
 </resources>
