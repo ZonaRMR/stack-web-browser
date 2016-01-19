@@ -46,7 +46,9 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Locale;
+import java.util.Vector;
 
 @SuppressWarnings({"deprecation"})
 @SuppressLint("SetJavaScriptEnabled")
@@ -332,7 +334,8 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         builder.setTitle(getString(R.string.menu_page));
         builder.setItems(new CharSequence[]{getString(R.string.openInApp),
                         getString(R.string.share),
-                        getString(R.string.addtohome)},
+                        getString(R.string.addtohome),
+                        getString(R.string.addtoBM)},
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -346,10 +349,26 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
                             case 2:
                                 addPagetoHome();
                                 break;
+                            case 3:
+                                bookmarkCurrent();
+                                break;
                         }
                     }
                 });
         builder.create().show();
+    }
+
+    private void bookmarkCurrent() {
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+        Vector<String> foldersArr = new Vector<>();
+        String folders = sharedPref.getString("folders", getString(R.string.favorites) + ";;" +
+                                                         getString(R.string.readlater));
+        Collections.addAll(foldersArr, folders.split(";;"));
+        SpinnerDialog mSD = new SpinnerDialog(this, foldersArr);
+        mSD.setTitle(R.string.add_bm);
+        mSD.show();
+
+        //sharedPref.edit().putString("bMarks", sharedPref.getString("bMarks", "") + );
     }
 
     public void goToDonate (MenuItem item) {

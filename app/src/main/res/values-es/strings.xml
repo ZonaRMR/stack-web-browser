@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--
+        á 225
+        é 233
+        í 237
+        ó 243
+        ú 250
+    -->
     <string name="app_name">Stack</string>
     <string name="bar_hint">Término de búsqueda o dirección</string>
     <string name="menu_about">Informaciones</string>
@@ -9,18 +16,17 @@
     <string name="email_noclient">Ninguna aplicación adecuada</string>
     <string name="donate">Donando, ayudas el desarrollo de esta aplicación.</string>
     <string name="bitcoin_noclient">Ninguna aplicación adecuada</string>
-    <string name="HP" translatable="false">http://duckduckgo.com</string>
     <string name="earliest_reached">Ninguna página antes de la actual</string>
     <string name="easter_toast">Encontraste un huevo de Pascua!</string>
     <string name="menu_page">Página&#8230;</string>
     <string name="openInApp">Abrir con otra aplicación</string>
     <string name="share">Compartir</string>
-    <string name="addtohome">Añadir a la pantalla de inicio</string>
+    <string name="addtohome">Añadir a la pantalla inicial</string>
     <string name="sharewith">Comparte con&#8230;</string>
-    <string name="search_engine">Motor de búsqueda</string>
-    <string name="picksergine">Selecciona un motor</string>
+    <string name="search_engine">Buscador</string>
+    <string name="picksergine">Elige un buscador</string>
     <string name="theme">Tema</string>
-    <string name="picktheme">Selecciona a un tema</string>
+    <string name="picktheme">Elige a un tema</string>
     <string name="color_scheme">Necesita que se reinicie la aplicación</string>
     <string name="reload">Recargar</string>
     <string name="notrack">Pide que no seas rastreado</string>
@@ -38,12 +44,13 @@
     <string name="showGPL">Publicado bajo la licencia GNU GPLv3.0</string>
     <string name="GPLsummary">Tocar para ver la licencia</string>
     <string name="dotssumm">Necesita un botón menu físico</string>
-    <string name="pageNotLoaded">No fue posible cargar la página</string>
-    <string name="checkTypos">Controla que la dirección no contenge errores como</string>
+    <string name="pageNotLoaded">No fue posible cargar la p&amp;#225;gina</string>
+    <string name="pageNotLoadedNoHTML">No fue posible cargar la página</string>
+    <string name="checkTypos">Controla que la direcci&amp;#243;n no contenga errores como</string>
     <string name="insteadof">en vez de</string>
-    <string name="cantLoad">Si no logras cargar ninguna página,</string>
-    <string name="checkConn">controla tu conexión.</string>
-    <string name="web_isPermitted">Si tu teléfono está protegido por un firewall o proxy, asegúrate que Stack tenga el permiso para conectarse.</string>
+    <string name="cantLoad">Si no logras cargar ninguna p&amp;#225;gina,</string>
+    <string name="checkConn">controla tu conexi&amp;#243;n.</string>
+    <string name="web_isPermitted">Si tu dispositivo o red est&amp;#225;n protegidos por un firewall o proxy, aseg&amp;#250;rate que Stack tenga el permiso para conectarse.</string>
     <string name="save_image">Guardar imagen</string>
     <string name="view_image">Ver imagen</string>
     <string name="share_image">Compartir imagen</string>

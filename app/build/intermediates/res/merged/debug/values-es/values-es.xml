@@ -14,7 +14,6 @@
         <item name="Grigio">Gris</item>
     </string-array>
     <string name="GPLsummary">Tocar para ver la licencia</string>
-    <string name="HP" translatable="false">http://duckduckgo.com</string>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Ir a la pantalla de inicio"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -36,7 +35,7 @@
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Contraer"</string>
     <string name="about_text">El desarrollo de Stack es dirigido por\nAlessandro De Pasquale\n\nPodéis contactarme o seguir el desarrollo vìa los botones debajo.</string>
     <string name="added_to_home">Añadido a la pantalla de inicio</string>
-    <string name="addtohome">Añadir a la pantalla de inicio</string>
+    <string name="addtohome">Añadir a la pantalla inicial</string>
     <string name="alphathx">Muchas gracias a\nmi alpha tester\nAlessandro Menabue</string>
     <string name="app_name">Stack</string>
     <string name="appearance">Aspecto</string>
@@ -46,9 +45,9 @@
     <string name="askuselocation">Proporcionar tu posición?</string>
     <string name="bar_hint">Término de búsqueda o dirección</string>
     <string name="bitcoin_noclient">Ninguna aplicación adecuada</string>
-    <string name="cantLoad">Si no logras cargar ninguna página,</string>
-    <string name="checkConn">controla tu conexión.</string>
-    <string name="checkTypos">Controla que la dirección no contenge errores como</string>
+    <string name="cantLoad">Si no logras cargar ninguna p&amp;#225;gina,</string>
+    <string name="checkConn">controla tu conexi&amp;#243;n.</string>
+    <string name="checkTypos">Controla que la direcci&amp;#243;n no contenga errores como</string>
     <string name="color_scheme">Necesita que se reinicie la aplicación</string>
     <string msgid="2785372108150982144" name="common_google_play_services_api_unavailable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> necesita uno o varios servicios de Google Play que no están disponibles en este momento. Ponte en contacto con el desarrollador para obtener ayuda."</string>
     <string msgid="7334167077229901382" name="common_google_play_services_enable_button">"Habilitar los Servicios de Google Play"</string>
@@ -108,16 +107,17 @@
     <string name="openInApp">Abrir con otra aplicación</string>
     <string name="openInNewTab">Abrir en una nueva pestaña</string>
     <string name="openNewTab">Abrir una nueva pestaña</string>
-    <string name="pageNotLoaded">No fue posible cargar la página</string>
-    <string name="picksergine">Selecciona un motor</string>
-    <string name="picktheme">Selecciona a un tema</string>
+    <string name="pageNotLoaded">No fue posible cargar la p&amp;#225;gina</string>
+    <string name="pageNotLoadedNoHTML">No fue posible cargar la página</string>
+    <string name="picksergine">Elige un buscador</string>
+    <string name="picktheme">Elige a un tema</string>
     <string name="plzNo">Cancelar</string>
     <string name="reload">Recargar</string>
     <string name="repBug">Comunicar de un bug</string>
     <string name="restart_cap">REINICIAR</string>
     <string name="restarting">Reinicio…</string>
     <string name="save_image">Guardar imagen</string>
-    <string name="search_engine">Motor de búsqueda</string>
+    <string name="search_engine">Buscador</string>
     <string name="send_email">Contacta el desarrollador</string>
     <string name="share">Compartir</string>
     <string name="share_image">Compartir imagen</string>
@@ -133,6 +133,6 @@
     <string name="version">Versión</string>
     <string name="view_image">Ver imagen</string>
     <string name="wanna_restart">Reiniciar la aplicación ahora?</string>
-    <string name="web_isPermitted">Si tu teléfono está protegido por un firewall o proxy, asegúrate que Stack tenga el permiso para conectarse.</string>
+    <string name="web_isPermitted">Si tu dispositivo o red est&amp;#225;n protegidos por un firewall o proxy, aseg&amp;#250;rate que Stack tenga el permiso para conectarse.</string>
     <string name="yes">SÍ</string>
 </resources>

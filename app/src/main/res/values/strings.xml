@@ -4,7 +4,7 @@
     <string name="menu_about">About</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_donate">Donate</string>
-    <string name="about_text">The development of stack is led by\nAlessandro De Pasquale\n\nYou may get to me or follow the development of Stack via the buttons below.</string>
+    <string name="about_text">The development of Stack is led by\nAlessandro De Pasquale\n\nYou may get to me or follow the development of Stack via the buttons below.</string>
     <string name="email_noclient">No email client found</string>
     <string name="donate">By donating, you can support the development of this application.</string>
     <string name="bitcoin_noclient">No client was found</string>
@@ -42,7 +42,7 @@
     <string name="insteadof">instead of</string>
     <string name="cantLoad">If you are unable to load any pages,</string>
     <string name="checkConn">check your network connection.</string>
-    <string name="web_isPermitted">If your phone or network is protected by a firewall or proxy, make sure that Stack is permitted to access the Web.</string>
+    <string name="web_isPermitted">If your device or network is protected by a firewall or proxy, make sure that Stack is permitted to access the Web.</string>
     <string name="save_image">Save image</string>
     <string name="view_image">View image</string>
     <string name="share_image">Share image</string>
@@ -72,4 +72,11 @@
     <string name="stopcklicking">Stop clicking me</string>
     <string name="askLocGeneral">Should your precise location be provided?</string>
     <string name="image">Image</string>
+    <string name="pageNotLoadedNoHTML">The page could not be loaded</string>
+    <string name="addtoBM">Bookmark this page</string>
+    <string name="new_fol">New</string>
+    <string name="folder">Folder</string>
+    <string name="add_bm">Add a bookmark</string>
+    <string name="favorites">Favourites</string>
+    <string name="readlater">Read later</string>
 </resources>

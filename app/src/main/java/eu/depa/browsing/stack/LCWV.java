@@ -69,7 +69,12 @@ public class LCWV extends WebView {
                 if (sharedPref.getBoolean("DNT", true)) extraHeaders.put("DNT", "1");
                 else extraHeaders.put("DNT", "0");
                 loadUrl(url, extraHeaders);
-                if (getUrl().startsWith("<html>")) toptextbar.setText(getTitle());
+                if (getUrl().startsWith("<html>") || getUrl().endsWith("</html>"))
+                    try{toptextbar.setText(getTitle());}
+                    catch (Exception e) {
+                        e.printStackTrace();
+                        toptextbar.setText(getTitle());
+                    }
                 else toptextbar.setText(getUrl().split("//")[1]);
                 pb.setVisibility(View.VISIBLE);
             }
@@ -105,12 +110,12 @@ public class LCWV extends WebView {
                     "    <div style=\"text-align:center; font-size: 15px !important\">" +
                     "      <INPUT TYPE=\"button\" " +
                     "       onClick=\"parent.location='" + url + "'\"" +
-                    "       VALUE=\"" + getString(R.string.reload).toUpperCase() + "\">" +
+                    "       VALUE=\"" + getString(R.string.reload) + "\">" +
                     "    </div>" +
                     "  </body>" +
                     "</html>";
             view.loadData(customErrorPageHtml, "text/html", null);
-            toptextbar.setText(url);
+            toptextbar.setText(getTitle());
         }
     };
     WebChromeClient webChromeClient = new WebChromeClient(){
@@ -118,7 +123,7 @@ public class LCWV extends WebView {
         public void onProgressChanged(WebView wv, int progress) {
             pb.setProgress(progress);
             try {
-                if (getUrl().startsWith("<html>")) toptextbar.setText(getTitle());
+                if (getUrl().startsWith("<html>") || getUrl().endsWith("</html>")) toptextbar.setText(getTitle());
                 else toptextbar.setText(getUrl().split("//")[1]);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -171,7 +176,7 @@ public class LCWV extends WebView {
                 toptextbar.setText(getTitle());
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
                     ActivityManager.TaskDescription taskDescription = new ActivityManager.TaskDescription(
-                            getString(R.string.pageNotLoaded),
+                            getString(R.string.pageNotLoadedNoHTML),
                             null,
                             Color.rgb(221, 221, 221));
                     ((MainActivity)getContext()).setTaskDescription(taskDescription);

@@ -108,6 +108,7 @@
     <string name="openInNewTab">Apri in una nuova scheda</string>
     <string name="openNewTab">Apri una nuova scheda</string>
     <string name="pageNotLoaded">Impossibile caricare la pagina</string>
+    <string name="pageNotLoadedNoHTML">Impossibile caricare la pagina</string>
     <string name="picksergine">Scegli un motore di ricerca</string>
     <string name="picktheme">Scegli un tema</string>
     <string name="plzNo">CANCELLA</string>
