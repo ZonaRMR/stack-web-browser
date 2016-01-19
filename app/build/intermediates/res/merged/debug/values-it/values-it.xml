@@ -13,6 +13,7 @@
         <item name="Blu">Blu</item>
         <item name="Grigio">Grigio</item>
     </string-array>
+    <string name="BM_added">Segnalibro aggiunto</string>
     <string name="GPLsummary">Tocca per vedere la licenza</string>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Vai alla home page"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
@@ -34,7 +35,10 @@
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Condividi con %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Comprimi"</string>
     <string name="about_text">Lo sviluppo di Stack\nè seguito da\nAlessandro De Pasquale\n\nPotete contattarmi o seguire lo sviluppo di Stack coi bottoni di seguito.</string>
+    <string name="add">Aggiungi</string>
+    <string name="add_bm">Aggiungi un segnalibro</string>
     <string name="added_to_home">Scorciatoia aggiunta</string>
+    <string name="addtoBM">Aggiungi ai segnalibri</string>
     <string name="addtohome">Aggiungi ad home</string>
     <string name="alphathx">Un ringraziamento speciale\nal mio alpha tester\nAlessandro Menabue</string>
     <string name="app_name">Stack</string>
@@ -88,18 +92,22 @@
     <string name="earliest_reached">Pagina iniziale raggiunta</string>
     <string name="easter_toast">Hai trovato un uovo di pasqua! </string>
     <string name="email_noclient">Nessuna applicazione adatta</string>
+    <string name="favorites">Preferiti</string>
     <string name="file_downloaded">Il file è stato scaricato</string>
     <string name="file_downloading">Il file sarà scaricato</string>
+    <string name="folder">Cartella</string>
     <string name="functionality">Funzionalità</string>
     <string name="image">Immagine</string>
     <string name="image_downloaded">L\'immagine è stata scaricata</string>
     <string name="insteadof">invece che</string>
     <string name="location">Posizione</string>
     <string name="menu_about">Informazioni</string>
+    <string name="menu_bookmarks">Segnalibri</string>
     <string name="menu_donate">Dona</string>
     <string name="menu_history">Cronologia</string>
     <string name="menu_page">Pagina…</string>
     <string name="menu_settings">Impostazioni</string>
+    <string name="new_fol">Nuovo</string>
     <string name="no">NO</string>
     <string name="nohistory">La cronologia è ancora vuota</string>
     <string name="notrack">Richiedi di non essere tracciato</string>
@@ -112,6 +120,7 @@
     <string name="picksergine">Scegli un motore di ricerca</string>
     <string name="picktheme">Scegli un tema</string>
     <string name="plzNo">CANCELLA</string>
+    <string name="readlater">Lista di lettura</string>
     <string name="reload">Aggiorna</string>
     <string name="repBug">Segnala un problema</string>
     <string name="restart_cap">RIAVVIA</string>

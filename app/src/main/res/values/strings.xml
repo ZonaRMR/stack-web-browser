@@ -79,4 +79,7 @@
     <string name="add_bm">Add a bookmark</string>
     <string name="favorites">Favourites</string>
     <string name="readlater">Read later</string>
+    <string name="add">Add</string>
+    <string name="BM_added">Bookmark added</string>
+    <string name="menu_bookmarks">Bookmarks</string>
 </resources>

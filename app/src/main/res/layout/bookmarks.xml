@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_bookmarks"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:typeface="sans"
+        android:layout_margin="20dp"
+        android:textColor="#808080"
+        android:id="@+id/BMTitle" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BMList"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/BMTitle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:text="@string/nohistory"
+        android:id="@+id/empty"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:typeface="sans"
+        android:layout_margin="20dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

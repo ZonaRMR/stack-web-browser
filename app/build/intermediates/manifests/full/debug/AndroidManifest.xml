@@ -16,6 +16,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
         android:allowBackup="true"
         android:fullBackupContent="true"
         android:hardwareAccelerated="true"
@@ -50,6 +51,7 @@
         <activity android:name="eu.depa.browsing.stack.Settings" />
         <activity android:name="eu.depa.browsing.stack.GPL" />
         <activity android:name="eu.depa.browsing.stack.History" />
+        <activity android:name="eu.depa.browsing.stack.Bookmarks" />
 
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for

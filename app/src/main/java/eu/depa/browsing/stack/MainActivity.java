@@ -46,9 +46,8 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.Locale;
-import java.util.Vector;
 
 @SuppressWarnings({"deprecation"})
 @SuppressLint("SetJavaScriptEnabled")
@@ -359,14 +358,10 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
     }
 
     private void bookmarkCurrent() {
-        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-        Vector<String> foldersArr = new Vector<>();
-        String folders = sharedPref.getString("folders", getString(R.string.favorites) + ";;" +
-                                                         getString(R.string.readlater));
-        Collections.addAll(foldersArr, folders.split(";;"));
-        SpinnerDialog mSD = new SpinnerDialog(this, foldersArr);
-        mSD.setTitle(R.string.add_bm);
-        mSD.show();
+        LCWV webView = (LCWV) findViewById(R.id.webView);
+        EditTextDialog ETD = new EditTextDialog(this, webView.getTitle(), webView.getUrl());
+        ETD.setTitle(R.string.add_bm);
+        ETD.show();
 
         //sharedPref.edit().putString("bMarks", sharedPref.getString("bMarks", "") + );
     }
@@ -416,5 +411,19 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         newTabIntent.setData(Uri.fromParts("http", HP, null));
         startActivity(newTabIntent);
+    }
+
+    public void goToBookmarks(MenuItem item) {
+        Intent gotoBookmarks = new Intent(getApplicationContext(), Bookmarks.class);
+        Bundle bookmarkData = new Bundle();
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+
+        ArrayList<String> titles = new ArrayList<>(Arrays.asList(sharedPref.getString("BMtitles", "").split(";;"))),
+                addrs = new ArrayList<>(Arrays.asList(sharedPref.getString("BMurls", "").split(";;")));
+
+        bookmarkData.putStringArrayList("titles", titles);
+        bookmarkData.putStringArrayList("addrs", addrs);
+        gotoBookmarks.putExtra("bundle", bookmarkData);
+        startActivity(gotoBookmarks);
     }
 }

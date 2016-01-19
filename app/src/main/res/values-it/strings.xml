@@ -73,4 +73,13 @@
     <string name="askLocGeneral">Fornire la tua posizione precisa?</string>
     <string name="image">Immagine</string>
     <string name="pageNotLoadedNoHTML">Impossibile caricare la pagina</string>
+    <string name="BM_added">Segnalibro aggiunto</string>
+    <string name="add">Aggiungi</string>
+    <string name="add_bm">Aggiungi un segnalibro</string>
+    <string name="addtoBM">Aggiungi ai segnalibri</string>
+    <string name="favorites">Preferiti</string>
+    <string name="folder">Cartella</string>
+    <string name="menu_bookmarks">Segnalibri</string>
+    <string name="new_fol">Nuovo</string>
+    <string name="readlater">Lista di lettura</string>
 </resources>

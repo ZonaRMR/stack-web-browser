@@ -313,6 +313,7 @@
     <integer name="design_snackbar_text_max_lines">2</integer>
     <integer name="google_play_services_version">8487000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="BM_added">Bookmark added</string>
     <string name="GPLsummary">Tap to see licence</string>
     <string name="HP" translatable="false">http://duckduckgo.com</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
@@ -335,6 +336,7 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="about_text">The development of Stack is led by\nAlessandro De Pasquale\n\nYou may get to me or follow the development of Stack via the buttons below.</string>
+    <string name="add">Add</string>
     <string name="add_bm">Add a bookmark</string>
     <string name="added_to_home">Added to home</string>
     <string name="addtoBM">Bookmark this page</string>
@@ -405,6 +407,7 @@
     <string name="insteadof">instead of</string>
     <string name="location">Location</string>
     <string name="menu_about">About</string>
+    <string name="menu_bookmarks">Bookmarks</string>
     <string name="menu_donate">Donate</string>
     <string name="menu_history">History</string>
     <string name="menu_page">Page…</string>

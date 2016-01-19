@@ -5,11 +5,22 @@
     android:layout_marginTop="@dimen/activity_horizontal_margin"
     android:layout_marginBottom="@dimen/activity_horizontal_margin">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_history"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:typeface="sans"
+        android:layout_margin="20dp"
+        android:textColor="#808080"
+        android:id="@+id/historyTitle" />
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/historyList"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/historyTitle"/>
 
     <TextView
         android:layout_width="match_parent"
