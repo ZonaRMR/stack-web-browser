@@ -418,11 +418,10 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         Bundle bookmarkData = new Bundle();
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
 
-        ArrayList<String> titles = new ArrayList<>(Arrays.asList(sharedPref.getString("BMtitles", "").split(";;"))),
-                addrs = new ArrayList<>(Arrays.asList(sharedPref.getString("BMurls", "").split(";;")));
-
-        bookmarkData.putStringArrayList("titles", titles);
-        bookmarkData.putStringArrayList("addrs", addrs);
+        String[] titles = sharedPref.getString("BMtitles", "").split(";;");
+        String[] addrs = sharedPref.getString("BMurls", "").split(";;");
+        bookmarkData.putStringArrayList("titles", new ArrayList<String>(Arrays.asList(titles)));
+        bookmarkData.putStringArrayList("addrs", new ArrayList<String>(Arrays.asList(addrs)));
         gotoBookmarks.putExtra("bundle", bookmarkData);
         startActivity(gotoBookmarks);
     }

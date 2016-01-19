@@ -1,5 +1,7 @@
 package eu.depa.browsing.stack;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -14,6 +16,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.TwoLineListItem;
 
 import java.util.ArrayList;
@@ -40,12 +43,14 @@ public class Bookmarks extends AppCompatActivity{
 
         if (titles.isEmpty() || addrs.isEmpty()) {
             TextView empty = (TextView) findViewById(R.id.empty);
+            TextView title = (TextView) findViewById(R.id.BMTitle);
+            title.setVisibility(View.GONE);
             empty.setVisibility(View.VISIBLE);
             return;
         }
 
         for (int i = 0; i < titles.size(); i++) {
-            if (titles.get(i).equals("") || addrs.get(i).startsWith("data:")) continue;
+            if (titles.get(i).equals("")) continue;
             Map<String, String> datum = new HashMap<>(2);
             datum.put("title", titles.get(i));
             datum.put("addr",  addrs.get(i));
@@ -72,6 +77,35 @@ public class Bookmarks extends AppCompatActivity{
                 newTabIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 newTabIntent.setData(Uri.parse(url));
                 getApplicationContext().startActivity(newTabIntent);
+            }
+        });
+
+        LV.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, final View view, int position, long id) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(Bookmarks.this);
+
+                builder.setTitle(getString(R.string.delete));
+
+                builder.setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        TwoLineListItem item = (TwoLineListItem) view;
+                        String url = item.getText2().getText().toString();
+                        String title = item.getText1().getText().toString();
+                        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                        sharedPref.edit().putString("BMtitles", sharedPref.getString("BMtitles", "").replace(";;" + title, "")).apply();
+                        sharedPref.edit().putString("BMurls", sharedPref.getString("BMurls", "").replace(";;" + url, "")).apply();
+                        Toast.makeText(Bookmarks.this, getString(R.string.deleted), Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder.setNegativeButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {}
+                });
+                builder.setCancelable(false);
+                builder.show();
+                return false;
             }
         });
     }

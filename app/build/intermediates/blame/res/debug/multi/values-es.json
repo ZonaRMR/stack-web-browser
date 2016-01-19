@@ -33,8 +33,27 @@
                     "startLine": 15,
                     "startColumn": 4,
                     "startOffset": 634,
+                    "endColumn": 53,
+                    "endOffset": 683
+                },
+                "from": {
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 82,
+                        "startColumn": 4,
+                        "startOffset": 4766,
+                        "endColumn": 53,
+                        "endOffset": 4815
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 688,
                     "endColumn": 65,
-                    "endOffset": 695
+                    "endOffset": 749
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -42,23 +61,11 @@
             },
             {
                 "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 700,
-                    "endColumn": 116,
-                    "endOffset": 812
-                },
-                "from": {
-                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
-                }
-            },
-            {
-                "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 817,
-                    "endColumn": 107,
-                    "endOffset": 920
+                    "startOffset": 754,
+                    "endColumn": 116,
+                    "endOffset": 866
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -68,9 +75,9 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 925,
-                    "endColumn": 122,
-                    "endOffset": 1043
+                    "startOffset": 871,
+                    "endColumn": 107,
+                    "endOffset": 974
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -80,9 +87,9 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1048,
-                    "endColumn": 112,
-                    "endOffset": 1156
+                    "startOffset": 979,
+                    "endColumn": 122,
+                    "endOffset": 1097
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -92,9 +99,9 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1161,
-                    "endColumn": 107,
-                    "endOffset": 1264
+                    "startOffset": 1102,
+                    "endColumn": 112,
+                    "endOffset": 1210
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -104,9 +111,9 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1269,
-                    "endColumn": 84,
-                    "endOffset": 1349
+                    "startOffset": 1215,
+                    "endColumn": 107,
+                    "endOffset": 1318
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -116,9 +123,9 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1354,
-                    "endColumn": 100,
-                    "endOffset": 1450
+                    "startOffset": 1323,
+                    "endColumn": 84,
+                    "endOffset": 1403
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -128,9 +135,9 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1455,
-                    "endColumn": 127,
-                    "endOffset": 1578
+                    "startOffset": 1408,
+                    "endColumn": 100,
+                    "endOffset": 1504
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -140,9 +147,9 @@
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 1583,
-                    "endColumn": 75,
-                    "endOffset": 1654
+                    "startOffset": 1509,
+                    "endColumn": 127,
+                    "endOffset": 1632
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -152,9 +159,9 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 1659,
+                    "startOffset": 1637,
                     "endColumn": 75,
-                    "endOffset": 1730
+                    "endOffset": 1708
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -164,9 +171,9 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 1735,
-                    "endColumn": 81,
-                    "endOffset": 1812
+                    "startOffset": 1713,
+                    "endColumn": 75,
+                    "endOffset": 1784
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -176,9 +183,9 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 1817,
-                    "endColumn": 106,
-                    "endOffset": 1919
+                    "startOffset": 1789,
+                    "endColumn": 81,
+                    "endOffset": 1866
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -188,9 +195,9 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 1924,
-                    "endColumn": 99,
-                    "endOffset": 2019
+                    "startOffset": 1871,
+                    "endColumn": 106,
+                    "endOffset": 1973
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -200,9 +207,9 @@
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 2024,
-                    "endColumn": 98,
-                    "endOffset": 2118
+                    "startOffset": 1978,
+                    "endColumn": 99,
+                    "endOffset": 2073
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -212,9 +219,9 @@
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 2123,
-                    "endColumn": 107,
-                    "endOffset": 2226
+                    "startOffset": 2078,
+                    "endColumn": 98,
+                    "endOffset": 2172
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -224,9 +231,9 @@
                 "to": {
                     "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 2231,
-                    "endColumn": 106,
-                    "endOffset": 2333
+                    "startOffset": 2177,
+                    "endColumn": 107,
+                    "endOffset": 2280
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -236,9 +243,9 @@
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 2338,
+                    "startOffset": 2285,
                     "endColumn": 106,
-                    "endOffset": 2440
+                    "endOffset": 2387
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -248,9 +255,9 @@
                 "to": {
                     "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 2445,
-                    "endColumn": 121,
-                    "endOffset": 2562
+                    "startOffset": 2392,
+                    "endColumn": 106,
+                    "endOffset": 2494
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -260,9 +267,9 @@
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 2567,
-                    "endColumn": 99,
-                    "endOffset": 2662
+                    "startOffset": 2499,
+                    "endColumn": 121,
+                    "endOffset": 2616
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
@@ -272,21 +279,21 @@
                 "to": {
                     "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 2667,
-                    "endColumn": 170,
-                    "endOffset": 2833
+                    "startOffset": 2621,
+                    "endColumn": 99,
+                    "endOffset": 2716
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 2838,
-                    "endColumn": 73,
-                    "endOffset": 2907
+                    "startOffset": 2721,
+                    "endColumn": 170,
+                    "endOffset": 2887
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -296,18 +303,18 @@
                 "to": {
                     "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 2912,
-                    "endColumn": 66,
-                    "endOffset": 2974
+                    "startOffset": 2892,
+                    "endColumn": 37,
+                    "endOffset": 2925
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml",
                     "position": {
-                        "startLine": 23,
+                        "startLine": 83,
                         "startColumn": 4,
-                        "startOffset": 1121,
-                        "endColumn": 66,
-                        "endOffset": 1183
+                        "startOffset": 4820,
+                        "endColumn": 37,
+                        "endOffset": 4853
                     }
                 }
             },
@@ -315,21 +322,28 @@
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 2979,
-                    "endColumn": 90,
-                    "endOffset": 3065
+                    "startOffset": 2930,
+                    "endColumn": 52,
+                    "endOffset": 2978
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 84,
+                        "startColumn": 4,
+                        "startOffset": 4858,
+                        "endColumn": 52,
+                        "endOffset": 4906
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 3070,
-                    "endColumn": 42,
-                    "endOffset": 3108
+                    "startOffset": 2983,
+                    "endColumn": 73,
+                    "endOffset": 3052
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -339,21 +353,28 @@
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 3113,
-                    "endColumn": 46,
-                    "endOffset": 3155
+                    "startOffset": 3057,
+                    "endColumn": 53,
+                    "endOffset": 3106
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 85,
+                        "startColumn": 4,
+                        "startOffset": 4911,
+                        "endColumn": 53,
+                        "endOffset": 4960
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 3160,
-                    "endColumn": 42,
-                    "endOffset": 3198
+                    "startOffset": 3111,
+                    "endColumn": 66,
+                    "endOffset": 3173
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -363,9 +384,9 @@
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 3203,
-                    "endColumn": 74,
-                    "endOffset": 3273
+                    "startOffset": 3178,
+                    "endColumn": 90,
+                    "endOffset": 3264
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -375,9 +396,9 @@
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 3278,
-                    "endColumn": 50,
-                    "endOffset": 3324
+                    "startOffset": 3269,
+                    "endColumn": 42,
+                    "endOffset": 3307
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -387,9 +408,9 @@
                 "to": {
                     "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 3329,
-                    "endColumn": 68,
-                    "endOffset": 3393
+                    "startOffset": 3312,
+                    "endColumn": 46,
+                    "endOffset": 3354
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -399,9 +420,9 @@
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 3398,
-                    "endColumn": 68,
-                    "endOffset": 3462
+                    "startOffset": 3359,
+                    "endColumn": 42,
+                    "endOffset": 3397
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -411,9 +432,9 @@
                 "to": {
                     "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 3467,
-                    "endColumn": 72,
-                    "endOffset": 3535
+                    "startOffset": 3402,
+                    "endColumn": 74,
+                    "endOffset": 3472
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -423,9 +444,9 @@
                 "to": {
                     "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 3540,
-                    "endColumn": 81,
-                    "endOffset": 3617
+                    "startOffset": 3477,
+                    "endColumn": 50,
+                    "endOffset": 3523
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -435,9 +456,9 @@
                 "to": {
                     "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 3622,
+                    "startOffset": 3528,
                     "endColumn": 68,
-                    "endOffset": 3686
+                    "endOffset": 3592
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -447,9 +468,9 @@
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 3691,
-                    "endColumn": 98,
-                    "endOffset": 3785
+                    "startOffset": 3597,
+                    "endColumn": 68,
+                    "endOffset": 3661
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -459,9 +480,9 @@
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 3790,
-                    "endColumn": 79,
-                    "endOffset": 3865
+                    "startOffset": 3666,
+                    "endColumn": 72,
+                    "endOffset": 3734
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -471,57 +492,57 @@
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 3870,
-                    "endColumn": 288,
-                    "endOffset": 4154
+                    "startOffset": 3739,
+                    "endColumn": 81,
+                    "endOffset": 3816
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 4159,
-                    "endColumn": 138,
-                    "endOffset": 4293
+                    "startOffset": 3821,
+                    "endColumn": 68,
+                    "endOffset": 3885
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 4298,
-                    "endColumn": 198,
-                    "endOffset": 4492
+                    "startOffset": 3890,
+                    "endColumn": 98,
+                    "endOffset": 3984
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 4497,
-                    "endColumn": 136,
-                    "endOffset": 4629
+                    "startOffset": 3989,
+                    "endColumn": 79,
+                    "endOffset": 4064
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 4634,
-                    "endColumn": 139,
-                    "endOffset": 4769
+                    "startOffset": 4069,
+                    "endColumn": 288,
+                    "endOffset": 4353
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -531,9 +552,9 @@
                 "to": {
                     "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 4774,
-                    "endColumn": 222,
-                    "endOffset": 4992
+                    "startOffset": 4358,
+                    "endColumn": 138,
+                    "endOffset": 4492
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -543,9 +564,9 @@
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 4997,
-                    "endColumn": 221,
-                    "endOffset": 5214
+                    "startOffset": 4497,
+                    "endColumn": 198,
+                    "endOffset": 4691
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -555,9 +576,9 @@
                 "to": {
                     "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 5219,
-                    "endColumn": 138,
-                    "endOffset": 5353
+                    "startOffset": 4696,
+                    "endColumn": 136,
+                    "endOffset": 4828
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -567,9 +588,9 @@
                 "to": {
                     "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 5358,
-                    "endColumn": 184,
-                    "endOffset": 5538
+                    "startOffset": 4833,
+                    "endColumn": 139,
+                    "endOffset": 4968
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -579,9 +600,9 @@
                 "to": {
                     "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 5543,
-                    "endColumn": 121,
-                    "endOffset": 5660
+                    "startOffset": 4973,
+                    "endColumn": 222,
+                    "endOffset": 5191
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -591,9 +612,9 @@
                 "to": {
                     "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 5665,
-                    "endColumn": 197,
-                    "endOffset": 5858
+                    "startOffset": 5196,
+                    "endColumn": 221,
+                    "endOffset": 5413
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -603,9 +624,9 @@
                 "to": {
                     "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 5863,
-                    "endColumn": 118,
-                    "endOffset": 5977
+                    "startOffset": 5418,
+                    "endColumn": 138,
+                    "endOffset": 5552
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -615,9 +636,9 @@
                 "to": {
                     "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 5982,
-                    "endColumn": 143,
-                    "endOffset": 6121
+                    "startOffset": 5557,
+                    "endColumn": 184,
+                    "endOffset": 5737
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -627,9 +648,9 @@
                 "to": {
                     "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 6126,
-                    "endColumn": 175,
-                    "endOffset": 6297
+                    "startOffset": 5742,
+                    "endColumn": 121,
+                    "endOffset": 5859
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -639,9 +660,9 @@
                 "to": {
                     "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 6302,
-                    "endColumn": 129,
-                    "endOffset": 6427
+                    "startOffset": 5864,
+                    "endColumn": 197,
+                    "endOffset": 6057
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -651,9 +672,9 @@
                 "to": {
                     "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 6432,
-                    "endColumn": 178,
-                    "endOffset": 6606
+                    "startOffset": 6062,
+                    "endColumn": 118,
+                    "endOffset": 6176
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -663,9 +684,9 @@
                 "to": {
                     "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 6611,
-                    "endColumn": 130,
-                    "endOffset": 6737
+                    "startOffset": 6181,
+                    "endColumn": 143,
+                    "endOffset": 6320
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -675,21 +696,21 @@
                 "to": {
                     "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 6742,
-                    "endColumn": 267,
-                    "endOffset": 7005
+                    "startOffset": 6325,
+                    "endColumn": 175,
+                    "endOffset": 6496
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values-es/common_strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 7010,
-                    "endColumn": 280,
-                    "endOffset": 7286
+                    "startOffset": 6501,
+                    "endColumn": 129,
+                    "endOffset": 6626
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -699,9 +720,9 @@
                 "to": {
                     "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 7291,
-                    "endColumn": 127,
-                    "endOffset": 7414
+                    "startOffset": 6631,
+                    "endColumn": 178,
+                    "endOffset": 6805
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -711,9 +732,9 @@
                 "to": {
                     "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 7419,
-                    "endColumn": 110,
-                    "endOffset": 7525
+                    "startOffset": 6810,
+                    "endColumn": 130,
+                    "endOffset": 6936
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -723,21 +744,21 @@
                 "to": {
                     "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 7530,
-                    "endColumn": 201,
-                    "endOffset": 7727
+                    "startOffset": 6941,
+                    "endColumn": 267,
+                    "endOffset": 7204
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values-es/common_strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 7732,
-                    "endColumn": 137,
-                    "endOffset": 7865
+                    "startOffset": 7209,
+                    "endColumn": 280,
+                    "endOffset": 7485
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -747,9 +768,9 @@
                 "to": {
                     "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 7870,
-                    "endColumn": 227,
-                    "endOffset": 8093
+                    "startOffset": 7490,
+                    "endColumn": 127,
+                    "endOffset": 7613
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -759,9 +780,9 @@
                 "to": {
                     "startLine": 75,
                     "startColumn": 4,
-                    "startOffset": 8098,
-                    "endColumn": 138,
-                    "endOffset": 8232
+                    "startOffset": 7618,
+                    "endColumn": 110,
+                    "endOffset": 7724
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -771,9 +792,9 @@
                 "to": {
                     "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 8237,
-                    "endColumn": 190,
-                    "endOffset": 8423
+                    "startOffset": 7729,
+                    "endColumn": 201,
+                    "endOffset": 7926
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -783,9 +804,9 @@
                 "to": {
                     "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 8428,
-                    "endColumn": 95,
-                    "endOffset": 8519
+                    "startOffset": 7931,
+                    "endColumn": 137,
+                    "endOffset": 8064
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -795,9 +816,9 @@
                 "to": {
                     "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 8524,
-                    "endColumn": 98,
-                    "endOffset": 8618
+                    "startOffset": 8069,
+                    "endColumn": 227,
+                    "endOffset": 8292
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -807,9 +828,9 @@
                 "to": {
                     "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 8623,
-                    "endColumn": 114,
-                    "endOffset": 8733
+                    "startOffset": 8297,
+                    "endColumn": 138,
+                    "endOffset": 8431
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
@@ -819,57 +840,57 @@
                 "to": {
                     "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 8738,
-                    "endColumn": 52,
-                    "endOffset": 8786
+                    "startOffset": 8436,
+                    "endColumn": 190,
+                    "endOffset": 8622
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 8791,
-                    "endColumn": 73,
-                    "endOffset": 8860
+                    "startOffset": 8627,
+                    "endColumn": 95,
+                    "endOffset": 8718
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 8865,
-                    "endColumn": 54,
-                    "endOffset": 8915
+                    "startOffset": 8723,
+                    "endColumn": 98,
+                    "endOffset": 8817
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 83,
                     "startColumn": 4,
-                    "startOffset": 8920,
-                    "endColumn": 84,
-                    "endOffset": 9000
+                    "startOffset": 8822,
+                    "endColumn": 114,
+                    "endOffset": 8932
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 84,
                     "startColumn": 4,
-                    "startOffset": 9005,
-                    "endColumn": 66,
-                    "endOffset": 9067
+                    "startOffset": 8937,
+                    "endColumn": 52,
+                    "endOffset": 8985
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -879,9 +900,9 @@
                 "to": {
                     "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 9072,
-                    "endColumn": 45,
-                    "endOffset": 9113
+                    "startOffset": 8990,
+                    "endColumn": 73,
+                    "endOffset": 9059
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -891,9 +912,9 @@
                 "to": {
                     "startLine": 86,
                     "startColumn": 4,
-                    "startOffset": 9118,
-                    "endColumn": 38,
-                    "endOffset": 9152
+                    "startOffset": 9064,
+                    "endColumn": 54,
+                    "endOffset": 9114
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -903,33 +924,47 @@
                 "to": {
                     "startLine": 87,
                     "startColumn": 4,
-                    "startOffset": 9157,
-                    "endColumn": 78,
-                    "endOffset": 9231
+                    "startOffset": 9119,
+                    "endColumn": 45,
+                    "endOffset": 9160
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 86,
+                        "startColumn": 4,
+                        "startOffset": 4965,
+                        "endColumn": 45,
+                        "endOffset": 5006
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 88,
                     "startColumn": 4,
-                    "startOffset": 9236,
-                    "endColumn": 72,
-                    "endOffset": 9304
+                    "startOffset": 9165,
+                    "endColumn": 54,
+                    "endOffset": 9215
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 87,
+                        "startColumn": 4,
+                        "startOffset": 5011,
+                        "endColumn": 54,
+                        "endOffset": 5061
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 89,
                     "startColumn": 4,
-                    "startOffset": 9309,
-                    "endColumn": 70,
-                    "endOffset": 9375
+                    "startOffset": 9220,
+                    "endColumn": 84,
+                    "endOffset": 9300
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -939,9 +974,9 @@
                 "to": {
                     "startLine": 90,
                     "startColumn": 4,
-                    "startOffset": 9380,
-                    "endColumn": 73,
-                    "endOffset": 9449
+                    "startOffset": 9305,
+                    "endColumn": 66,
+                    "endOffset": 9367
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -951,9 +986,9 @@
                 "to": {
                     "startLine": 91,
                     "startColumn": 4,
-                    "startOffset": 9454,
-                    "endColumn": 78,
-                    "endOffset": 9528
+                    "startOffset": 9372,
+                    "endColumn": 45,
+                    "endOffset": 9413
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -963,9 +998,9 @@
                 "to": {
                     "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 9533,
-                    "endColumn": 55,
-                    "endOffset": 9584
+                    "startOffset": 9418,
+                    "endColumn": 38,
+                    "endOffset": 9452
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -975,9 +1010,9 @@
                 "to": {
                     "startLine": 93,
                     "startColumn": 4,
-                    "startOffset": 9589,
-                    "endColumn": 40,
-                    "endOffset": 9625
+                    "startOffset": 9457,
+                    "endColumn": 78,
+                    "endOffset": 9531
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -987,9 +1022,9 @@
                 "to": {
                     "startLine": 94,
                     "startColumn": 4,
-                    "startOffset": 9630,
-                    "endColumn": 73,
-                    "endOffset": 9699
+                    "startOffset": 9536,
+                    "endColumn": 72,
+                    "endOffset": 9604
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -999,9 +1034,9 @@
                 "to": {
                     "startLine": 95,
                     "startColumn": 4,
-                    "startOffset": 9704,
-                    "endColumn": 47,
-                    "endOffset": 9747
+                    "startOffset": 9609,
+                    "endColumn": 70,
+                    "endOffset": 9675
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1011,21 +1046,28 @@
                 "to": {
                     "startLine": 96,
                     "startColumn": 4,
-                    "startOffset": 9752,
-                    "endColumn": 45,
-                    "endOffset": 9793
+                    "startOffset": 9680,
+                    "endColumn": 47,
+                    "endOffset": 9723
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 88,
+                        "startColumn": 4,
+                        "startOffset": 5066,
+                        "endColumn": 47,
+                        "endOffset": 5109
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 97,
                     "startColumn": 4,
-                    "startOffset": 9798,
-                    "endColumn": 52,
-                    "endOffset": 9846
+                    "startOffset": 9728,
+                    "endColumn": 73,
+                    "endOffset": 9797
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1035,9 +1077,9 @@
                 "to": {
                     "startLine": 98,
                     "startColumn": 4,
-                    "startOffset": 9851,
-                    "endColumn": 45,
-                    "endOffset": 9892
+                    "startOffset": 9802,
+                    "endColumn": 78,
+                    "endOffset": 9876
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1047,21 +1089,28 @@
                 "to": {
                     "startLine": 99,
                     "startColumn": 4,
-                    "startOffset": 9897,
-                    "endColumn": 50,
-                    "endOffset": 9943
+                    "startOffset": 9881,
+                    "endColumn": 42,
+                    "endOffset": 9919
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 89,
+                        "startColumn": 4,
+                        "startOffset": 5114,
+                        "endColumn": 42,
+                        "endOffset": 5152
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 100,
                     "startColumn": 4,
-                    "startOffset": 9948,
-                    "endColumn": 45,
-                    "endOffset": 9989
+                    "startOffset": 9924,
+                    "endColumn": 55,
+                    "endOffset": 9975
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1071,9 +1120,9 @@
                 "to": {
                     "startLine": 101,
                     "startColumn": 4,
-                    "startOffset": 9994,
-                    "endColumn": 55,
-                    "endOffset": 10045
+                    "startOffset": 9980,
+                    "endColumn": 40,
+                    "endOffset": 10016
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1083,9 +1132,9 @@
                 "to": {
                     "startLine": 102,
                     "startColumn": 4,
-                    "startOffset": 10050,
-                    "endColumn": 33,
-                    "endOffset": 10079
+                    "startOffset": 10021,
+                    "endColumn": 73,
+                    "endOffset": 10090
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1095,9 +1144,9 @@
                 "to": {
                     "startLine": 103,
                     "startColumn": 4,
-                    "startOffset": 10084,
-                    "endColumn": 54,
-                    "endOffset": 10134
+                    "startOffset": 10095,
+                    "endColumn": 47,
+                    "endOffset": 10138
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1107,9 +1156,9 @@
                 "to": {
                     "startLine": 104,
                     "startColumn": 4,
-                    "startOffset": 10139,
-                    "endColumn": 62,
-                    "endOffset": 10197
+                    "startOffset": 10143,
+                    "endColumn": 45,
+                    "endOffset": 10184
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1119,9 +1168,9 @@
                 "to": {
                     "startLine": 105,
                     "startColumn": 4,
-                    "startOffset": 10202,
-                    "endColumn": 64,
-                    "endOffset": 10262
+                    "startOffset": 10189,
+                    "endColumn": 52,
+                    "endOffset": 10237
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1131,21 +1180,28 @@
                 "to": {
                     "startLine": 106,
                     "startColumn": 4,
-                    "startOffset": 10267,
-                    "endColumn": 63,
-                    "endOffset": 10326
+                    "startOffset": 10242,
+                    "endColumn": 53,
+                    "endOffset": 10291
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 90,
+                        "startColumn": 4,
+                        "startOffset": 5157,
+                        "endColumn": 53,
+                        "endOffset": 5206
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 107,
                     "startColumn": 4,
-                    "startOffset": 10331,
-                    "endColumn": 67,
-                    "endOffset": 10394
+                    "startOffset": 10296,
+                    "endColumn": 45,
+                    "endOffset": 10337
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1155,9 +1211,9 @@
                 "to": {
                     "startLine": 108,
                     "startColumn": 4,
-                    "startOffset": 10399,
-                    "endColumn": 62,
-                    "endOffset": 10457
+                    "startOffset": 10342,
+                    "endColumn": 50,
+                    "endOffset": 10388
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1167,9 +1223,9 @@
                 "to": {
                     "startLine": 109,
                     "startColumn": 4,
-                    "startOffset": 10462,
-                    "endColumn": 82,
-                    "endOffset": 10540
+                    "startOffset": 10393,
+                    "endColumn": 45,
+                    "endOffset": 10434
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1179,9 +1235,9 @@
                 "to": {
                     "startLine": 110,
                     "startColumn": 4,
-                    "startOffset": 10545,
-                    "endColumn": 79,
-                    "endOffset": 10620
+                    "startOffset": 10439,
+                    "endColumn": 55,
+                    "endOffset": 10490
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1191,21 +1247,28 @@
                 "to": {
                     "startLine": 111,
                     "startColumn": 4,
-                    "startOffset": 10625,
-                    "endColumn": 57,
-                    "endOffset": 10678
+                    "startOffset": 10495,
+                    "endColumn": 41,
+                    "endOffset": 10532
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 91,
+                        "startColumn": 4,
+                        "startOffset": 5211,
+                        "endColumn": 41,
+                        "endOffset": 5248
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 112,
                     "startColumn": 4,
-                    "startOffset": 10683,
-                    "endColumn": 53,
-                    "endOffset": 10732
+                    "startOffset": 10537,
+                    "endColumn": 33,
+                    "endOffset": 10566
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1215,9 +1278,9 @@
                 "to": {
                     "startLine": 113,
                     "startColumn": 4,
-                    "startOffset": 10737,
-                    "endColumn": 42,
-                    "endOffset": 10775
+                    "startOffset": 10571,
+                    "endColumn": 54,
+                    "endOffset": 10621
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1227,9 +1290,9 @@
                 "to": {
                     "startLine": 114,
                     "startColumn": 4,
-                    "startOffset": 10780,
-                    "endColumn": 43,
-                    "endOffset": 10819
+                    "startOffset": 10626,
+                    "endColumn": 62,
+                    "endOffset": 10684
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1239,9 +1302,9 @@
                 "to": {
                     "startLine": 115,
                     "startColumn": 4,
-                    "startOffset": 10824,
-                    "endColumn": 54,
-                    "endOffset": 10874
+                    "startOffset": 10689,
+                    "endColumn": 64,
+                    "endOffset": 10749
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1251,9 +1314,9 @@
                 "to": {
                     "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 10879,
-                    "endColumn": 49,
-                    "endOffset": 10924
+                    "startOffset": 10754,
+                    "endColumn": 63,
+                    "endOffset": 10813
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1263,9 +1326,9 @@
                 "to": {
                     "startLine": 117,
                     "startColumn": 4,
-                    "startOffset": 10929,
-                    "endColumn": 48,
-                    "endOffset": 10973
+                    "startOffset": 10818,
+                    "endColumn": 67,
+                    "endOffset": 10881
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1275,9 +1338,9 @@
                 "to": {
                     "startLine": 118,
                     "startColumn": 4,
-                    "startOffset": 10978,
-                    "endColumn": 53,
-                    "endOffset": 11027
+                    "startOffset": 10886,
+                    "endColumn": 62,
+                    "endOffset": 10944
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1287,9 +1350,9 @@
                 "to": {
                     "startLine": 119,
                     "startColumn": 4,
-                    "startOffset": 11032,
-                    "endColumn": 50,
-                    "endOffset": 11078
+                    "startOffset": 10949,
+                    "endColumn": 82,
+                    "endOffset": 11027
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1299,9 +1362,9 @@
                 "to": {
                     "startLine": 120,
                     "startColumn": 4,
-                    "startOffset": 11083,
-                    "endColumn": 64,
-                    "endOffset": 11143
+                    "startOffset": 11032,
+                    "endColumn": 79,
+                    "endOffset": 11107
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1311,9 +1374,9 @@
                 "to": {
                     "startLine": 121,
                     "startColumn": 4,
-                    "startOffset": 11148,
-                    "endColumn": 43,
-                    "endOffset": 11187
+                    "startOffset": 11112,
+                    "endColumn": 57,
+                    "endOffset": 11165
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1323,9 +1386,9 @@
                 "to": {
                     "startLine": 122,
                     "startColumn": 4,
-                    "startOffset": 11192,
-                    "endColumn": 56,
-                    "endOffset": 11244
+                    "startOffset": 11170,
+                    "endColumn": 53,
+                    "endOffset": 11219
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1335,9 +1398,9 @@
                 "to": {
                     "startLine": 123,
                     "startColumn": 4,
-                    "startOffset": 11249,
-                    "endColumn": 58,
-                    "endOffset": 11303
+                    "startOffset": 11224,
+                    "endColumn": 42,
+                    "endOffset": 11262
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1347,21 +1410,28 @@
                 "to": {
                     "startLine": 124,
                     "startColumn": 4,
-                    "startOffset": 11308,
-                    "endColumn": 51,
-                    "endOffset": 11355
+                    "startOffset": 11267,
+                    "endColumn": 52,
+                    "endOffset": 11315
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 92,
+                        "startColumn": 4,
+                        "startOffset": 5253,
+                        "endColumn": 52,
+                        "endOffset": 5301
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 125,
                     "startColumn": 4,
-                    "startOffset": 11360,
-                    "endColumn": 62,
-                    "endOffset": 11418
+                    "startOffset": 11320,
+                    "endColumn": 43,
+                    "endOffset": 11359
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1371,9 +1441,9 @@
                 "to": {
                     "startLine": 126,
                     "startColumn": 4,
-                    "startOffset": 11423,
-                    "endColumn": 74,
-                    "endOffset": 11493
+                    "startOffset": 11364,
+                    "endColumn": 54,
+                    "endOffset": 11414
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1383,21 +1453,21 @@
                 "to": {
                     "startLine": 127,
                     "startColumn": 4,
-                    "startOffset": 11498,
-                    "endColumn": 100,
-                    "endOffset": 11594
+                    "startOffset": 11419,
+                    "endColumn": 49,
+                    "endOffset": 11464
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 128,
                     "startColumn": 4,
-                    "startOffset": 11599,
-                    "endColumn": 57,
-                    "endOffset": 11652
+                    "startOffset": 11469,
+                    "endColumn": 48,
+                    "endOffset": 11513
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1407,9 +1477,9 @@
                 "to": {
                     "startLine": 129,
                     "startColumn": 4,
-                    "startOffset": 11657,
-                    "endColumn": 50,
-                    "endOffset": 11703
+                    "startOffset": 11518,
+                    "endColumn": 53,
+                    "endOffset": 11567
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1419,9 +1489,9 @@
                 "to": {
                     "startLine": 130,
                     "startColumn": 4,
-                    "startOffset": 11708,
-                    "endColumn": 38,
-                    "endOffset": 11742
+                    "startOffset": 11572,
+                    "endColumn": 50,
+                    "endOffset": 11618
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1431,9 +1501,9 @@
                 "to": {
                     "startLine": 131,
                     "startColumn": 4,
-                    "startOffset": 11747,
-                    "endColumn": 44,
-                    "endOffset": 11787
+                    "startOffset": 11623,
+                    "endColumn": 64,
+                    "endOffset": 11683
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1443,9 +1513,9 @@
                 "to": {
                     "startLine": 132,
                     "startColumn": 4,
-                    "startOffset": 11792,
+                    "startOffset": 11688,
                     "endColumn": 43,
-                    "endOffset": 11831
+                    "endOffset": 11727
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1455,9 +1525,9 @@
                 "to": {
                     "startLine": 133,
                     "startColumn": 4,
-                    "startOffset": 11836,
-                    "endColumn": 49,
-                    "endOffset": 11881
+                    "startOffset": 11732,
+                    "endColumn": 56,
+                    "endOffset": 11784
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1467,9 +1537,9 @@
                 "to": {
                     "startLine": 134,
                     "startColumn": 4,
-                    "startOffset": 11886,
-                    "endColumn": 72,
-                    "endOffset": 11954
+                    "startOffset": 11789,
+                    "endColumn": 58,
+                    "endOffset": 11843
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
@@ -1479,28 +1549,153 @@
                 "to": {
                     "startLine": 135,
                     "startColumn": 4,
-                    "startOffset": 11959,
-                    "endColumn": 181,
-                    "endOffset": 12136
+                    "startOffset": 11848,
+                    "endColumn": 51,
+                    "endOffset": 11895
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml",
-                    "position": {
-                        "startLine": 52,
-                        "startColumn": 4,
-                        "startOffset": 2905,
-                        "endColumn": 181,
-                        "endOffset": 3082
-                    }
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 136,
                     "startColumn": 4,
-                    "startOffset": 12141,
+                    "startOffset": 11900,
+                    "endColumn": 62,
+                    "endOffset": 11958
+                },
+                "from": {
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 137,
+                    "startColumn": 4,
+                    "startOffset": 11963,
+                    "endColumn": 74,
+                    "endOffset": 12033
+                },
+                "from": {
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 138,
+                    "startColumn": 4,
+                    "startOffset": 12038,
+                    "endColumn": 100,
+                    "endOffset": 12134
+                },
+                "from": {
+                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-es/values-es.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 139,
+                    "startColumn": 4,
+                    "startOffset": 12139,
+                    "endColumn": 57,
+                    "endOffset": 12192
+                },
+                "from": {
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 140,
+                    "startColumn": 4,
+                    "startOffset": 12197,
+                    "endColumn": 50,
+                    "endOffset": 12243
+                },
+                "from": {
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 141,
+                    "startColumn": 4,
+                    "startOffset": 12248,
+                    "endColumn": 38,
+                    "endOffset": 12282
+                },
+                "from": {
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 142,
+                    "startColumn": 4,
+                    "startOffset": 12287,
+                    "endColumn": 44,
+                    "endOffset": 12327
+                },
+                "from": {
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 143,
+                    "startColumn": 4,
+                    "startOffset": 12332,
+                    "endColumn": 43,
+                    "endOffset": 12371
+                },
+                "from": {
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 144,
+                    "startColumn": 4,
+                    "startOffset": 12376,
+                    "endColumn": 49,
+                    "endOffset": 12421
+                },
+                "from": {
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 145,
+                    "startColumn": 4,
+                    "startOffset": 12426,
+                    "endColumn": 72,
+                    "endOffset": 12494
+                },
+                "from": {
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 146,
+                    "startColumn": 4,
+                    "startOffset": 12499,
+                    "endColumn": 181,
+                    "endOffset": 12676
+                },
+                "from": {
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 147,
+                    "startColumn": 4,
+                    "startOffset": 12681,
                     "endColumn": 34,
-                    "endOffset": 12171
+                    "endOffset": 12711
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-es/strings.xml"

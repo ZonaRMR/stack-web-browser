@@ -37,6 +37,8 @@ public class History extends AppCompatActivity {
 
         if (titles.isEmpty() || addrs.isEmpty()) {
             TextView empty = (TextView) findViewById(R.id.empty);
+            TextView title = (TextView) findViewById(R.id.historyTitle);
+            title.setVisibility(View.GONE);
             empty.setVisibility(View.VISIBLE);
             return;
         }

@@ -85,6 +85,8 @@
     <string name="copied">Indirizzo copiato negli appunti</string>
     <string name="copy_image_link">Copia indirizzo immagine</string>
     <string name="copy_link">Copia link</string>
+    <string name="delete">Eliminare?</string>
+    <string name="deleted">Segnalibro eliminato</string>
     <string name="donate">Donando puoi sostenere lo sviluppo di Stack</string>
     <string name="dotssumm">Necessita un tasto menu fisico</string>
     <string name="download">Scaricamento file</string>

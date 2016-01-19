@@ -82,4 +82,6 @@
     <string name="menu_bookmarks">Segnalibri</string>
     <string name="new_fol">Nuovo</string>
     <string name="readlater">Lista di lettura</string>
+    <string name="delete">Eliminare?</string>
+    <string name="deleted">Segnalibro eliminato</string>
 </resources>

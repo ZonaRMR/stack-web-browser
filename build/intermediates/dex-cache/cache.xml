@@ -1,12 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
-
-    <item
-        jar="/home/depa/Desktop/Stack/app/build/intermediates/incremental-classes/debug/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="c22fb25a3162a42c6520bd6abfb09bfafa169c2a">
-        <dex dex="/home/depa/Desktop/Stack/app/build/intermediates/pre-dexed/debug/classes_35291c010207c965109114598b9247effbc30c0a.jar" />
-    </item>
-
-</items>
+<items version="2" />

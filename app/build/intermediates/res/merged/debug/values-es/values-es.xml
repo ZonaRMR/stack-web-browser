@@ -13,6 +13,7 @@
         <item name="Blu">Azul</item>
         <item name="Grigio">Gris</item>
     </string-array>
+    <string name="BM_added">Marcador añadido</string>
     <string name="GPLsummary">Tocar para ver la licencia</string>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Ir a la pantalla de inicio"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
@@ -34,7 +35,10 @@
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Compartir con %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Contraer"</string>
     <string name="about_text">El desarrollo de Stack es dirigido por\nAlessandro De Pasquale\n\nPodéis contactarme o seguir el desarrollo vìa los botones debajo.</string>
+    <string name="add">Añade</string>
+    <string name="add_bm">Añade un marcador</string>
     <string name="added_to_home">Añadido a la pantalla de inicio</string>
+    <string name="addtoBM">Marca esta página</string>
     <string name="addtohome">Añadir a la pantalla inicial</string>
     <string name="alphathx">Muchas gracias a\nmi alpha tester\nAlessandro Menabue</string>
     <string name="app_name">Stack</string>
@@ -81,6 +85,8 @@
     <string name="copied">Dirección copiada</string>
     <string name="copy_image_link">Copiar dirección de la imagen</string>
     <string name="copy_link">Copiar dirección</string>
+    <string name="delete">¿Eliminar?</string>
+    <string name="deleted">Marcador eliminado</string>
     <string name="donate">Donando, ayudas el desarrollo de esta aplicación.</string>
     <string name="dotssumm">Necesita un botón menu físico</string>
     <string name="download">Descarga</string>
@@ -88,18 +94,22 @@
     <string name="earliest_reached">Ninguna página antes de la actual</string>
     <string name="easter_toast">Encontraste un huevo de Pascua!</string>
     <string name="email_noclient">Ninguna aplicación adecuada</string>
+    <string name="favorites">Favoritos</string>
     <string name="file_downloaded">El archivo ha sido descargado</string>
     <string name="file_downloading">El archivo está siendo descargado</string>
+    <string name="folder">Carpeta</string>
     <string name="functionality">Funcionalidad</string>
     <string name="image">Imagen</string>
     <string name="image_downloaded">La imagen ha sido descargada</string>
     <string name="insteadof">en vez de</string>
     <string name="location">Posición</string>
     <string name="menu_about">Informaciones</string>
+    <string name="menu_bookmarks">Marcadores</string>
     <string name="menu_donate">Donar</string>
     <string name="menu_history">Historial</string>
     <string name="menu_page">Página…</string>
     <string name="menu_settings">Configuración</string>
+    <string name="new_fol">Nuevo</string>
     <string name="no">NO</string>
     <string name="nohistory">No hay nada aquí</string>
     <string name="notrack">Pide que no seas rastreado</string>
@@ -112,6 +122,7 @@
     <string name="picksergine">Elige un buscador</string>
     <string name="picktheme">Elige a un tema</string>
     <string name="plzNo">Cancelar</string>
+    <string name="readlater">Leer más tarde</string>
     <string name="reload">Recargar</string>
     <string name="repBug">Comunicar de un bug</string>
     <string name="restart_cap">REINICIAR</string>

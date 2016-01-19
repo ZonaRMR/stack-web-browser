@@ -390,6 +390,8 @@
     <string name="copied">Link copied to clipboard</string>
     <string name="copy_image_link">Copy image location</string>
     <string name="copy_link">Copy link location</string>
+    <string name="delete">Delete?</string>
+    <string name="deleted">Bookmark deleted</string>
     <string name="donate">By donating, you can support the development of this application.</string>
     <string name="dotssumm">Requires a hardware menu button</string>
     <string name="download">File download</string>

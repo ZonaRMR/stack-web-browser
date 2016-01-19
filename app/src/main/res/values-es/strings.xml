@@ -80,4 +80,15 @@
     <string name="stopcklicking">Deja de tocarme</string>
     <string name="askLocGeneral">Proporcionar tu posición exacta?</string>
     <string name="image">Imagen</string>
+    <string name="BM_added">Marcador añadido</string>
+    <string name="add">Añade</string>
+    <string name="add_bm">Añade un marcador</string>
+    <string name="addtoBM">Marca esta página</string>
+    <string name="delete">¿Eliminar?</string>
+    <string name="deleted">Marcador eliminado</string>
+    <string name="favorites">Favoritos</string>
+    <string name="folder">Carpeta</string>
+    <string name="menu_bookmarks">Marcadores</string>
+    <string name="new_fol">Nuevo</string>
+    <string name="readlater">Leer más tarde</string>
 </resources>

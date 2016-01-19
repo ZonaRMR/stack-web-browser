@@ -37,14 +37,7 @@
                     "endOffset": 682
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml",
-                    "position": {
-                        "startLine": 75,
-                        "startColumn": 4,
-                        "startOffset": 4682,
-                        "endColumn": 56,
-                        "endOffset": 4734
-                    }
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
                 }
             },
             {
@@ -308,14 +301,7 @@
                     "endOffset": 2916
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml",
-                    "position": {
-                        "startLine": 76,
-                        "startColumn": 4,
-                        "startOffset": 4739,
-                        "endColumn": 40,
-                        "endOffset": 4775
-                    }
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
                 }
             },
             {
@@ -327,14 +313,7 @@
                     "endOffset": 2974
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml",
-                    "position": {
-                        "startLine": 77,
-                        "startColumn": 4,
-                        "startOffset": 4780,
-                        "endColumn": 57,
-                        "endOffset": 4833
-                    }
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
                 }
             },
             {
@@ -358,14 +337,7 @@
                     "endOffset": 3096
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml",
-                    "position": {
-                        "startLine": 78,
-                        "startColumn": 4,
-                        "startOffset": 4838,
-                        "endColumn": 58,
-                        "endOffset": 4892
-                    }
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
                 }
             },
             {
@@ -925,32 +897,46 @@
                     "startLine": 87,
                     "startColumn": 4,
                     "startOffset": 8963,
-                    "endColumn": 78,
-                    "endOffset": 9037
+                    "endColumn": 45,
+                    "endOffset": 9004
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 84,
+                        "startColumn": 4,
+                        "startOffset": 5140,
+                        "endColumn": 45,
+                        "endOffset": 5181
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 88,
                     "startColumn": 4,
-                    "startOffset": 9042,
-                    "endColumn": 67,
-                    "endOffset": 9105
+                    "startOffset": 9009,
+                    "endColumn": 56,
+                    "endOffset": 9061
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml",
+                    "position": {
+                        "startLine": 85,
+                        "startColumn": 4,
+                        "startOffset": 5186,
+                        "endColumn": 56,
+                        "endOffset": 5238
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 89,
                     "startColumn": 4,
-                    "startOffset": 9110,
-                    "endColumn": 54,
-                    "endOffset": 9160
+                    "startOffset": 9066,
+                    "endColumn": 78,
+                    "endOffset": 9140
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -960,9 +946,9 @@
                 "to": {
                     "startLine": 90,
                     "startColumn": 4,
-                    "startOffset": 9165,
-                    "endColumn": 40,
-                    "endOffset": 9201
+                    "startOffset": 9145,
+                    "endColumn": 67,
+                    "endOffset": 9208
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -972,9 +958,9 @@
                 "to": {
                     "startLine": 91,
                     "startColumn": 4,
-                    "startOffset": 9206,
-                    "endColumn": 70,
-                    "endOffset": 9272
+                    "startOffset": 9213,
+                    "endColumn": 54,
+                    "endOffset": 9263
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -984,9 +970,9 @@
                 "to": {
                     "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 9277,
-                    "endColumn": 72,
-                    "endOffset": 9345
+                    "startOffset": 9268,
+                    "endColumn": 40,
+                    "endOffset": 9304
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -996,9 +982,9 @@
                 "to": {
                     "startLine": 93,
                     "startColumn": 4,
-                    "startOffset": 9350,
+                    "startOffset": 9309,
                     "endColumn": 70,
-                    "endOffset": 9416
+                    "endOffset": 9375
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1008,28 +994,21 @@
                 "to": {
                     "startLine": 94,
                     "startColumn": 4,
-                    "startOffset": 9421,
-                    "endColumn": 47,
-                    "endOffset": 9464
+                    "startOffset": 9380,
+                    "endColumn": 72,
+                    "endOffset": 9448
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml",
-                    "position": {
-                        "startLine": 79,
-                        "startColumn": 4,
-                        "startOffset": 4897,
-                        "endColumn": 47,
-                        "endOffset": 4940
-                    }
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 95,
                     "startColumn": 4,
-                    "startOffset": 9469,
-                    "endColumn": 69,
-                    "endOffset": 9534
+                    "startOffset": 9453,
+                    "endColumn": 70,
+                    "endOffset": 9519
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1039,9 +1018,9 @@
                 "to": {
                     "startLine": 96,
                     "startColumn": 4,
-                    "startOffset": 9539,
-                    "endColumn": 67,
-                    "endOffset": 9602
+                    "startOffset": 9524,
+                    "endColumn": 47,
+                    "endOffset": 9567
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1051,28 +1030,21 @@
                 "to": {
                     "startLine": 97,
                     "startColumn": 4,
-                    "startOffset": 9607,
-                    "endColumn": 43,
-                    "endOffset": 9646
+                    "startOffset": 9572,
+                    "endColumn": 69,
+                    "endOffset": 9637
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml",
-                    "position": {
-                        "startLine": 80,
-                        "startColumn": 4,
-                        "startOffset": 4945,
-                        "endColumn": 43,
-                        "endOffset": 4984
-                    }
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 98,
                     "startColumn": 4,
-                    "startOffset": 9651,
-                    "endColumn": 54,
-                    "endOffset": 9701
+                    "startOffset": 9642,
+                    "endColumn": 67,
+                    "endOffset": 9705
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1082,9 +1054,9 @@
                 "to": {
                     "startLine": 99,
                     "startColumn": 4,
-                    "startOffset": 9706,
-                    "endColumn": 42,
-                    "endOffset": 9744
+                    "startOffset": 9710,
+                    "endColumn": 43,
+                    "endOffset": 9749
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1094,9 +1066,9 @@
                 "to": {
                     "startLine": 100,
                     "startColumn": 4,
-                    "startOffset": 9749,
-                    "endColumn": 74,
-                    "endOffset": 9819
+                    "startOffset": 9754,
+                    "endColumn": 54,
+                    "endOffset": 9804
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1106,9 +1078,9 @@
                 "to": {
                     "startLine": 101,
                     "startColumn": 4,
-                    "startOffset": 9824,
-                    "endColumn": 48,
-                    "endOffset": 9868
+                    "startOffset": 9809,
+                    "endColumn": 42,
+                    "endOffset": 9847
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1118,9 +1090,9 @@
                 "to": {
                     "startLine": 102,
                     "startColumn": 4,
-                    "startOffset": 9873,
-                    "endColumn": 46,
-                    "endOffset": 9915
+                    "startOffset": 9852,
+                    "endColumn": 74,
+                    "endOffset": 9922
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1130,9 +1102,9 @@
                 "to": {
                     "startLine": 103,
                     "startColumn": 4,
-                    "startOffset": 9920,
-                    "endColumn": 51,
-                    "endOffset": 9967
+                    "startOffset": 9927,
+                    "endColumn": 48,
+                    "endOffset": 9971
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1142,28 +1114,21 @@
                 "to": {
                     "startLine": 104,
                     "startColumn": 4,
-                    "startOffset": 9972,
-                    "endColumn": 53,
-                    "endOffset": 10021
+                    "startOffset": 9976,
+                    "endColumn": 46,
+                    "endOffset": 10018
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml",
-                    "position": {
-                        "startLine": 81,
-                        "startColumn": 4,
-                        "startOffset": 4989,
-                        "endColumn": 53,
-                        "endOffset": 5038
-                    }
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 105,
                     "startColumn": 4,
-                    "startOffset": 10026,
-                    "endColumn": 44,
-                    "endOffset": 10066
+                    "startOffset": 10023,
+                    "endColumn": 51,
+                    "endOffset": 10070
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1173,9 +1138,9 @@
                 "to": {
                     "startLine": 106,
                     "startColumn": 4,
-                    "startOffset": 10071,
-                    "endColumn": 51,
-                    "endOffset": 10118
+                    "startOffset": 10075,
+                    "endColumn": 53,
+                    "endOffset": 10124
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1185,9 +1150,9 @@
                 "to": {
                     "startLine": 107,
                     "startColumn": 4,
-                    "startOffset": 10123,
-                    "endColumn": 45,
-                    "endOffset": 10164
+                    "startOffset": 10129,
+                    "endColumn": 44,
+                    "endOffset": 10169
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1197,9 +1162,9 @@
                 "to": {
                     "startLine": 108,
                     "startColumn": 4,
-                    "startOffset": 10169,
-                    "endColumn": 54,
-                    "endOffset": 10219
+                    "startOffset": 10174,
+                    "endColumn": 51,
+                    "endOffset": 10221
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1209,28 +1174,21 @@
                 "to": {
                     "startLine": 109,
                     "startColumn": 4,
-                    "startOffset": 10224,
-                    "endColumn": 41,
-                    "endOffset": 10261
+                    "startOffset": 10226,
+                    "endColumn": 45,
+                    "endOffset": 10267
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml",
-                    "position": {
-                        "startLine": 82,
-                        "startColumn": 4,
-                        "startOffset": 5043,
-                        "endColumn": 41,
-                        "endOffset": 5080
-                    }
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 110,
                     "startColumn": 4,
-                    "startOffset": 10266,
-                    "endColumn": 33,
-                    "endOffset": 10295
+                    "startOffset": 10272,
+                    "endColumn": 54,
+                    "endOffset": 10322
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1240,9 +1198,9 @@
                 "to": {
                     "startLine": 111,
                     "startColumn": 4,
-                    "startOffset": 10300,
-                    "endColumn": 66,
-                    "endOffset": 10362
+                    "startOffset": 10327,
+                    "endColumn": 41,
+                    "endOffset": 10364
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1252,9 +1210,9 @@
                 "to": {
                     "startLine": 112,
                     "startColumn": 4,
-                    "startOffset": 10367,
-                    "endColumn": 68,
-                    "endOffset": 10431
+                    "startOffset": 10369,
+                    "endColumn": 33,
+                    "endOffset": 10398
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1264,9 +1222,9 @@
                 "to": {
                     "startLine": 113,
                     "startColumn": 4,
-                    "startOffset": 10436,
-                    "endColumn": 75,
-                    "endOffset": 10507
+                    "startOffset": 10403,
+                    "endColumn": 66,
+                    "endOffset": 10465
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1276,9 +1234,9 @@
                 "to": {
                     "startLine": 114,
                     "startColumn": 4,
-                    "startOffset": 10512,
-                    "endColumn": 53,
-                    "endOffset": 10561
+                    "startOffset": 10470,
+                    "endColumn": 68,
+                    "endOffset": 10534
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1288,9 +1246,9 @@
                 "to": {
                     "startLine": 115,
                     "startColumn": 4,
-                    "startOffset": 10566,
-                    "endColumn": 65,
-                    "endOffset": 10627
+                    "startOffset": 10539,
+                    "endColumn": 75,
+                    "endOffset": 10610
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1300,9 +1258,9 @@
                 "to": {
                     "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 10632,
-                    "endColumn": 60,
-                    "endOffset": 10688
+                    "startOffset": 10615,
+                    "endColumn": 53,
+                    "endOffset": 10664
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1312,9 +1270,9 @@
                 "to": {
                     "startLine": 117,
                     "startColumn": 4,
-                    "startOffset": 10693,
-                    "endColumn": 72,
-                    "endOffset": 10761
+                    "startOffset": 10669,
+                    "endColumn": 65,
+                    "endOffset": 10730
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1324,9 +1282,9 @@
                 "to": {
                     "startLine": 118,
                     "startColumn": 4,
-                    "startOffset": 10766,
-                    "endColumn": 78,
-                    "endOffset": 10840
+                    "startOffset": 10735,
+                    "endColumn": 60,
+                    "endOffset": 10791
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1336,9 +1294,9 @@
                 "to": {
                     "startLine": 119,
                     "startColumn": 4,
-                    "startOffset": 10845,
-                    "endColumn": 67,
-                    "endOffset": 10908
+                    "startOffset": 10796,
+                    "endColumn": 72,
+                    "endOffset": 10864
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1348,9 +1306,9 @@
                 "to": {
                     "startLine": 120,
                     "startColumn": 4,
-                    "startOffset": 10913,
-                    "endColumn": 52,
-                    "endOffset": 10961
+                    "startOffset": 10869,
+                    "endColumn": 78,
+                    "endOffset": 10943
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1360,9 +1318,9 @@
                 "to": {
                     "startLine": 121,
                     "startColumn": 4,
-                    "startOffset": 10966,
-                    "endColumn": 42,
-                    "endOffset": 11004
+                    "startOffset": 10948,
+                    "endColumn": 67,
+                    "endOffset": 11011
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1372,28 +1330,21 @@
                 "to": {
                     "startLine": 122,
                     "startColumn": 4,
-                    "startOffset": 11009,
-                    "endColumn": 54,
-                    "endOffset": 11059
+                    "startOffset": 11016,
+                    "endColumn": 52,
+                    "endOffset": 11064
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml",
-                    "position": {
-                        "startLine": 83,
-                        "startColumn": 4,
-                        "startOffset": 5085,
-                        "endColumn": 54,
-                        "endOffset": 5135
-                    }
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 123,
                     "startColumn": 4,
-                    "startOffset": 11064,
-                    "endColumn": 43,
-                    "endOffset": 11103
+                    "startOffset": 11069,
+                    "endColumn": 42,
+                    "endOffset": 11107
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1403,9 +1354,9 @@
                 "to": {
                     "startLine": 124,
                     "startColumn": 4,
-                    "startOffset": 11108,
+                    "startOffset": 11112,
                     "endColumn": 54,
-                    "endOffset": 11158
+                    "endOffset": 11162
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1415,8 +1366,8 @@
                 "to": {
                     "startLine": 125,
                     "startColumn": 4,
-                    "startOffset": 11163,
-                    "endColumn": 47,
+                    "startOffset": 11167,
+                    "endColumn": 43,
                     "endOffset": 11206
                 },
                 "from": {
@@ -1428,8 +1379,8 @@
                     "startLine": 126,
                     "startColumn": 4,
                     "startOffset": 11211,
-                    "endColumn": 47,
-                    "endOffset": 11254
+                    "endColumn": 54,
+                    "endOffset": 11261
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1439,9 +1390,9 @@
                 "to": {
                     "startLine": 127,
                     "startColumn": 4,
-                    "startOffset": 11259,
-                    "endColumn": 53,
-                    "endOffset": 11308
+                    "startOffset": 11266,
+                    "endColumn": 47,
+                    "endOffset": 11309
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1451,9 +1402,9 @@
                 "to": {
                     "startLine": 128,
                     "startColumn": 4,
-                    "startOffset": 11313,
-                    "endColumn": 59,
-                    "endOffset": 11368
+                    "startOffset": 11314,
+                    "endColumn": 47,
+                    "endOffset": 11357
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1463,9 +1414,9 @@
                 "to": {
                     "startLine": 129,
                     "startColumn": 4,
-                    "startOffset": 11373,
-                    "endColumn": 63,
-                    "endOffset": 11432
+                    "startOffset": 11362,
+                    "endColumn": 53,
+                    "endOffset": 11411
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1475,9 +1426,9 @@
                 "to": {
                     "startLine": 130,
                     "startColumn": 4,
-                    "startOffset": 11437,
-                    "endColumn": 43,
-                    "endOffset": 11476
+                    "startOffset": 11416,
+                    "endColumn": 59,
+                    "endOffset": 11471
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1487,8 +1438,8 @@
                 "to": {
                     "startLine": 131,
                     "startColumn": 4,
-                    "startOffset": 11481,
-                    "endColumn": 58,
+                    "startOffset": 11476,
+                    "endColumn": 63,
                     "endOffset": 11535
                 },
                 "from": {
@@ -1500,8 +1451,8 @@
                     "startLine": 132,
                     "startColumn": 4,
                     "startOffset": 11540,
-                    "endColumn": 53,
-                    "endOffset": 11589
+                    "endColumn": 43,
+                    "endOffset": 11579
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1511,9 +1462,9 @@
                 "to": {
                     "startLine": 133,
                     "startColumn": 4,
-                    "startOffset": 11594,
-                    "endColumn": 52,
-                    "endOffset": 11642
+                    "startOffset": 11584,
+                    "endColumn": 58,
+                    "endOffset": 11638
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1523,9 +1474,9 @@
                 "to": {
                     "startLine": 134,
                     "startColumn": 4,
-                    "startOffset": 11647,
-                    "endColumn": 60,
-                    "endOffset": 11703
+                    "startOffset": 11643,
+                    "endColumn": 53,
+                    "endOffset": 11692
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1535,9 +1486,9 @@
                 "to": {
                     "startLine": 135,
                     "startColumn": 4,
-                    "startOffset": 11708,
-                    "endColumn": 75,
-                    "endOffset": 11779
+                    "startOffset": 11697,
+                    "endColumn": 52,
+                    "endOffset": 11745
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1547,21 +1498,21 @@
                 "to": {
                     "startLine": 136,
                     "startColumn": 4,
-                    "startOffset": 11784,
-                    "endColumn": 100,
-                    "endOffset": 11880
+                    "startOffset": 11750,
+                    "endColumn": 60,
+                    "endOffset": 11806
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-it/values-it.xml"
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 137,
                     "startColumn": 4,
-                    "startOffset": 11885,
-                    "endColumn": 62,
-                    "endOffset": 11943
+                    "startOffset": 11811,
+                    "endColumn": 75,
+                    "endOffset": 11882
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1571,21 +1522,21 @@
                 "to": {
                     "startLine": 138,
                     "startColumn": 4,
-                    "startOffset": 11948,
-                    "endColumn": 60,
-                    "endOffset": 12004
+                    "startOffset": 11887,
+                    "endColumn": 100,
+                    "endOffset": 11983
                 },
                 "from": {
-                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
+                    "file": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-it/values-it.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 139,
                     "startColumn": 4,
-                    "startOffset": 12009,
-                    "endColumn": 38,
-                    "endOffset": 12043
+                    "startOffset": 11988,
+                    "endColumn": 62,
+                    "endOffset": 12046
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1595,9 +1546,9 @@
                 "to": {
                     "startLine": 140,
                     "startColumn": 4,
-                    "startOffset": 12048,
-                    "endColumn": 49,
-                    "endOffset": 12093
+                    "startOffset": 12051,
+                    "endColumn": 60,
+                    "endOffset": 12107
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1607,9 +1558,9 @@
                 "to": {
                     "startLine": 141,
                     "startColumn": 4,
-                    "startOffset": 12098,
-                    "endColumn": 44,
-                    "endOffset": 12138
+                    "startOffset": 12112,
+                    "endColumn": 38,
+                    "endOffset": 12146
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1619,9 +1570,9 @@
                 "to": {
                     "startLine": 142,
                     "startColumn": 4,
-                    "startOffset": 12143,
-                    "endColumn": 58,
-                    "endOffset": 12197
+                    "startOffset": 12151,
+                    "endColumn": 49,
+                    "endOffset": 12196
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1631,9 +1582,9 @@
                 "to": {
                     "startLine": 143,
                     "startColumn": 4,
-                    "startOffset": 12202,
-                    "endColumn": 75,
-                    "endOffset": 12273
+                    "startOffset": 12201,
+                    "endColumn": 44,
+                    "endOffset": 12241
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1643,9 +1594,9 @@
                 "to": {
                     "startLine": 144,
                     "startColumn": 4,
-                    "startOffset": 12278,
-                    "endColumn": 174,
-                    "endOffset": 12448
+                    "startOffset": 12246,
+                    "endColumn": 58,
+                    "endOffset": 12300
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
@@ -1655,9 +1606,33 @@
                 "to": {
                     "startLine": 145,
                     "startColumn": 4,
-                    "startOffset": 12453,
+                    "startOffset": 12305,
+                    "endColumn": 75,
+                    "endOffset": 12376
+                },
+                "from": {
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 146,
+                    "startColumn": 4,
+                    "startOffset": 12381,
+                    "endColumn": 174,
+                    "endOffset": 12551
+                },
+                "from": {
+                    "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 147,
+                    "startColumn": 4,
+                    "startOffset": 12556,
                     "endColumn": 34,
-                    "endOffset": 12483
+                    "endOffset": 12586
                 },
                 "from": {
                     "file": "/home/depa/Desktop/Stack/app/src/main/res/values-it/strings.xml"
