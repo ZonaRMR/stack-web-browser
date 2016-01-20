@@ -119,6 +119,7 @@ public class LCWV extends WebView {
         }
     };
     WebChromeClient webChromeClient = new WebChromeClient(){
+
         @Override
         public void onProgressChanged(WebView wv, int progress) {
             pb.setProgress(progress);
@@ -165,7 +166,8 @@ public class LCWV extends WebView {
                 }
             });
             builder.setCancelable(false);
-            builder.setIcon(getResources().getDrawable(R.drawable.pin));
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP)
+                builder.setIcon(getResources().getDrawable(R.drawable.pin));
             builder.show();
         }
 

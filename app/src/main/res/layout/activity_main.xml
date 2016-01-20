@@ -105,4 +105,11 @@
         android:layout_alignTop="@id/webView"
         android:id="@+id/pb"/>
 
+    <FrameLayout
+        android:id="@+id/target_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </FrameLayout>
+
 </RelativeLayout>

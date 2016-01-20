@@ -48,7 +48,8 @@ public class About extends Activity {
     public void sendEmail(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(About.this);
         builder.setTitle(getString(R.string.send_email));
-        builder.setIcon(getResources().getDrawable(R.drawable.mail));
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP)
+            builder.setIcon(getResources().getDrawable(R.drawable.mail));
         builder.setItems(new CharSequence[]{getString(R.string.repBug),
                         getString(R.string.ask),
                         getString(R.string.suggest)},
