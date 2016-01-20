@@ -25,13 +25,11 @@ import java.util.List;
 import java.util.Map;
 
 public class Bookmarks extends AppCompatActivity{
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         setThemeFromPrefs();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bookmarks);
-
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         final ListView LV = (ListView) findViewById(R.id.BMList);
 
@@ -42,7 +40,7 @@ public class Bookmarks extends AppCompatActivity{
         if (titles == null || addrs == null) return;
 
         if (titles.isEmpty() || addrs.isEmpty()) {
-            TextView empty = (TextView) findViewById(R.id.empty);
+            TextView empty = (TextView) findViewById(R.id.emptyBM);
             TextView title = (TextView) findViewById(R.id.BMTitle);
             title.setVisibility(View.GONE);
             empty.setVisibility(View.VISIBLE);
@@ -62,9 +60,17 @@ public class Bookmarks extends AppCompatActivity{
                 new String[] {"title", "addr"},
                 new int[] {android.R.id.text1, android.R.id.text2 });
 
+        if (adapter.isEmpty() || data.isEmpty()) {
+            TextView empty = (TextView) findViewById(R.id.emptyBM);
+            TextView title = (TextView) findViewById(R.id.BMTitle);
+            title.setVisibility(View.GONE);
+            empty.setVisibility(View.VISIBLE);
+            return;
+        }
+
+
         LV.setAdapter(adapter);
         LV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @SuppressWarnings("deprecation")
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 TwoLineListItem item = (TwoLineListItem) view;
@@ -105,7 +111,7 @@ public class Bookmarks extends AppCompatActivity{
                 });
                 builder.setCancelable(false);
                 builder.show();
-                return false;
+                return true;
             }
         });
     }

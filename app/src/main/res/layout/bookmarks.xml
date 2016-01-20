@@ -29,7 +29,7 @@
         android:layout_gravity="center"
         android:foregroundGravity="center"
         android:text="@string/nohistory"
-        android:id="@+id/empty"
+        android:id="@+id/emptyBM"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:typeface="sans"
         android:layout_margin="20dp"
