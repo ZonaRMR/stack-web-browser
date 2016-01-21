@@ -26,6 +26,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.webkit.DownloadListener;
 import android.webkit.GeolocationPermissions;
+import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -193,6 +194,23 @@ public class LCWV extends WebView {
                     ((MainActivity)getContext()).setTaskDescription(taskDescription);
                 }
             }
+        }
+
+        public void openFileChooser(ValueCallback<Uri> uploadMsg) {
+
+            ((MainActivity) getContext()).mUploadMessage = uploadMsg;
+            Intent i = new Intent(Intent.ACTION_GET_CONTENT);
+            i.addCategory(Intent.CATEGORY_OPENABLE);
+            i.setType("image/*");
+            ((MainActivity) getContext()).startActivityForResult(i, 4893);
+        }
+
+        public void openFileChooser(ValueCallback<Uri> uploadMsg, String acceptType) {
+            openFileChooser(uploadMsg);
+        }
+
+        public void openFileChooser(ValueCallback<Uri> uploadMsg, String acceptType, String capture) {
+            openFileChooser(uploadMsg);
         }
     };
     DownloadListener DListener = new DownloadListener() {

@@ -1,10 +1,18 @@
 [
     {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/menu/options.xml",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/menu/options.xml"
+    },
+    {
         "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/menu/menu_email.xml",
         "source": "/home/depa/Desktop/Stack/app/src/main/res/menu/menu_email.xml"
     },
     {
         "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/menu/options.xml",
         "source": "/home/depa/Desktop/Stack/app/src/main/res/menu/options.xml"
+    },
+    {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/menu/menu_email.xml",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/menu/menu_email.xml"
     }
 ]

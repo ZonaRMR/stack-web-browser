@@ -36,6 +36,7 @@ import android.view.View;
 import android.view.View.OnKeyListener;
 import android.view.ViewConfiguration;
 import android.view.inputmethod.InputMethodManager;
+import android.webkit.ValueCallback;
 import android.webkit.WebBackForwardList;
 import android.webkit.WebIconDatabase;
 import android.widget.EditText;
@@ -231,8 +232,13 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         Toast.makeText(this, getString(R.string.added_to_home), Toast.LENGTH_SHORT).show();
     }   //duh NOTE: WORKS 3/1/16 HELL YEAH
 
+
+    public ValueCallback<Uri> mUploadMessage;
+    private final static int FILECHOOSER_RESULTCODE = 4893;
+    private final static int PAYPAL_RESULTCODE = 16019;
+
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-        if (resultCode == 16019) {
+        if (resultCode == PAYPAL_RESULTCODE) {
             Intent launchPayPal = getPackageManager().getLaunchIntentForPackage("com.paypal.android.p2pmobile");
             if(launchPayPal == null) {
                 PackageManager pm = getPackageManager();
@@ -250,6 +256,16 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
                 startActivity(launchPayPal);
             }
         }
+
+        if (requestCode == FILECHOOSER_RESULTCODE) {
+            if (null == mUploadMessage)
+                return;
+            Uri result = intent == null || resultCode != RESULT_OK ? null
+                    : intent.getData();
+            mUploadMessage.onReceiveValue(result);
+            mUploadMessage = null;
+        }
+
         reloadSettings();
     }   //wat do when u get a result from activity: PayPal
 
@@ -420,8 +436,8 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
 
         String[] titles = sharedPref.getString("BMtitles", "").split(";;");
         String[] addrs = sharedPref.getString("BMurls", "").split(";;");
-        bookmarkData.putStringArrayList("titles", new ArrayList<String>(Arrays.asList(titles)));
-        bookmarkData.putStringArrayList("addrs", new ArrayList<String>(Arrays.asList(addrs)));
+        bookmarkData.putStringArrayList("titles", new ArrayList<>(Arrays.asList(titles)));
+        bookmarkData.putStringArrayList("addrs", new ArrayList<>(Arrays.asList(addrs)));
         gotoBookmarks.putExtra("bundle", bookmarkData);
         startActivity(gotoBookmarks);
     }

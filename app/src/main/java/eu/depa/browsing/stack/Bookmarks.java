@@ -103,6 +103,7 @@ public class Bookmarks extends AppCompatActivity{
                         sharedPref.edit().putString("BMtitles", sharedPref.getString("BMtitles", "").replace(";;" + title, "")).apply();
                         sharedPref.edit().putString("BMurls", sharedPref.getString("BMurls", "").replace(";;" + url, "")).apply();
                         Toast.makeText(Bookmarks.this, getString(R.string.deleted), Toast.LENGTH_SHORT).show();
+                        item.setVisibility(View.GONE);
                     }
                 });
                 builder.setNegativeButton(getString(R.string.no), new DialogInterface.OnClickListener() {

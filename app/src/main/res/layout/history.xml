@@ -11,7 +11,8 @@
         android:text="@string/menu_history"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:typeface="sans"
-        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:textColor="#808080"
         android:id="@+id/historyTitle" />
 
@@ -20,7 +21,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/historyList"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@id/historyTitle"/>
+        android:layout_below="@id/historyTitle"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginStart="-30dp"/>
 
     <TextView
         android:layout_width="match_parent"

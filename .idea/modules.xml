@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Stack.iml" filepath="$PROJECT_DIR$/Stack.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stack-web-browser.iml" filepath="$PROJECT_DIR$/stack-web-browser.iml" />
     </modules>
   </component>
 </project>
