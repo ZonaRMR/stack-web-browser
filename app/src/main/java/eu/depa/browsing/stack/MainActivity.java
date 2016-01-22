@@ -23,7 +23,11 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.PictureDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -39,6 +43,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebBackForwardList;
 import android.webkit.WebIconDatabase;
+import android.webkit.WebView;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.PopupMenu;
@@ -46,9 +51,17 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.larvalabs.svgandroid.SVG;
+import com.larvalabs.svgandroid.SVGParser;
+
+import org.json.JSONObject;
+
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.BitSet;
 import java.util.Locale;
+import java.util.concurrent.atomic.AtomicReference;
 
 @SuppressWarnings({"deprecation"})
 @SuppressLint("SetJavaScriptEnabled")
@@ -90,7 +103,6 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
                 else X.setVisibility(View.GONE);
             }
         });
-        //ALL DONE
     }
 
     protected void onNewIntent(Intent intent) {
@@ -220,9 +232,15 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         Intent addIntent = new Intent();
         addIntent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
         addIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, webView.getTitle());
-        if (webView.getFavicon() != null)
+        if (webView.getFavicon() != null && webView.getFavicon().getHeight() >= 63)
             addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON, webView.getFavicon());
-        else addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, R.drawable.x);
+        else {
+            Bitmap favicon = webView.getFavicon();
+            int mdl = favicon.getPixel((int) Math.floor(favicon.getHeight() / 2), (int) Math.floor(favicon.getWidth()/2));
+            Bitmap bitmap = BitmapFromSVG(webView.getTitle().toUpperCase().toCharArray()[0], mdl);
+            if (bitmap != null)
+                addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON, bitmap);
+        }
 
 
         addIntent.putExtra("duplicate", false);
@@ -232,8 +250,7 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         Toast.makeText(this, getString(R.string.added_to_home), Toast.LENGTH_SHORT).show();
     }   //duh NOTE: WORKS 3/1/16 HELL YEAH
 
-
-    public ValueCallback<Uri> mUploadMessage;
+    public static ValueCallback<Uri> mUploadMessage;
     private final static int FILECHOOSER_RESULTCODE = 4893;
     private final static int PAYPAL_RESULTCODE = 16019;
 
@@ -440,5 +457,66 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         bookmarkData.putStringArrayList("addrs", new ArrayList<>(Arrays.asList(addrs)));
         gotoBookmarks.putExtra("bundle", bookmarkData);
         startActivity(gotoBookmarks);
+    }
+
+    public Bitmap BitmapFromSVG(char c, int mdl) {
+        SVG svg = SVGParser.getSVGFromString("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
+                "<svg\n" +
+                "   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n" +
+                "   xmlns:cc=\"http://creativecommons.org/ns#\"\n" +
+                "   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n" +
+                "   xmlns:svg=\"http://www.w3.org/2000/svg\"\n" +
+                "   xmlns=\"http://www.w3.org/2000/svg\"\n" +
+                "   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n" +
+                "   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"" +
+                "   width=\"128\"\n" +
+                "   height=\"128\"\n" +
+                "   id=\"svg2\"\n" +
+                "   version=\"1.1\"\n" +
+                "   sodipodi:docname=\"letterTemplate.svg\">\n" +
+                "  <defs id=\"defs4\" />\n" +
+                "  <rect\n" +
+                "     style=\"fill:#004d40;\n" +
+                "            fill-opacity:1;\n" +
+                "            fill-rule:evenodd;\n" +
+                "            stroke:#000000;\n" +
+                "            stroke-width:5;\n" +
+                "            stroke-linecap:round;\n" +
+                "            stroke-linejoin:round;\n" +
+                "            stroke-miterlimit:4;\n" +
+                "            stroke-opacity:1;\n" +
+                "            stroke-dasharray:none;\n" +
+                "            stroke-dashoffset:0\"\n" +
+                "     id=\"rect2985\"\n" +
+                "     width=\"128\"\n" +
+                "     height=\"128\"\n" +
+                "     x=\"0\"\n" +
+                "     y=\"0\" />\n" +
+                "  <text\n" +
+                "     xml:space=\"preserve\"\n" +
+                "     style=\"font-size:64px;\n" +
+                "            font-style:normal;\n" +
+                "            font-weight:normal;\n" +
+                "            line-height:125%;\n" +
+                "            letter-spacing:0px;\n" +
+                "            word-spacing:0px;\n" +
+                "            fill:#ffffff;\n" +
+                "            fill-opacity:1;\n" +
+                "            stroke:none;\n" +
+                "            font-family:Monospace\"\n" +
+                "     width = \"45px\"\n" +
+                "     height = \"45px\"\n" +
+                "     x=\"0\"\n" +
+                "     y=\"0\"\n" +
+                "     id=\"text3755\"\n" +
+                "     sodipodi:linespacing=\"125%\"><tspan\n" +
+                "       sodipodi:role=\"line\"\n" +
+                "       x=\"44\"\n" +
+                "       y=\"88\"\n" +
+                "       id=\"tspan3814\">" + c + "</tspan></text>\n" +
+                "</svg>\n");
+        PictureDrawable pictureDrawable = svg.createPictureDrawable();
+        Bitmap bitmap = Bitmap.createBitmap(pictureDrawable.getIntrinsicWidth(), pictureDrawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+        return bitmap;
     }
 }

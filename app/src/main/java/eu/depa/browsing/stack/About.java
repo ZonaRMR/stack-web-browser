@@ -48,8 +48,6 @@ public class About extends Activity {
     public void sendEmail(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(About.this);
         builder.setTitle(getString(R.string.send_email));
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP)
-            builder.setIcon(getResources().getDrawable(R.drawable.mail));
         builder.setItems(new CharSequence[]{getString(R.string.repBug),
                         getString(R.string.ask),
                         getString(R.string.suggest)},
@@ -81,7 +79,7 @@ public class About extends Activity {
                         emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
                         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "STACK_" + thing + ": ");
                         emailIntent.putExtra(Intent.EXTRA_TEXT, "API: " + android.os.Build.VERSION.SDK_INT +
-                                "\nVERSION: " + BuildConfig.VERSION_CODE);
+                                "\nVERSION: " + BuildConfig.VERSION_CODE + "\n\n");
 
                         try {
                             startActivity(emailIntent);
@@ -90,7 +88,9 @@ public class About extends Activity {
                             Toast.makeText(About.this, getString(R.string.email_noclient), Toast.LENGTH_SHORT).show();}
                     }
                 });
-        builder.create().show();
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP)
+            builder.setIcon(getResources().getDrawable(R.drawable.mail));
+        builder.show();
     }
 
     public void seeSource(View view) {

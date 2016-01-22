@@ -1,19 +1,19 @@
 [
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_light.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_text_light.xml"
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/k.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/k.png"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_text_light.xml"
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/w.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/w.png"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/paypal.png",
-        "source": "/home/depa/Desktop/Stack/app/src/main/res/drawable/paypal.png"
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/q.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/q.png"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/bang.png",
-        "source": "/home/depa/Desktop/Stack/app/src/main/res/drawable/bang.png"
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/b.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/b.png"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
@@ -32,56 +32,96 @@
         "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/x.png"
     },
     {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/g.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/g.png"
+    },
+    {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/r.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/r.png"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/plus.png",
         "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/plus.png"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_seekbar_thumb_material.xml"
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/j.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/j.png"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_light.xml"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/drawable/design_snackbar_background.xml"
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/i.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/i.png"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_colored_material.xml"
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/t.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/t.png"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/u.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/u.png"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/a.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/a.png"
+    },
+    {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/n.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/n.png"
+    },
+    {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/github.png",
-        "source": "/home/depa/Desktop/Stack/app/src/main/res/drawable/github.png"
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/h.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/h.png"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_tab_indicator_material.xml"
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/c.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/c.png"
+    },
+    {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/l.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/l.png"
+    },
+    {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/s.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/s.png"
+    },
+    {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/d.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/d.png"
+    },
+    {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_cab_background_top_material.xml"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_dark.xml",
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/bang.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/bang.png"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
@@ -92,64 +132,8 @@
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/bitcoin.png",
-        "source": "/home/depa/Desktop/Stack/app/src/main/res/drawable/bitcoin.png"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_check_material.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/drawable/design_fab_background.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/paypal.png",
-        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/paypal.png"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_cab_background_top_material.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
-        "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/drawable/design_snackbar_background.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/dots_white.png",
-        "source": "/home/depa/Desktop/Stack/app/src/main/res/drawable/dots_white.png"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_ratingbar_full_material.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_cab_background_top_material.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_dark.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_icon_dark.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/bang.png",
-        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/bang.png"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_dark.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_text_dark.xml"
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/x_letter.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/x_letter.png"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/github.png",
@@ -160,40 +144,32 @@
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_switch_thumb_material.xml"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_holo_dark.xml"
-    },
-    {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/m.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/m.png"
+    },
+    {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/y.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/y.png"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_ratingbar_full_material.xml"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_radio_material.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_edit_text_material.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/mail.png",
-        "source": "/home/depa/Desktop/Stack/app/src/main/res/drawable/mail.png"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/plus.png",
-        "source": "/home/depa/Desktop/Stack/app/src/main/res/drawable/plus.png"
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/paypal.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/paypal.png"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_text_cursor_material.xml"
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/p.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/p.png"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
@@ -208,16 +184,8 @@
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_radio_material.xml"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_textfield_search_material.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_light.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_icon_light.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_icon_light.xml"
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/o.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/o.png"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_light.xml",
@@ -236,22 +204,6 @@
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_light.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/x.png",
-        "source": "/home/depa/Desktop/Stack/app/src/main/res/drawable/x.png"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_switch_thumb_material.xml"
-    },
-    {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/pin.png",
         "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/pin.png"
     },
@@ -260,20 +212,8 @@
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_icon_dark.xml"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_icon_dark.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_item_background_holo_dark.xml"
-    },
-    {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_dark.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_seekbar_track_material.xml"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/dots_white.png",
@@ -284,16 +224,16 @@
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_text_dark.xml"
-    },
-    {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_dark.xml",
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_icon_dark.xml"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/f.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/f.png"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
@@ -304,20 +244,16 @@
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/z.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/z.png"
+    },
+    {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/bitcoin.png",
         "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/bitcoin.png"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_icon_light.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_item_background_holo_light.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
@@ -328,19 +264,15 @@
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/pin.png",
-        "source": "/home/depa/Desktop/Stack/app/src/main/res/drawable/pin.png"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "/home/depa/Desktop/Stack/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
-        "source": "/home/depa/Desktop/Stack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_dark.xml"
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/e.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/e.png"
     },
     {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
         "source": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/drawable/v.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/drawable/v.png"
     }
 ]

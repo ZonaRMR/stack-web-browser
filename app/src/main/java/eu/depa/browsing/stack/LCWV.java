@@ -196,21 +196,32 @@ public class LCWV extends WebView {
             }
         }
 
-        public void openFileChooser(ValueCallback<Uri> uploadMsg) {
 
-            ((MainActivity) getContext()).mUploadMessage = uploadMsg;
+        private final static int FILECHOOSER_RESULTCODE = 4893;
+        public void openFileChooser(ValueCallback uploadMsg) {
+            MainActivity.mUploadMessage = uploadMsg;
             Intent i = new Intent(Intent.ACTION_GET_CONTENT);
             i.addCategory(Intent.CATEGORY_OPENABLE);
-            i.setType("image/*");
-            ((MainActivity) getContext()).startActivityForResult(i, 4893);
+            i.setType("*/*");
+            ((MainActivity)getContext()).startActivityForResult(
+                    Intent.createChooser(i, "File Browser"),
+                    FILECHOOSER_RESULTCODE);
         }
 
-        public void openFileChooser(ValueCallback<Uri> uploadMsg, String acceptType) {
-            openFileChooser(uploadMsg);
+        // For Android 3.0+
+        public void openFileChooser( ValueCallback uploadMsg, String acceptType ) {
+            MainActivity.mUploadMessage = uploadMsg;
+            Intent i = new Intent(Intent.ACTION_GET_CONTENT);
+            i.addCategory(Intent.CATEGORY_OPENABLE);
+            i.setType("*/*");
+            ((MainActivity)getContext()).startActivityForResult(
+                    Intent.createChooser(i, "File Browser"),
+                    FILECHOOSER_RESULTCODE);
         }
 
-        public void openFileChooser(ValueCallback<Uri> uploadMsg, String acceptType, String capture) {
-            openFileChooser(uploadMsg);
+        @Override
+        public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback, FileChooserParams fileChooserParams) {
+            return super.onShowFileChooser(webView, filePathCallback, fileChooserParams);
         }
     };
     DownloadListener DListener = new DownloadListener() {

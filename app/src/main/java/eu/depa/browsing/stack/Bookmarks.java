@@ -20,6 +20,7 @@ import android.widget.Toast;
 import android.widget.TwoLineListItem;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -33,43 +34,8 @@ public class Bookmarks extends AppCompatActivity{
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         final ListView LV = (ListView) findViewById(R.id.BMList);
 
-        List<Map<String, String>> data = new ArrayList<>();
-        ArrayList<String> titles = getIntent().getBundleExtra("bundle").getStringArrayList("titles");
-        ArrayList<String> addrs  = getIntent().getBundleExtra("bundle").getStringArrayList("addrs");
+        init();
 
-        if (titles == null || addrs == null) return;
-
-        if (titles.isEmpty() || addrs.isEmpty()) {
-            TextView empty = (TextView) findViewById(R.id.emptyBM);
-            TextView title = (TextView) findViewById(R.id.BMTitle);
-            title.setVisibility(View.GONE);
-            empty.setVisibility(View.VISIBLE);
-            return;
-        }
-
-        for (int i = 0; i < titles.size(); i++) {
-            if (titles.get(i).equals("")) continue;
-            Map<String, String> datum = new HashMap<>(2);
-            datum.put("title", titles.get(i));
-            datum.put("addr",  addrs.get(i));
-            data.add(datum);
-        }
-
-        final SimpleAdapter adapter = new SimpleAdapter(this, data,
-                android.R.layout.simple_expandable_list_item_2,
-                new String[] {"title", "addr"},
-                new int[] {android.R.id.text1, android.R.id.text2 });
-
-        if (adapter.isEmpty() || data.isEmpty()) {
-            TextView empty = (TextView) findViewById(R.id.emptyBM);
-            TextView title = (TextView) findViewById(R.id.BMTitle);
-            title.setVisibility(View.GONE);
-            empty.setVisibility(View.VISIBLE);
-            return;
-        }
-
-
-        LV.setAdapter(adapter);
         LV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -103,7 +69,7 @@ public class Bookmarks extends AppCompatActivity{
                         sharedPref.edit().putString("BMtitles", sharedPref.getString("BMtitles", "").replace(";;" + title, "")).apply();
                         sharedPref.edit().putString("BMurls", sharedPref.getString("BMurls", "").replace(";;" + url, "")).apply();
                         Toast.makeText(Bookmarks.this, getString(R.string.deleted), Toast.LENGTH_SHORT).show();
-                        item.setVisibility(View.GONE);
+                        init();
                     }
                 });
                 builder.setNegativeButton(getString(R.string.no), new DialogInterface.OnClickListener() {
@@ -115,6 +81,53 @@ public class Bookmarks extends AppCompatActivity{
                 return true;
             }
         });
+    }
+
+    public void init() {
+
+        final ListView LV = (ListView) findViewById(R.id.BMList);
+
+        List<Map<String, String>> data = new ArrayList<>();
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+
+        String[] titlesArr = sharedPref.getString("BMtitles", "").split(";;");
+        String[] addrsArr = sharedPref.getString("BMurls", "").split(";;");
+
+        ArrayList<String> titles = new ArrayList<>(Arrays.asList(titlesArr));
+        ArrayList<String> addrs = new ArrayList<>(Arrays.asList(addrsArr));
+
+        if (titles.isEmpty() || addrs.isEmpty()) {
+            TextView empty = (TextView) findViewById(R.id.emptyBM);
+            TextView title = (TextView) findViewById(R.id.BMTitle);
+            title.setVisibility(View.GONE);
+            empty.setVisibility(View.VISIBLE);
+            return;
+        }
+
+        for (int i = 0; i < titles.size(); i++) {
+            if (titles.get(i).equals("")) continue;
+            Map<String, String> datum = new HashMap<>(2);
+            datum.put("title", titles.get(i));
+            datum.put("addr",  addrs.get(i));
+            data.add(datum);
+        }
+
+        final SimpleAdapter adapter = new SimpleAdapter(this, data,
+                android.R.layout.simple_expandable_list_item_2,
+                new String[] {"title", "addr"},
+                new int[] {android.R.id.text1, android.R.id.text2 });
+
+        if (adapter.isEmpty() || data.isEmpty()) {
+            TextView empty = (TextView) findViewById(R.id.emptyBM);
+            TextView title = (TextView) findViewById(R.id.BMTitle);
+            title.setVisibility(View.GONE);
+            empty.setVisibility(View.VISIBLE);
+            LV.setVisibility(View.GONE);
+            return;
+        }
+
+
+        LV.setAdapter(adapter);
     }
 
     public void setThemeFromPrefs () {

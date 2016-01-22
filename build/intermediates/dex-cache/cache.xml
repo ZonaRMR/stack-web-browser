@@ -1,12 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
-
-    <item
-        jar="/home/depa/Desktop/Stack/app/build/intermediates/transforms/instantRunSlicer/debug/jars/1/1a/dependencies.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="617c1d218cd75aca70281b558cca496bbf269ee0">
-        <dex dex="/home/depa/Desktop/Stack/app/build/intermediates/transforms/dex/debug/folders/1000/1a/dependencies_80f1b5d229e1a5b11089aba0bc1c0886f13da67f/classes.dex" />
-    </item>
-
-</items>
+<items version="2" />
