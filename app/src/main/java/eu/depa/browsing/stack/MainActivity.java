@@ -17,6 +17,7 @@ If not, see <http://www.gnu.org/licenses/>.*/
 package eu.depa.browsing.stack;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -24,7 +25,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Picture;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.PictureDrawable;
@@ -51,8 +54,8 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.larvalabs.svgandroid.SVG;
-import com.larvalabs.svgandroid.SVGParser;
+import com.caverock.androidsvg.SVG;
+import com.caverock.androidsvg.SVGParseException;
 
 import org.json.JSONObject;
 
@@ -232,15 +235,15 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         Intent addIntent = new Intent();
         addIntent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
         addIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, webView.getTitle());
-        if (webView.getFavicon() != null && webView.getFavicon().getHeight() >= 63)
+        //if (webView.getFavicon() != null && webView.getFavicon().getHeight() >= 63)
             addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON, webView.getFavicon());
-        else {
+        /*else {
             Bitmap favicon = webView.getFavicon();
             int mdl = favicon.getPixel((int) Math.floor(favicon.getHeight() / 2), (int) Math.floor(favicon.getWidth()/2));
             Bitmap bitmap = BitmapFromSVG(webView.getTitle().toUpperCase().toCharArray()[0], mdl);
             if (bitmap != null)
                 addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON, bitmap);
-        }
+        }*/ // FIXME: 23/01/16
 
 
         addIntent.putExtra("duplicate", false);
@@ -253,6 +256,9 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
     public static ValueCallback<Uri> mUploadMessage;
     private final static int FILECHOOSER_RESULTCODE = 4893;
     private final static int PAYPAL_RESULTCODE = 16019;
+    public static final int INPUT_FILE_REQUEST_CODE = 8443;
+    public ValueCallback<Uri[]> mFilePathCallback;
+    private String mCameraPhotoPath;
 
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         if (resultCode == PAYPAL_RESULTCODE) {
@@ -282,6 +288,27 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
             mUploadMessage.onReceiveValue(result);
             mUploadMessage = null;
         }
+
+        Uri[] results = null;
+// Check that the response is a good one
+        if(resultCode == Activity.RESULT_OK) {
+            if(intent == null) {
+// If there is not data, then we may have taken a photo
+                if(mCameraPhotoPath != null) {
+                    results = new Uri[]{Uri.parse(mCameraPhotoPath)};
+                }
+            } else {
+                String dataString = intent.getDataString();
+                if (dataString != null) {
+                    results = new Uri[]{Uri.parse(dataString)};
+                }
+            }
+        }
+        LCWV WV = (LCWV) findViewById(R.id.webView);
+        WV.getmFilePathCallback().onReceiveValue(results);
+        //if (mFilePathCallback != null) mFilePathCallback.onReceiveValue(results);
+        WV.setmFilePathCallback(null);
+        //mFilePathCallback = null;
 
         reloadSettings();
     }   //wat do when u get a result from activity: PayPal
@@ -460,63 +487,60 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
     }
 
     public Bitmap BitmapFromSVG(char c, int mdl) {
-        SVG svg = SVGParser.getSVGFromString("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
-                "<svg\n" +
-                "   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n" +
-                "   xmlns:cc=\"http://creativecommons.org/ns#\"\n" +
-                "   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n" +
-                "   xmlns:svg=\"http://www.w3.org/2000/svg\"\n" +
-                "   xmlns=\"http://www.w3.org/2000/svg\"\n" +
-                "   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n" +
-                "   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"" +
-                "   width=\"128\"\n" +
-                "   height=\"128\"\n" +
-                "   id=\"svg2\"\n" +
-                "   version=\"1.1\"\n" +
-                "   sodipodi:docname=\"letterTemplate.svg\">\n" +
-                "  <defs id=\"defs4\" />\n" +
-                "  <rect\n" +
-                "     style=\"fill:#004d40;\n" +
-                "            fill-opacity:1;\n" +
-                "            fill-rule:evenodd;\n" +
-                "            stroke:#000000;\n" +
-                "            stroke-width:5;\n" +
-                "            stroke-linecap:round;\n" +
-                "            stroke-linejoin:round;\n" +
-                "            stroke-miterlimit:4;\n" +
-                "            stroke-opacity:1;\n" +
-                "            stroke-dasharray:none;\n" +
-                "            stroke-dashoffset:0\"\n" +
-                "     id=\"rect2985\"\n" +
-                "     width=\"128\"\n" +
-                "     height=\"128\"\n" +
-                "     x=\"0\"\n" +
-                "     y=\"0\" />\n" +
-                "  <text\n" +
-                "     xml:space=\"preserve\"\n" +
-                "     style=\"font-size:64px;\n" +
-                "            font-style:normal;\n" +
-                "            font-weight:normal;\n" +
-                "            line-height:125%;\n" +
-                "            letter-spacing:0px;\n" +
-                "            word-spacing:0px;\n" +
-                "            fill:#ffffff;\n" +
-                "            fill-opacity:1;\n" +
-                "            stroke:none;\n" +
-                "            font-family:Monospace\"\n" +
-                "     width = \"45px\"\n" +
-                "     height = \"45px\"\n" +
-                "     x=\"0\"\n" +
-                "     y=\"0\"\n" +
-                "     id=\"text3755\"\n" +
-                "     sodipodi:linespacing=\"125%\"><tspan\n" +
-                "       sodipodi:role=\"line\"\n" +
-                "       x=\"44\"\n" +
-                "       y=\"88\"\n" +
-                "       id=\"tspan3814\">" + c + "</tspan></text>\n" +
-                "</svg>\n");
-        PictureDrawable pictureDrawable = svg.createPictureDrawable();
-        Bitmap bitmap = Bitmap.createBitmap(pictureDrawable.getIntrinsicWidth(), pictureDrawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+        SVG svg = null;
+        try {
+            svg = SVG.getFromString("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
+                    "<!-- Created with Inkscape (http://www.inkscape.org/) -->\n" +
+                    "\n" +
+                    "<svg\n" +
+                    "   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n" +
+                    "   xmlns:cc=\"http://creativecommons.org/ns#\"\n" +
+                    "   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n" +
+                    "   xmlns:svg=\"http://www.w3.org/2000/svg\"\n" +
+                    "   xmlns=\"http://www.w3.org/2000/svg\"\n" +
+                    "   version=\"1.1\"\n" +
+                    "   width=\"128\"\n" +
+                    "   height=\"128\"\n" +
+                    "   id=\"svg2\">\n" +
+                    "  <metadata\n" +
+                    "     id=\"metadata9\">\n" +
+                    "    <rdf:RDF>\n" +
+                    "      <cc:Work\n" +
+                    "         rdf:about=\"\">\n" +
+                    "        <dc:format>image/svg+xml</dc:format>\n" +
+                    "        <dc:type\n" +
+                    "           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\" />\n" +
+                    "        <dc:title></dc:title>\n" +
+                    "      </cc:Work>\n" +
+                    "    </rdf:RDF>\n" +
+                    "  </metadata>\n" +
+                    "  <defs\n" +
+                    "     id=\"defs4\" />\n" +
+                    "  <rect\n" +
+                    "     width=\"128\"\n" +
+                    "     height=\"128\"\n" +
+                    "     x=\"0\"\n" +
+                    "     y=\"0\"\n" +
+                    "     id=\"rect2985\"\n" +
+                    "     style=\"fill:#004d40;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0\" />\n" +
+                    "  <text\n" +
+                    "     x=\"0\"\n" +
+                    "     y=\"0\"\n" +
+                    "     id=\"text3755\"\n" +
+                    "     xml:space=\"preserve\"\n" +
+                    "     style=\"font-size:64px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Monospace\"><tspan\n" +
+                    "       x=\"44\"\n" +
+                    "       y=\"88\"\n" +
+                    "       id=\"tspan3814\">" + c +"</tspan></text>\n" +
+                    "</svg>\n");
+        } catch (SVGParseException e) {
+            e.printStackTrace();
+        }
+
+        Picture picture = svg.renderToPicture();
+        Bitmap bitmap = Bitmap.createBitmap(128, 128, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        canvas.drawPicture(picture);
         return bitmap;
     }
 }

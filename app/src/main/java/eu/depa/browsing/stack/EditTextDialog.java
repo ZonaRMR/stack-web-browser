@@ -38,7 +38,8 @@ public class EditTextDialog extends Dialog implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.saveBM:
                 SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
-                sharedPref.edit().putString("BMtitles", sharedPref.getString("BMtitles", "") + ";;" + title).apply();
+                EditText ET = (EditText) findViewById(R.id.editBM);
+                sharedPref.edit().putString("BMtitles", sharedPref.getString("BMtitles", "") + ";;" + ET.getText().toString()).apply();
                 sharedPref.edit().putString("BMurls", sharedPref.getString("BMurls", "") + ";;" + url).apply();
                 Toast.makeText(context, getContext().getString(R.string.BM_added), Toast.LENGTH_SHORT).show();
                 dismiss();

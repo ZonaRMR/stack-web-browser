@@ -106,10 +106,12 @@ public class Bookmarks extends AppCompatActivity{
 
         for (int i = 0; i < titles.size(); i++) {
             if (titles.get(i).equals("")) continue;
-            Map<String, String> datum = new HashMap<>(2);
-            datum.put("title", titles.get(i));
-            datum.put("addr",  addrs.get(i));
-            data.add(datum);
+            try {
+                Map<String, String> datum = new HashMap<>(2);
+                datum.put("title", titles.get(i));
+                datum.put("addr", addrs.get(i));
+                data.add(datum);
+            }catch (Exception e){e.printStackTrace();}
         }
 
         final SimpleAdapter adapter = new SimpleAdapter(this, data,

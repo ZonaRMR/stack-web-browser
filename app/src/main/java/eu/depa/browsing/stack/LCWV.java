@@ -17,10 +17,12 @@ import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.util.AttributeSet;
 import android.util.Base64;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
@@ -39,6 +41,8 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 @SuppressWarnings("deprecation")
@@ -57,6 +61,16 @@ public class LCWV extends WebView {
     EditText toptextbar = new EditText(getContext());
     ProgressBar pb = new ProgressBar(getContext());
     ImageView favicon = new ImageView(getContext());
+
+
+    public ValueCallback<Uri[]> mFilePathCallback;
+    public ValueCallback<Uri[]> getmFilePathCallback() {
+        return this.mFilePathCallback;
+    }
+
+    public void setmFilePathCallback(ValueCallback<Uri[]> mFilePathCallback) {
+        this.mFilePathCallback = mFilePathCallback;
+    }
 
     WebViewClient webViewClient = new WebViewClient(){
         @Override
@@ -219,9 +233,50 @@ public class LCWV extends WebView {
                     FILECHOOSER_RESULTCODE);
         }
 
-        @Override
-        public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback, FileChooserParams fileChooserParams) {
-            return super.onShowFileChooser(webView, filePathCallback, fileChooserParams);
+        public static final int INPUT_FILE_REQUEST_CODE = 8443;
+        private String mCameraPhotoPath;
+
+
+
+        public boolean onShowFileChooser(
+                WebView webView, ValueCallback<Uri[]> filePathCallback,
+                WebChromeClient.FileChooserParams fileChooserParams) {
+            if(mFilePathCallback != null) {
+                mFilePathCallback.onReceiveValue(null);
+            }
+            mFilePathCallback = filePathCallback;
+            Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            if (takePictureIntent.resolveActivity(getContext().getPackageManager()) != null) {
+                File photoFile = null;
+                try {
+                    photoFile = createImageFile();
+                    takePictureIntent.putExtra("PhotoPath", mCameraPhotoPath);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+                if (photoFile != null) {
+                    mCameraPhotoPath = "file:" + photoFile.getAbsolutePath();
+                    takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT,
+                            Uri.fromFile(photoFile));
+                } else {
+                    takePictureIntent = null;
+                }
+            }
+            Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
+            contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
+            contentSelectionIntent.setType("image/*");
+            Intent[] intentArray;
+            if(takePictureIntent != null) {
+                intentArray = new Intent[]{takePictureIntent};
+            } else {
+                intentArray = new Intent[0];
+            }
+            Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
+            chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
+            chooserIntent.putExtra(Intent.EXTRA_TITLE, "Image Chooser");
+            chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, intentArray);
+            ((MainActivity)getContext()).startActivityForResult(chooserIntent, INPUT_FILE_REQUEST_CODE);
+            return true;
         }
     };
     DownloadListener DListener = new DownloadListener() {
@@ -419,5 +474,18 @@ public class LCWV extends WebView {
 
     public String getString(int res) {
         return getResources().getString(res);
+    }
+
+    private File createImageFile() throws IOException {
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String imageFileName = "JPEG_" + timeStamp + "_";
+        File storageDir = Environment.getExternalStoragePublicDirectory(
+                Environment.DIRECTORY_PICTURES);
+        File imageFile = File.createTempFile(
+                imageFileName,
+                ".jpg",
+                storageDir
+        );
+        return imageFile;
     }
 }
