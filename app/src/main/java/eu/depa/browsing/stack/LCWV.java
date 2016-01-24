@@ -22,7 +22,6 @@ import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.util.AttributeSet;
 import android.util.Base64;
-import android.util.Log;
 import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
@@ -44,6 +43,7 @@ import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 
 @SuppressWarnings("deprecation")
 
@@ -212,35 +212,33 @@ public class LCWV extends WebView {
 
 
         private final static int FILECHOOSER_RESULTCODE = 4893;
+        // For Android < 3.0
         public void openFileChooser(ValueCallback uploadMsg) {
             MainActivity.mUploadMessage = uploadMsg;
             Intent i = new Intent(Intent.ACTION_GET_CONTENT);
             i.addCategory(Intent.CATEGORY_OPENABLE);
             i.setType("*/*");
             ((MainActivity)getContext()).startActivityForResult(
-                    Intent.createChooser(i, "File Browser"),
+                    Intent.createChooser(i, getString(R.string.chooseSauce)),
                     FILECHOOSER_RESULTCODE);
         }
 
-        // For Android 3.0+
+        // For Android > 3.0
         public void openFileChooser( ValueCallback uploadMsg, String acceptType ) {
             MainActivity.mUploadMessage = uploadMsg;
             Intent i = new Intent(Intent.ACTION_GET_CONTENT);
             i.addCategory(Intent.CATEGORY_OPENABLE);
             i.setType("*/*");
             ((MainActivity)getContext()).startActivityForResult(
-                    Intent.createChooser(i, "File Browser"),
+                    Intent.createChooser(i, getString(R.string.chooseSauce)),
                     FILECHOOSER_RESULTCODE);
         }
 
         public static final int INPUT_FILE_REQUEST_CODE = 8443;
         private String mCameraPhotoPath;
 
-
-
-        public boolean onShowFileChooser(
-                WebView webView, ValueCallback<Uri[]> filePathCallback,
-                WebChromeClient.FileChooserParams fileChooserParams) {
+        // For Lollipop
+        public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback, WebChromeClient.FileChooserParams fileChooserParams) {
             if(mFilePathCallback != null) {
                 mFilePathCallback.onReceiveValue(null);
             }
@@ -264,7 +262,7 @@ public class LCWV extends WebView {
             }
             Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
             contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
-            contentSelectionIntent.setType("image/*");
+            contentSelectionIntent.setType("*/*");
             Intent[] intentArray;
             if(takePictureIntent != null) {
                 intentArray = new Intent[]{takePictureIntent};
@@ -273,7 +271,7 @@ public class LCWV extends WebView {
             }
             Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
             chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
-            chooserIntent.putExtra(Intent.EXTRA_TITLE, "Image Chooser");
+            chooserIntent.putExtra(Intent.EXTRA_TITLE, getString(R.string.chooseSauce));
             chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, intentArray);
             ((MainActivity)getContext()).startActivityForResult(chooserIntent, INPUT_FILE_REQUEST_CODE);
             return true;
@@ -477,15 +475,14 @@ public class LCWV extends WebView {
     }
 
     private File createImageFile() throws IOException {
-        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US).format(new Date());
         String imageFileName = "JPEG_" + timeStamp + "_";
         File storageDir = Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_PICTURES);
-        File imageFile = File.createTempFile(
+        return File.createTempFile(
                 imageFileName,
                 ".jpg",
                 storageDir
         );
-        return imageFile;
     }
 }

@@ -956,6 +956,7 @@ int string cantLoad 0x7f070042
 int string character_counter_pattern 0x7f070089
 int string checkConn 0x7f070043
 int string checkTypos 0x7f070044
+int string chooseSauce 0x7f07008a
 int string color_scheme 0x7f070045
 int string common_google_play_services_api_unavailable_text 0x7f070013
 int string common_google_play_services_enable_button 0x7f070014

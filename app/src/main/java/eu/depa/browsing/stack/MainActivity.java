@@ -28,9 +28,6 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Picture;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.PictureDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -46,7 +43,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebBackForwardList;
 import android.webkit.WebIconDatabase;
-import android.webkit.WebView;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.PopupMenu;
@@ -57,14 +53,9 @@ import android.widget.Toast;
 import com.caverock.androidsvg.SVG;
 import com.caverock.androidsvg.SVGParseException;
 
-import org.json.JSONObject;
-
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.BitSet;
 import java.util.Locale;
-import java.util.concurrent.atomic.AtomicReference;
 
 @SuppressWarnings({"deprecation"})
 @SuppressLint("SetJavaScriptEnabled")
@@ -290,10 +281,8 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         }
 
         Uri[] results = null;
-// Check that the response is a good one
         if(resultCode == Activity.RESULT_OK) {
             if(intent == null) {
-// If there is not data, then we may have taken a photo
                 if(mCameraPhotoPath != null) {
                     results = new Uri[]{Uri.parse(mCameraPhotoPath)};
                 }
@@ -306,12 +295,11 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         }
         LCWV WV = (LCWV) findViewById(R.id.webView);
         WV.getmFilePathCallback().onReceiveValue(results);
-        //if (mFilePathCallback != null) mFilePathCallback.onReceiveValue(results);
-        WV.setmFilePathCallback(null);
-        //mFilePathCallback = null;
+        WV.setmFilePathCallback(null);      //the FilePathCallback is shared across activities this way,
+                                            // in order to prevent NPE
 
         reloadSettings();
-    }   //wat do when u get a result from activity: PayPal
+    }   //wat do when u get a result from activity: PayPal, Uploader
 
     public void reloadSettings() {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);

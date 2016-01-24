@@ -2669,6 +2669,7 @@ containing a value of this type.
         public static final int character_counter_pattern=0x7f070089;
         public static final int checkConn=0x7f070043;
         public static final int checkTypos=0x7f070044;
+        public static final int chooseSauce=0x7f07008a;
         public static final int color_scheme=0x7f070045;
         public static final int common_google_play_services_api_unavailable_text=0x7f070013;
         public static final int common_google_play_services_enable_button=0x7f070014;
