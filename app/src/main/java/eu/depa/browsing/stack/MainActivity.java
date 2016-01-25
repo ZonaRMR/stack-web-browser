@@ -294,9 +294,11 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
             }
         }
         LCWV WV = (LCWV) findViewById(R.id.webView);
-        WV.getmFilePathCallback().onReceiveValue(results);
-        WV.setmFilePathCallback(null);      //the FilePathCallback is shared across activities this way,
-                                            // in order to prevent NPE
+        if (WV.getmFilePathCallback() != null) {
+            WV.getmFilePathCallback().onReceiveValue(results);
+            WV.setmFilePathCallback(null);      //the FilePathCallback is shared across activities this way,
+            // in order to prevent NPE
+        }
 
         reloadSettings();
     }   //wat do when u get a result from activity: PayPal, Uploader

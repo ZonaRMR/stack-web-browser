@@ -16,11 +16,11 @@
         "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/mipmap-xxxhdpi/ic_green.png"
     },
     {
-        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_rock.png",
-        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/mipmap-xxxhdpi/ic_rock.png"
-    },
-    {
         "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_bluegray.png",
         "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/mipmap-xxxhdpi/ic_bluegray.png"
+    },
+    {
+        "merged": "/home/depa/Desktop/stack-web-browser/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_rock.png",
+        "source": "/home/depa/Desktop/stack-web-browser/app/src/main/res/mipmap-xxxhdpi/ic_rock.png"
     }
 ]

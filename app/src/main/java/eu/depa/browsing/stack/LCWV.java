@@ -138,12 +138,12 @@ public class LCWV extends WebView {
         @Override
         public void onProgressChanged(WebView wv, int progress) {
             pb.setProgress(progress);
-            try {
+            /*try {
                 if (getUrl().startsWith("<html>") || getUrl().endsWith("</html>")) toptextbar.setText(getTitle());
                 else toptextbar.setText(getUrl().split("//")[1]);
             } catch (Exception e) {
                 e.printStackTrace();
-            }
+            }*/
             if (progress == 100) pb.setVisibility(View.GONE);
         }
 
