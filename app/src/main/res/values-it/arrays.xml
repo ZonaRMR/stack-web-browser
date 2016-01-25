@@ -14,4 +14,11 @@
         <item name="doprovide">Fornisci sempre</item>
         <item name="dontprovide">Non fornire mai</item>
     </string-array>
+
+    <string-array name="sizeNames">
+        <item name ="default">Default</item>
+        <item name ="small">Piccolo</item>
+        <item name ="medium">Medio</item>
+        <item name ="large">Grande</item>
+    </string-array>
 </resources>

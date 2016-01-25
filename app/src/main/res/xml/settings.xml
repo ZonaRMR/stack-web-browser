@@ -3,21 +3,30 @@
     android:title="@string/menu_settings">
 
     <PreferenceCategory android:title="@string/appearance">
-    <ListPreference
-        android:key="theme"
-        android:title="@string/theme"
-        android:dialogTitle="@string/picktheme"
-        android:entries="@array/themes"
-        android:entryValues="@array/themevalues"
-        android:defaultValue="def"
-        android:summary="@string/color_scheme"/>
+        <ListPreference
+            android:key="theme"
+            android:title="@string/theme"
+            android:dialogTitle="@string/picktheme"
+            android:entries="@array/themes"
+            android:entryValues="@array/themevalues"
+            android:defaultValue="def"
+            android:summary="@string/color_scheme"/>
 
-    <CheckBoxPreference
-        android:key="showDots"
-        android:title="@string/showDots"
-        android:summary="@string/dotssumm"
-        android:defaultValue="true"
-        android:id="@+id/showDots"/>
+        <CheckBoxPreference
+            android:key="showDots"
+            android:title="@string/showDots"
+            android:summary="@string/dotssumm"
+            android:defaultValue="true"
+            android:id="@+id/showDots"/>
+
+        <ListPreference
+            android:key="size"
+            android:title="@string/text_size"
+            android:dialogTitle="@string/text_size"
+            android:entries="@array/sizeNames"
+            android:entryValues="@array/sizeVals"
+            android:defaultValue="-1"
+            android:summary="@string/inWeb"/>
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/functionality">

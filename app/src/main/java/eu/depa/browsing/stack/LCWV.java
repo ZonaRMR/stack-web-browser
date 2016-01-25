@@ -307,6 +307,7 @@ public class LCWV extends WebView {
         this.getSettings().setDatabaseEnabled(true);
         this.getSettings().setDomStorageEnabled(true);
         this.getSettings().setSaveFormData(true);
+        reloadSize();
         toptextbar = (EditText) getRootView().findViewById(R.id.toptextbar);
         pb = (ProgressBar) getRootView().findViewById(R.id.pb);
         favicon = (ImageView) getRootView().findViewById(R.id.favicon);
@@ -484,5 +485,11 @@ public class LCWV extends WebView {
                 ".jpg",
                 storageDir
         );
+    }
+
+    public void reloadSize() {
+        int sizePref = Integer.parseInt(sharedPref.getString("size", "-1"));
+        if (sizePref != -1)
+            this.getSettings().setMinimumFontSize(sizePref);
     }
 }

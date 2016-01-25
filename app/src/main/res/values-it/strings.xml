@@ -84,4 +84,8 @@
     <string name="readlater">Lista di lettura</string>
     <string name="delete">Eliminare?</string>
     <string name="deleted">Segnalibro eliminato</string>
+    <string name="chooseSauce">Scegli sorgente...</string>
+    <string name="text_size">Dimensione del testo</string>
+    <string name="inWeb">Nelle pagine web</string>
+    <string name="textsize">Dimensione del testo</string>
 </resources>

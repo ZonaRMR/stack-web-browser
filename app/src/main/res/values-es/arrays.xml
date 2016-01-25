@@ -14,4 +14,11 @@
         <item name="doprovide">Proporciona siempre</item>
         <item name="dontprovide">No proporciones nunca</item>
     </string-array>
+
+    <string-array name="sizeNames">
+        <item name ="default">Default</item>
+        <item name ="small">Pequeño</item>
+        <item name ="medium">Medio</item>
+        <item name ="large">Grande</item>
+    </string-array>
 </resources>

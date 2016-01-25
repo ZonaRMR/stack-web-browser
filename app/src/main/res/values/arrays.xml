@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources
     xmlns:tools="http://schemas.android.com/tools">
+
     <string-array name="sergines"
         tools:ignore="MissingTranslation">
         <item name="DuckDuckGo">DuckDuckGo</item>
         <item name="Google">Google</item>
         <item name="Bing">Bing</item>
     </string-array>
+
     <string-array name="serginevalues"
         tools:ignore="MissingTranslation">
         <item name="ddg">ddg</item>
@@ -44,5 +46,19 @@
         <item name="ask">ask</item>
         <item name="doprovide">doprovide</item>
         <item name="dontprovide">dontprovide</item>
-    </string-array>>
+    </string-array>
+
+    <string-array name="sizeNames">
+        <item name ="default">Default</item>
+        <item name ="small">Small</item>
+        <item name ="medium">Medium</item>
+        <item name ="large">Large</item>
+    </string-array>
+
+    <string-array name="sizeVals">
+        <item name ="default">-1</item>
+        <item name ="small">5</item>
+        <item name ="medium">10</item>
+        <item name ="large">20</item>
+    </string-array>
 </resources>

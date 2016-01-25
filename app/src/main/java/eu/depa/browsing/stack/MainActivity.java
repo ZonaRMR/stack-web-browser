@@ -234,7 +234,7 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
             Bitmap bitmap = BitmapFromSVG(webView.getTitle().toUpperCase().toCharArray()[0], mdl);
             if (bitmap != null)
                 addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON, bitmap);
-        }*/ // FIXME: 23/01/16
+        }*/ // FIXME: 23/01/16 make it put standardised icon if favicon is too small
 
 
         addIntent.putExtra("duplicate", false);

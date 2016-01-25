@@ -20,6 +20,18 @@
         <item name="g">g</item>
         <item name="b">b</item>
     </string-array>
+    <string-array name="sizeNames">
+        <item name="default">Default</item>
+        <item name="small">Small</item>
+        <item name="medium">Medium</item>
+        <item name="large">Large</item>
+    </string-array>
+    <string-array name="sizeVals">
+        <item name="default">-1</item>
+        <item name="small">5</item>
+        <item name="medium">10</item>
+        <item name="large">20</item>
+    </string-array>
     <string-array name="themes">
         <item name="Default">Default</item>
         <item name="Blue gray">Blue gray</item>
@@ -407,6 +419,7 @@
     <string name="functionality">Functionality</string>
     <string name="image">Image</string>
     <string name="image_downloaded">The image has been downloaded</string>
+    <string name="inWeb">Within web pages</string>
     <string name="insteadof">instead of</string>
     <string name="location">Location</string>
     <string name="menu_about">About</string>
@@ -445,6 +458,8 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="stopcklicking">Stop clicking me</string>
     <string name="suggest">Make a suggestion</string>
+    <string name="text_size">Text size</string>
+    <string name="textsize">Text size</string>
     <string name="theme">Theme</string>
     <string name="tracking">Tracking</string>
     <string name="version">Version</string>

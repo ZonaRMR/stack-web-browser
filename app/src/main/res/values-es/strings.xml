@@ -91,4 +91,8 @@
     <string name="menu_bookmarks">Marcadores</string>
     <string name="new_fol">Nuevo</string>
     <string name="readlater">Leer más tarde</string>
+    <string name="chooseSauce">Selecciona fuente...</string>
+    <string name="inWeb">En las páginas web</string>
+    <string name="text_size">Dimensión del texto</string>
+    <string name="textsize">Dimensión del texto</string>
 </resources>
