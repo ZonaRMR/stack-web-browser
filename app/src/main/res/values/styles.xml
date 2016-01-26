@@ -29,7 +29,7 @@
     <style name="Green" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">#DDDDDD</item>
         <item name="colorAccent">#66BB6A</item>         <!--400-->
-        <item name="colorPrimaryDark">#2E7D32</item>    <!--800-->
+        <item name="colorPrimaryDark">#43A047</item>    <!--600-->  <!--800 was WAY too dark-->
     </style>
 
     <style name="Blue" parent="Theme.AppCompat.Light.DarkActionBar">

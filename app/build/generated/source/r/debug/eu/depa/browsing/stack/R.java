@@ -2929,7 +2929,8 @@ containing a value of this type.
         /** 800
          */
         public static final int Gray=0x7f0b00b3;
-        /** 800
+        /** 600
+800 was WAY too dark
          */
         public static final int Green=0x7f0b00b4;
         public static final int Platform_AppCompat=0x7f0b0011;

@@ -99,6 +99,13 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
         });
     }
 
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        LCWV WV = (LCWV) findViewById(R.id.webView);
+        WV.reloadSize();
+    }
+
     protected void onNewIntent(Intent intent) {
         String action = intent.getAction();
         String data = intent.getDataString();
@@ -355,7 +362,7 @@ public class MainActivity extends AppCompatActivity implements OnKeyListener{
                 return;
             case "green":
                 toptextbar.setHighlightColor(Color.rgb(165, 214, 167)); //200
-                topelements.setBackgroundColor(Color.rgb(46, 125, 50)); //800
+                topelements.setBackgroundColor(Color.rgb(67, 160, 71)); //800
                 return;
             case "blue":
                 toptextbar.setHighlightColor(Color.rgb(129, 212, 250)); //200

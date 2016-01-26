@@ -307,6 +307,7 @@ public class LCWV extends WebView {
         this.getSettings().setDatabaseEnabled(true);
         this.getSettings().setDomStorageEnabled(true);
         this.getSettings().setSaveFormData(true);
+        this.getSettings().setLoadWithOverviewMode(true);
         reloadSize();
         toptextbar = (EditText) getRootView().findViewById(R.id.toptextbar);
         pb = (ProgressBar) getRootView().findViewById(R.id.pb);
@@ -488,8 +489,7 @@ public class LCWV extends WebView {
     }
 
     public void reloadSize() {
-        int sizePref = Integer.parseInt(sharedPref.getString("size", "-1"));
-        if (sizePref != -1)
-            this.getSettings().setMinimumFontSize(sizePref);
+        int sizePref = Integer.parseInt(sharedPref.getString("size", "0"));
+        this.getSettings().setMinimumFontSize(sizePref);
     }
 }

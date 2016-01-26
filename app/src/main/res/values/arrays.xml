@@ -55,10 +55,11 @@
         <item name ="large">Large</item>
     </string-array>
 
-    <string-array name="sizeVals">
-        <item name ="default">-1</item>
+    <string-array name="sizeVals"
+        tools:ignore="MissingTranslation">
+        <item name ="default">0</item>
         <item name ="small">5</item>
-        <item name ="medium">10</item>
+        <item name ="medium">15</item>
         <item name ="large">20</item>
     </string-array>
 </resources>

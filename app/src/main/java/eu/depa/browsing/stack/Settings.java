@@ -29,11 +29,6 @@ public class Settings extends PreferenceActivity {
             public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
                 if (key.equals("theme"))
                     askIfRestart();
-
-                if (key.equals("size")) {
-                    LCWV WV = (LCWV) ((MainActivity) getBaseContext()).findViewById(R.id.webView);
-                    WV.reloadSize();
-                }
             }
         };
         prefs.registerOnSharedPreferenceChangeListener(ChListener);
