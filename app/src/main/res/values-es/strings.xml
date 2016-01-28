@@ -95,4 +95,5 @@
     <string name="inWeb">En las páginas web</string>
     <string name="text_size">Dimensión del texto</string>
     <string name="textsize">Dimensión del texto</string>
+    <string name="showDownloads">Muestra las descargas</string>
 </resources>

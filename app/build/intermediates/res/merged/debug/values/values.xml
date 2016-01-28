@@ -454,6 +454,7 @@
     <string name="share_link">Share link</string>
     <string name="sharewith">Share with…</string>
     <string name="showDots">Show the menu button</string>
+    <string name="showDownloads">Show downloads</string>
     <string name="showGPL">Released under the GNU GPLv3.0 licence</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="stopcklicking">Stop clicking me</string>

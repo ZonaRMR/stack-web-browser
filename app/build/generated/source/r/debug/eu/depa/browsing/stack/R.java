@@ -2629,7 +2629,7 @@ containing a value of this type.
     public static final class string {
         public static final int BM_added=0x7f070031;
         public static final int GPLsummary=0x7f070032;
-        public static final int HP=0x7f070089;
+        public static final int HP=0x7f07008a;
         public static final int abc_action_bar_home_description=0x7f070000;
         public static final int abc_action_bar_home_description_format=0x7f070001;
         public static final int abc_action_bar_home_subtitle_description_format=0x7f070002;
@@ -2657,18 +2657,18 @@ containing a value of this type.
         public static final int addtohome=0x7f070038;
         public static final int alphathx=0x7f070039;
         public static final int app_name=0x7f07003a;
-        public static final int appbar_scrolling_view_behavior=0x7f07008a;
+        public static final int appbar_scrolling_view_behavior=0x7f07008b;
         public static final int appearance=0x7f07003b;
         public static final int ask=0x7f07003c;
         public static final int askLocGeneral=0x7f07003d;
         public static final int askdownload=0x7f07003e;
         public static final int askuselocation=0x7f07003f;
-        public static final int auth_google_play_services_client_facebook_display_name=0x7f07008b;
-        public static final int auth_google_play_services_client_google_display_name=0x7f07008c;
+        public static final int auth_google_play_services_client_facebook_display_name=0x7f07008c;
+        public static final int auth_google_play_services_client_google_display_name=0x7f07008d;
         public static final int bar_hint=0x7f070040;
         public static final int bitcoin_noclient=0x7f070041;
         public static final int cantLoad=0x7f070042;
-        public static final int character_counter_pattern=0x7f07008d;
+        public static final int character_counter_pattern=0x7f07008e;
         public static final int checkConn=0x7f070043;
         public static final int checkTypos=0x7f070044;
         public static final int chooseSauce=0x7f070045;
@@ -2756,19 +2756,20 @@ containing a value of this type.
         public static final int share_link=0x7f07007a;
         public static final int sharewith=0x7f07007b;
         public static final int showDots=0x7f07007c;
-        public static final int showGPL=0x7f07007d;
+        public static final int showDownloads=0x7f07007d;
+        public static final int showGPL=0x7f07007e;
         public static final int status_bar_notification_info_overflow=0x7f070030;
-        public static final int stopcklicking=0x7f07007e;
-        public static final int suggest=0x7f07007f;
-        public static final int text_size=0x7f070080;
-        public static final int textsize=0x7f070081;
-        public static final int theme=0x7f070082;
-        public static final int tracking=0x7f070083;
-        public static final int version=0x7f070084;
-        public static final int view_image=0x7f070085;
-        public static final int wanna_restart=0x7f070086;
-        public static final int web_isPermitted=0x7f070087;
-        public static final int yes=0x7f070088;
+        public static final int stopcklicking=0x7f07007f;
+        public static final int suggest=0x7f070080;
+        public static final int text_size=0x7f070081;
+        public static final int textsize=0x7f070082;
+        public static final int theme=0x7f070083;
+        public static final int tracking=0x7f070084;
+        public static final int version=0x7f070085;
+        public static final int view_image=0x7f070086;
+        public static final int wanna_restart=0x7f070087;
+        public static final int web_isPermitted=0x7f070088;
+        public static final int yes=0x7f070089;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0b007e;

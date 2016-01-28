@@ -4,6 +4,8 @@ import android.annotation.SuppressLint;
 import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.DownloadManager;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
@@ -16,11 +18,11 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
-import android.net.http.SslCertificate;
 import android.os.Build;
 import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.provider.MediaStore;
+import android.support.v4.app.NotificationCompat;
 import android.util.AttributeSet;
 import android.util.Base64;
 import android.view.ContextMenu;
@@ -45,6 +47,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
+import java.util.Random;
 
 @SuppressWarnings("deprecation")
 
@@ -291,6 +294,31 @@ public class LCWV extends WebView {
                 public void onClick(DialogInterface dialogInterface, int i) {
                     downloadFile(url);
                     Toast.makeText(getContext(), getString(R.string.file_downloading), Toast.LENGTH_SHORT).show();
+
+                    NotificationCompat.Builder mBuilder =
+                            new NotificationCompat.Builder(getContext())
+                                    .setSmallIcon(R.mipmap.ic_launcher)
+                                    .setContentTitle(getString(R.string.file_downloaded))
+                                    .setContentText(getString(R.string.showDownloads));
+
+                    Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+                    Uri uri = Uri.parse(Environment.getExternalStorageDirectory().getPath()
+                            + "/Download/");
+                    intent.setDataAndType(uri, "*/*");
+
+                    PendingIntent resultPendingIntent =
+                            PendingIntent.getActivity(
+                                    getContext(),
+                                    0,
+                                    intent,
+                                    PendingIntent.FLAG_UPDATE_CURRENT);
+
+                    mBuilder.setContentIntent(resultPendingIntent);
+
+                    NotificationManager mNotifyMgr =
+                            (NotificationManager) getContext().getSystemService(Context.NOTIFICATION_SERVICE);
+
+                    mNotifyMgr.notify(251383, mBuilder.build());
                 }
             });
             builder.setIcon(new BitmapDrawable(getResources(), getFavicon()));

@@ -143,6 +143,7 @@
     <string name="share_link">Compartir dirección</string>
     <string name="sharewith">Comparte con…</string>
     <string name="showDots">Mostrar el botón del menu</string>
+    <string name="showDownloads">Muestra las descargas</string>
     <string name="showGPL">Publicado bajo la licencia GNU GPLv3.0</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"+999"</string>
     <string name="stopcklicking">Deja de tocarme</string>
