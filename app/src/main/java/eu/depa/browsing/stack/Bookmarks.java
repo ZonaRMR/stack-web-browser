@@ -10,7 +10,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -25,13 +24,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Bookmarks extends AppCompatActivity{
+public class Bookmarks extends BaseActivity {
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        setThemeFromPrefs();
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bookmarks);
-        if (getSupportActionBar() != null) getSupportActionBar().hide();
+        setTitle(R.string.menu_bookmarks);
+
         final ListView LV = (ListView) findViewById(R.id.BMList);
 
         init();
@@ -98,8 +97,6 @@ public class Bookmarks extends AppCompatActivity{
 
         if (titles.isEmpty() || addrs.isEmpty()) {
             TextView empty = (TextView) findViewById(R.id.emptyBM);
-            TextView title = (TextView) findViewById(R.id.BMTitle);
-            title.setVisibility(View.GONE);
             empty.setVisibility(View.VISIBLE);
             return;
         }
@@ -121,8 +118,6 @@ public class Bookmarks extends AppCompatActivity{
 
         if (adapter.isEmpty() || data.isEmpty()) {
             TextView empty = (TextView) findViewById(R.id.emptyBM);
-            TextView title = (TextView) findViewById(R.id.BMTitle);
-            title.setVisibility(View.GONE);
             empty.setVisibility(View.VISIBLE);
             LV.setVisibility(View.GONE);
             return;
@@ -130,28 +125,5 @@ public class Bookmarks extends AppCompatActivity{
 
 
         LV.setAdapter(adapter);
-    }
-
-    public void setThemeFromPrefs () {
-        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        switch(sharedPref.getString("theme", "")) {
-            case "def":
-                setTheme(R.style.Cyan);
-                return;
-            case "bg":
-                setTheme(R.style.BlueGray);
-                return;
-            case "rock":
-                setTheme(R.style.Rock);
-                return;
-            case "green":
-                setTheme(R.style.Green);
-                return;
-            case "blue":
-                setTheme(R.style.Blue);
-                return;
-            case "gray":
-                setTheme(R.style.Gray);
-        }
     }
 }

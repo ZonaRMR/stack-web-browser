@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="eu.depa.browsing.stack"
-    android:versionCode="10"
-    android:versionName="1.6-beta" >
+    android:versionCode="11"
+    android:versionName="1.7-beta" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -51,6 +51,7 @@
         <activity android:name="eu.depa.browsing.stack.GPL" />
         <activity android:name="eu.depa.browsing.stack.History" />
         <activity android:name="eu.depa.browsing.stack.Bookmarks" />
+        <activity android:name="eu.depa.browsing.stack.BaseActivity" />
 
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for

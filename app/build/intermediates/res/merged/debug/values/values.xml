@@ -326,6 +326,7 @@
     <integer name="google_play_services_version">8487000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="BM_added">Bookmark added</string>
+    <string name="GPL">GPL</string>
     <string name="GPLsummary">Tap to see licence</string>
     <string name="HP" translatable="false">http://duckduckgo.com</string>
     <string name="abc_action_bar_home_description">Navigate home</string>

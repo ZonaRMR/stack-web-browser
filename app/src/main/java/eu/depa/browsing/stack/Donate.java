@@ -1,28 +1,25 @@
 package eu.depa.browsing.stack;
 
-import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.Random;
 
-public class Donate extends Activity {
+public class Donate extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle SavedInstanceState) {
-        setThemeFromPrefs();
+    public void onCreate(Bundle SavedInstanceState) {
         super.onCreate(SavedInstanceState);
         setContentView(R.layout.donate);
+        setTitle(R.string.menu_donate);
 
-        ImageButton bitcoin = (ImageButton) findViewById(R.id.fab_btc);
-        ImageButton paypal  = (ImageButton) findViewById(R.id.fab_paypal);
+        ImageButton bitcoin = (ImageButton) findViewById(R.id.fab_btc),
+                paypal  = (ImageButton) findViewById(R.id.fab_paypal);
 
         bitcoin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,28 +50,5 @@ public class Donate extends Activity {
                 finish();
             }
         });
-    }
-
-    public void setThemeFromPrefs () {
-        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-        switch(sharedPref.getString("theme", "")) {
-            case "def":
-                setTheme(R.style.Cyan);
-                return;
-            case "bg":
-                setTheme(R.style.BlueGray);
-                return;
-            case "rock":
-                setTheme(R.style.Rock);
-                return;
-            case "green":
-                setTheme(R.style.Green);
-                return;
-            case "blue":
-                setTheme(R.style.Blue);
-                return;
-            case "gray":
-                setTheme(R.style.Gray);
-        }
     }
 }

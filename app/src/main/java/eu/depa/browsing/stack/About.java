@@ -1,50 +1,23 @@
 package eu.depa.browsing.stack;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Toast;
 
-public class About extends Activity {
+public class About extends BaseActivity {
     @Override
-    protected void onCreate(Bundle SavedInstanceState) {
-        setThemeFromPrefs();
+    public void onCreate(Bundle SavedInstanceState) {
         super.onCreate(SavedInstanceState);
         setContentView(R.layout.about);
+        setTitle(R.string.menu_about);
     }
 
-    public void setThemeFromPrefs () {
-        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-        switch(sharedPref.getString("theme", "")) {
-            case "def":
-                setTheme(R.style.Cyan);
-                return;
-            case "bg":
-                setTheme(R.style.BlueGray);
-                return;
-            case "rock":
-                setTheme(R.style.Rock);
-                return;
-            case "green":
-                setTheme(R.style.Green);
-                return;
-            case "blue":
-                setTheme(R.style.Blue);
-                return;
-            case "gray":
-                setTheme(R.style.Gray);
-        }
-    }
-
-    @SuppressWarnings("deprecation")
     public void sendEmail(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(About.this);
         builder.setTitle(getString(R.string.send_email));

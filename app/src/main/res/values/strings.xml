@@ -89,4 +89,5 @@
     <string name="textsize">Text size</string>
     <string name="inWeb">Within web pages</string>
     <string name="showDownloads">Show downloads</string>
+    <string name="GPL">GPL</string>
 </resources>

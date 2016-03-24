@@ -1,14 +1,11 @@
 package eu.depa.browsing.stack;
 
-import android.app.Activity;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.widget.TextView;
 
 @SuppressWarnings("ConstantConditions")
-public class GPL extends Activity {
+public class GPL extends BaseActivity {
 
     final String FULL_LICENCE = "Stack is free software: you can redistribute it and/or modify " +
             "it under the terms of the GNU General Public License as published by " +
@@ -640,35 +637,12 @@ public class GPL extends Activity {
             "copy of the Program in return for a fee.\n";
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        setThemeFromPrefs();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gpl);
+        setTitle(R.string.GPL);
 
         TextView TV = (TextView) findViewById(R.id.textView2);
         TV.setText(FULL_LICENCE);
         TV.setTextColor(Color.rgb(20, 20, 20));
-    }
-
-    public void setThemeFromPrefs () {
-        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-        switch(sharedPref.getString("theme", "def")) {
-            case "def":
-                setTheme(R.style.Cyan);
-                return;
-            case "bg":
-                setTheme(R.style.BlueGray);
-                return;
-            case "rock":
-                setTheme(R.style.Rock);
-                return;
-            case "green":
-                setTheme(R.style.Green);
-                return;
-            case "blue":
-                setTheme(R.style.Blue);
-                return;
-            case "gray":
-                setTheme(R.style.Gray);
-        }
     }
 }

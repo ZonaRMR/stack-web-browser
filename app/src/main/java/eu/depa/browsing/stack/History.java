@@ -1,13 +1,10 @@
 package eu.depa.browsing.stack;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -20,13 +17,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class History extends AppCompatActivity {
+public class History extends BaseActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        setThemeFromPrefs();
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.history);
-        if (getSupportActionBar() != null) getSupportActionBar().hide();
+        setTitle(R.string.menu_history);
+
         final ListView LV = (ListView) findViewById(R.id.historyList);
 
         List<Map<String, String>> data = new ArrayList<>();
@@ -37,8 +34,6 @@ public class History extends AppCompatActivity {
 
         if (titles.isEmpty() || addrs.isEmpty()) {
             TextView empty = (TextView) findViewById(R.id.empty);
-            TextView title = (TextView) findViewById(R.id.historyTitle);
-            title.setVisibility(View.GONE);
             empty.setVisibility(View.VISIBLE);
             return;
         }
@@ -73,28 +68,5 @@ public class History extends AppCompatActivity {
                 getApplicationContext().startActivity(newTabIntent);
             }
         });
-    }
-
-    public void setThemeFromPrefs () {
-        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        switch(sharedPref.getString("theme", "")) {
-            case "def":
-                setTheme(R.style.Cyan);
-                return;
-            case "bg":
-                setTheme(R.style.BlueGray);
-                return;
-            case "rock":
-                setTheme(R.style.Rock);
-                return;
-            case "green":
-                setTheme(R.style.Green);
-                return;
-            case "blue":
-                setTheme(R.style.Blue);
-                return;
-            case "gray":
-                setTheme(R.style.Gray);
-        }
     }
 }

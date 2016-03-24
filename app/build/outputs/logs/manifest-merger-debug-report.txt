@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml:2:1-54:12
+ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml:2:1-55:12
 	xmlns:android
 		ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml:2:11-69
 	package
@@ -38,7 +38,7 @@ ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml
 	android:name
 		ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml:10:22-76
 application
-ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml:12:5-52:19
+ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml:12:5-53:19
 MERGED from [com.android.support:appcompat-v7:23.1.1] /home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] /home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:19:5-20
@@ -129,13 +129,17 @@ activity#eu.depa.browsing.stack.Bookmarks
 ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml:45:9-46
 	android:name
 		ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml:45:19-44
+activity#eu.depa.browsing.stack.BaseActivity
+ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml:46:9-49
+	android:name
+		ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml:46:19-47
 meta-data#com.google.android.gms.version
-ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml:49:9-51:69
+ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml:50:9-52:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 	android:name
-		ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml:50:13-58
+		ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml:51:13-58
 	android:value
-		ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml:51:13-66
+		ADDED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml:52:13-66
 uses-sdk
 INJECTED from /home/depa/Desktop/stack-web-browser/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.1.1] /home/depa/Desktop/stack-web-browser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:20:5-43
